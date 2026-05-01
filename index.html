@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Myrtha Gilbert — Historienne & Auteure</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --red:#3A6B9A;--red2:#4A80B5;
+  --gold:#7AAEC8;--gold-light:#EAF4FB;
+  --text:#1A2A35;--text2:#3A5060;--text3:#7A9BAA;
+  --bg:#F4F9FC;--white:#FFF;--border:#C8DFE8;
+  --nav-bg:#2A4A60;
+}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.6}
+
+/* ─── TOP BAR ─── */
+.topbar{background:var(--red);color:#fff;text-align:center;padding:0.4rem 1rem;font-size:0.78rem;letter-spacing:0.06em}
+.topbar a{color:#FFD9A0;text-decoration:none}
+
+/* ─── NAV ─── */
+nav{background:var(--nav-bg);position:sticky;top:0;z-index:200}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+.nav-logo{display:flex;flex-direction:column;line-height:1.1}
+.nav-logo span:first-child{font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:0.03em;font-family:Georgia,serif}
+.nav-logo span:last-child{font-size:0.65rem;color:#aaa;letter-spacing:0.15em;text-transform:uppercase}
+.nav-menu{display:flex;list-style:none;gap:0;height:64px}
+.nav-menu>li{position:relative;display:flex;align-items:center}
+.nav-menu>li>a{color:#ddd;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;padding:0 1rem;height:64px;display:flex;align-items:center;transition:background .2s,color .2s;white-space:nowrap}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--red);color:#fff}
+.dropdown{display:none;position:absolute;top:64px;left:0;background:#222;min-width:220px;border-top:2px solid var(--gold);z-index:300}
+.dropdown a{display:block;color:#ccc;text-decoration:none;padding:0.6rem 1.2rem;font-size:0.78rem;border-bottom:1px solid #333;transition:background .15s,color .15s}
+.dropdown a:hover{background:var(--red);color:#fff}
+.nav-menu>li:hover .dropdown{display:block}
+
+/* ─── HERO BANNER ─── */
+.hero-banner{background:linear-gradient(120deg,#1A3A55 0%,#2A5A7A 40%,#3A7A9A 70%,#4A90B0 100%);padding:4rem 1.5rem;text-align:center;position:relative;overflow:hidden}
+.hero-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(201,146,42,0.15) 0%,transparent 60%)}
+.hero-inner{max-width:900px;margin:0 auto;display:flex;gap:3rem;align-items:center;flex-wrap:wrap;justify-content:center;position:relative}
+.hero-photo-wrap{flex-shrink:0}
+.hero-photo-wrap img,.hero-photo-placeholder{width:180px;height:180px;border-radius:50%;border:3px solid var(--gold);object-fit:cover;display:block}
+.hero-photo-placeholder{background:linear-gradient(135deg,#2A6080,#3A80A0);display:flex;align-items:center;justify-content:center;font-size:3.5rem}
+.hero-text{text-align:left}
+.hero-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem}
+.hero-text h1{font-family:Georgia,serif;font-size:2.6rem;font-weight:normal;color:#fff;line-height:1.15;margin-bottom:0.8rem}
+.hero-text p{color:rgba(255,255,255,0.75);font-size:0.95rem;max-width:420px;margin-bottom:1.5rem}
+.btn-hero{background:var(--gold);color:#1A0A10;padding:0.65rem 1.8rem;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;font-weight:700;border-radius:1px;display:inline-block;transition:background .2s}
+.btn-hero:hover{background:#E0A830}
+.btn-outline-hero{background:transparent;border:1px solid rgba(255,255,255,0.4);color:#fff;padding:0.65rem 1.8rem;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;display:inline-block;margin-left:0.8rem;transition:background .2s}
+.btn-outline-hero:hover{background:rgba(255,255,255,0.1)}
+
+/* ─── SECTION GENERIC ─── */
+.section{padding:3.5rem 1.5rem}
+.container{max-width:1100px;margin:0 auto}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:1.8rem;border-bottom:2px solid var(--border);padding-bottom:0.8rem}
+.section-head h2{font-family:Georgia,serif;font-size:1.5rem;font-weight:normal;color:var(--red)}
+.section-head a{font-size:0.78rem;color:var(--gold);text-decoration:none;letter-spacing:0.05em}
+.section-head a:hover{color:var(--red)}
+
+/* ─── BOOKS GRID ─── */
+.books-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:1.5rem}
+.book-card{text-align:center;cursor:pointer;transition:transform .2s}
+.book-card:hover{transform:translateY(-4px)}
+.book-cover{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px;box-shadow:0 4px 14px rgba(0,0,0,0.18);display:block;background:linear-gradient(135deg,#C9922A,#8B1A2E);display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:#fff}
+.book-card h3{margin-top:0.7rem;font-size:0.82rem;font-weight:700;color:var(--text);line-height:1.3}
+.book-card p{font-size:0.75rem;color:var(--text3);margin-top:0.2rem}
+.btn-sm{display:inline-block;margin-top:0.5rem;padding:0.3rem 0.8rem;background:var(--red);color:#fff;font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;border-radius:1px;transition:background .2s}
+.btn-sm:hover{background:var(--red2)}
+
+/* ─── PROMO BANNER ─── */
+.promo-banner{background:var(--red);padding:1.6rem 1.5rem;text-align:center;color:#fff}
+.promo-banner p{font-size:1rem;letter-spacing:0.05em}
+.promo-banner strong{font-size:1.15rem;display:block;margin-bottom:0.2rem}
+
+/* ─── ABOUT ─── */
+.about-grid{display:grid;grid-template-columns:1fr 2fr;gap:3rem;align-items:start}
+.about-img img,.about-img-placeholder{width:100%;border-radius:2px;box-shadow:0 4px 20px rgba(0,0,0,0.12)}
+.about-img-placeholder{aspect-ratio:3/4;background:linear-gradient(135deg,#F5EDD0,#C9922A);display:flex;align-items:center;justify-content:center;font-size:5rem;border-radius:2px}
+.about-text .tag{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem}
+.about-text h2{font-family:Georgia,serif;font-size:1.8rem;font-weight:normal;color:var(--red);margin-bottom:1rem}
+.about-text p{color:var(--text2);margin-bottom:0.9rem;line-height:1.75}
+.domains{margin-top:1.2rem;display:flex;flex-wrap:wrap;gap:0.5rem}
+.domain-tag{background:var(--gold-light);border:1px solid #E8C87A;color:var(--red);font-size:0.75rem;padding:0.3rem 0.8rem;border-radius:20px}
+
+/* ─── ARTICLES ─── */
+.articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
+.article-card{border:1px solid var(--border);background:var(--white);border-radius:2px;padding:1.4rem;transition:box-shadow .2s}
+.article-card:hover{box-shadow:0 4px 18px rgba(0,0,0,0.09)}
+.article-card .date{font-size:0.72rem;color:var(--gold);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.5rem}
+.article-card h3{font-family:Georgia,serif;font-size:1rem;font-weight:normal;color:var(--red);margin-bottom:0.6rem;line-height:1.4}
+.article-card p{font-size:0.82rem;color:var(--text3);line-height:1.55}
+.article-card a{font-size:0.75rem;color:var(--gold);text-decoration:none;display:inline-block;margin-top:0.8rem;letter-spacing:0.05em}
+.article-card a:hover{color:var(--red)}
+
+/* ─── CONTACT ─── */
+.contact-section{background:#1A1A1A;padding:3.5rem 1.5rem}
+.contact-section .section-head h2{color:#fff;border-color:#333}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:3rem}
+.contact-info{color:#bbb}
+.contact-info h3{color:#fff;font-family:Georgia,serif;font-weight:normal;font-size:1.2rem;margin-bottom:1rem}
+.contact-info p{margin-bottom:0.6rem;font-size:0.88rem}
+.contact-info a{color:var(--gold);text-decoration:none}
+.form-group{margin-bottom:0.9rem}
+.form-group input,.form-group textarea{width:100%;padding:0.65rem 1rem;background:#2A2A2A;border:1px solid #444;color:#eee;font-size:0.88rem;border-radius:1px;outline:none;font-family:Arial,sans-serif;transition:border-color .2s}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--gold)}
+.form-group textarea{min-height:110px;resize:vertical}
+::placeholder{color:#666}
+.btn-submit{background:var(--red);color:#fff;border:none;padding:0.7rem 2rem;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-radius:1px;transition:background .2s;width:100%}
+.btn-submit:hover{background:var(--red2)}
+
+/* ─── FOOTER ─── */
+footer{background:#152A3A;color:#666;padding:2rem 1.5rem;text-align:center;font-size:0.78rem}
+footer a{color:#888;text-decoration:none}
+footer a:hover{color:var(--gold)}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:2rem}
+.footer-col h4{color:#aaa;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.8rem}
+.footer-col p,.footer-col a{display:block;color:#666;font-size:0.78rem;margin-bottom:0.4rem;text-decoration:none}
+.footer-col a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid #222;padding-top:1.2rem;color:#444}
+.footer-bottom span{color:#666}
+
+@media(max-width:768px){
+  .about-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .hero-text{text-align:center}
+  .hero-text p{margin:0 auto 1.5rem}
+  .nav-menu{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">📦 Livraison disponible &nbsp;·&nbsp; <a href="#contact">Commander un livre →</a></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <span>Myrtha Gilbert</span>
+      <span>Historienne · Auteure</span>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="#accueil" class="active">Accueil</a></li>
+      <li><a href="#livres">Livres</a></li>
+      <li><a href="#biographie">Biographie</a></li>
+      <li><a href="publications.html">Articles</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="accueil" class="hero-banner">
+  <div class="hero-inner">
+    <div class="hero-photo-wrap">
+      <img src="photo_myrtha.avif" alt="Myrtha Gilbert" style="width:180px;height:180px;border-radius:50%;border:3px solid #C9922A;object-fit:cover;display:block" onerror="this.outerHTML='<div class=\'hero-photo-placeholder\'>✍</div>'">
+    </div>
+    <div class="hero-text">
+      <p class="hero-tag">Chercheuse · Professeure · Auteure</p>
+      <h1>Myrtha Gilbert</h1>
+      <p>Historienne haïtienne dont les travaux illuminent l'histoire sociale, politique et économique d'Haïti avec rigueur et passion.</p>
+      <a class="btn-hero" href="#livres">Découvrir ses œuvres</a>
+      <a class="btn-outline-hero" href="#biographie">Lire la biographie</a>
+    </div>
+  </div>
+</section>
+
+<!-- LIVRES -->
+<section id="livres" class="section" style="background:var(--white)">
+  <div class="container">
+    <div class="section-head">
+      <h2>Mes Livres</h2>
+      <a href="#contact">Commander →</a>
+    </div>
+    <div class="books-grid">
+
+      <div class="book-card">
+        <img src="shada.avif" alt="SHADA" onerror="this.src='shada.jpg'" style="width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px;box-shadow:0 4px 14px rgba(0,0,0,0.18)">
+        <h3>SHADA, Chronique d'une extravagante escroquerie <span style="font-weight:normal;color:var(--text3)">(2e éd.)</span></h3>
+        <p style="font-size:0.75rem;color:var(--text3);margin-top:0.3rem">285 pages · ISBN 978-99970-62-09-3 · Avril 2016</p>
+        <p style="font-size:0.78rem;color:var(--text2);margin-top:0.5rem;line-height:1.5">L'histoire de cette compagnie américaine créée en Haïti en 1941 qui s'empara de milliers d'ha de terres paysannes au profit de plantations de caoutchouc et de pite.</p>
+        <a class="btn-sm" href="#contact">Commander</a>
+      </div>
+
+      <div class="book-card">
+        <img src="couvertureShadaCreole.avif" alt="SHADA yon kokenn chenn manti" onerror="this.src='couvertureShadaCreole.jpg'" style="width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px;box-shadow:0 4px 14px rgba(0,0,0,0.18)">
+        <h3>SHADA, yon kokenn chenn manti <span style="font-weight:normal;color:var(--text3)">(version créole)</span></h3>
+        <p style="font-size:0.75rem;color:var(--text3);margin-top:0.3rem">72 pages · ISBN 978-99935-7-357-9 · 2013</p>
+        <p style="font-size:0.78rem;color:var(--text2);margin-top:0.5rem;line-height:1.5">Version créole de l'ouvrage. Thèmes : création de la SHADA, dépossessions paysannes, plantations de caoutchouc, faillite du programme.</p>
+        <a class="btn-sm" href="#contact">Commander</a>
+      </div>
+
+      <div class="book-card">
+        <img src="shada_1.avif" alt="SHADA 1re édition" onerror="this.src='shada_1.jpg'" style="width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px;box-shadow:0 4px 14px rgba(0,0,0,0.18)">
+        <h3>SHADA, Chronique d'une extravagante escroquerie <span style="font-weight:normal;color:var(--text3)">(1re éd.)</span></h3>
+        <p style="font-size:0.75rem;color:var(--text3);margin-top:0.3rem">214 pages · ISBN 978-99935-58-18-7 · 2012</p>
+        <p style="font-size:0.78rem;color:var(--text2);margin-top:0.5rem;line-height:1.5">Première édition. Thèmes : création de la SHADA, dépossessions paysannes, coupe sauvage des pins, faillite du programme de caoutchouc.</p>
+        <p style="font-size:0.72rem;color:var(--red);margin-top:0.3rem;font-style:italic">⚠ 10 exemplaires disponibles (fin de stock)</p>
+        <a class="btn-sm" href="#contact">Commander</a>
+      </div>
+
+      <div class="book-card">
+        <img src="lacatastropheEstPasNaturelle.avif" alt="La catastrophe n'était pas naturelle" onerror="this.src='lacatastropheEstPasNaturelle.jpg'" style="width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px;box-shadow:0 4px 14px rgba(0,0,0,0.18)">
+        <h3>La catastrophe n'était pas naturelle</h3>
+        <p style="font-size:0.75rem;color:var(--text3);margin-top:0.3rem">33 pages · ISBN 978-99935-94-42-0 · Mai 2010</p>
+        <p style="font-size:0.78rem;color:var(--text2);margin-top:0.5rem;line-height:1.5">Liens entre politiques publiques néfastes et l'ampleur des catastrophes. Thèmes : déboisement, pauvreté de masse, crise alimentaire, politiques néolibérales.</p>
+        <p style="font-size:0.72rem;color:var(--text3);margin-top:0.3rem">En vente à la Librairie La Pléiade PV Haïti</p>
+        <a class="btn-sm" href="#contact">Commander</a>
+      </div>
+
+      <div class="book-card">
+        <img src="lacrisedesvaleurs.avif" alt="La crise des valeurs dans la société haïtienne" onerror="this.src='lacrisedesvaleurs.jpg'" style="width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px;box-shadow:0 4px 14px rgba(0,0,0,0.18)">
+        <h3>La crise des valeurs dans la société haïtienne</h3>
+        <p style="font-size:0.75rem;color:var(--text3);margin-top:0.3rem">104 pages · ISBN 978-99935-7-227-5 · 2007</p>
+        <p style="font-size:0.78rem;color:var(--text2);margin-top:0.5rem;line-height:1.5">Analyse la naissance des valeurs de la société haïtienne et la destruction systématique de ces valeurs sous le régime Duvalier.</p>
+        <p style="font-size:0.72rem;color:var(--text3);margin-top:0.3rem">En vente à la Librairie La Pléiade PV Haïti</p>
+        <a class="btn-sm" href="#contact">Commander</a>
+      </div>
+
+      <div class="book-card">
+        <img src="seprendreencharge.avif" alt="Se prendre en charge ou disparaître" onerror="this.src='seprendreencharge.jpg'" style="width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px;box-shadow:0 4px 14px rgba(0,0,0,0.18)">
+        <h3>Se prendre en charge ou disparaître</h3>
+        <p style="font-size:0.75rem;color:var(--text3);margin-top:0.3rem">60 pages · ISBN 99935-2-695-9 · 2004</p>
+        <p style="font-size:0.78rem;color:var(--text2);margin-top:0.5rem;line-height:1.5">Identification des problèmes socio-économiques, politiques et culturels d'Haïti. Invitation au dialogue entre secteurs sociaux et élites.</p>
+        <p style="font-size:0.72rem;color:var(--red);margin-top:0.3rem;font-style:italic">⚠ Stock épuisé — Consultation : Bibliothèque Nationale d'Haïti</p>
+      </div>
+
+      <div class="book-card">
+        <img src="luttesdesfemmes.avif" alt="Luttes des Femmes et luttes sociales en Haïti" onerror="this.src='luttesdesfemmes.jpg'" style="width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:2px;box-shadow:0 4px 14px rgba(0,0,0,0.18)">
+        <h3>Luttes des Femmes et luttes sociales en Haïti</h3>
+        <p style="font-size:0.75rem;color:var(--text3);margin-top:0.3rem">165 pages · ISBN 999 35-2-006-3 · 2001</p>
+        <p style="font-size:0.78rem;color:var(--text2);margin-top:0.5rem;line-height:1.5">Problématique des femmes haïtiennes face au pouvoir politique, leur participation à l'économie nationale et la violence de genre.</p>
+        <p style="font-size:0.72rem;color:var(--red);margin-top:0.3rem;font-style:italic">⚠ Stock épuisé — Consultation : Bibliothèque Nationale d'Haïti</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner">
+  <p><strong>📦 Livraison disponible</strong>Disponible à la Librairie La Pléiade PV (Haïti) &nbsp;·&nbsp; Commandes : <strong style="font-size:inherit;display:inline">+1 (509) 44 04 1957</strong></p>
+</div>
+
+<!-- BIOGRAPHIE -->
+<section id="biographie" class="section" style="background:var(--gold-light)">
+  <div class="container">
+    <div class="section-head">
+      <h2>Biographie</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="PhotoBiographie.avif" alt="Myrtha Gilbert" onerror="this.src='PhotoBiographie.jpg'" style="width:100%;border-radius:2px;box-shadow:0 4px 20px rgba(0,0,0,0.12)">
+      </div>
+      <div class="about-text">
+        <p class="tag">À propos de l'auteure</p>
+        <h2>Myrtha Gilbert</h2>
+        <p>Myrtha Gilbert, spécialiste en formation de cadres, a participé à la lutte politique clandestine sous la dictature des Duvalier dans les années soixante. Dans le cadre de la promotion de la lutte des femmes, elle intégra à l'époque, le noyau associatif Mouvement des femmes.</p>
+        <p>À l'étranger, elle devient membre de l'Association Nationale des Femmes Luisa Amanda Espinoza au Nicaragua, après le triomphe de la Révolution Sandiniste.</p>
+        <p>De retour au pays, elle s'impliqua résolument dans des activités de réflexion sur la problématique nationale, d'organisation et d'éducation populaire. Elle a en outre participé en qualité d'intervenant à de nombreux colloques, séminaires et conférences relatifs à la problématique des femmes.</p>
+        <p>Elle a abordé la problématique des Femmes haïtiennes dans plusieurs articles et notamment dans son premier ouvrage <em>Luttes des Femmes et luttes sociales en Haïti</em> ; elle a scruté également les rapports historiques conflictuels entre l'État haïtien et les grandes majorités dans son cours à l'Université sur <em>L'État et le citoyen en Haïti</em>.</p>
+        <p>Aujourd'hui, ses recherches s'orientent essentiellement vers la question paysanne. Elle a animé dans ce sens durant l'année 2015, plusieurs émissions sur les conditions et l'urgence d'une véritable réforme agraire en Haïti.</p>
+        <p>Elle est très présente dans tous les débats qui intéressent les indispensables transformations de la société haïtienne.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section id="articles" class="section" style="background:var(--white)">
+  <div class="container">
+    <div class="section-head">
+      <h2>Articles & Publications</h2>
+      <a href="publications.html">Toutes les publications →</a>
+    </div>
+    <div class="articles-grid">
+      <div class="article-card">
+        <p class="date">Mai 2022</p>
+        <h3>Haïti-Énergie : Mirage électrique — Le cas de Jacmel au XIX<sup>e</sup> siècle (suite)</h3>
+        <p>Suite de l'enquête historique sur l'électrification de Jacmel, première ville des Amériques à bénéficier de l'éclairage public à l'électricité.</p>
+        <a href="#">Lire l'article →</a>
+      </div>
+      <div class="article-card">
+        <p class="date">Mai 2022</p>
+        <h3>Haïti : Mirage électrique — Le cas de Jacmel au 19<sup>e</sup> siècle</h3>
+        <p>Exploration des ambitions modernisatrices de Jacmel à la fin du XIXe siècle et les paradoxes du développement énergétique.</p>
+        <a href="#">Lire l'article →</a>
+      </div>
+      <div class="article-card">
+        <p class="date">Archives</p>
+        <h3>Nouvelles & Événements</h3>
+        <p>Retrouvez les dernières actualités, conférences et présentations de Myrtha Gilbert.</p>
+        <a href="#">Voir toutes les actualités →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Rejoignez Myrtha Gilbert</h3>
+        <p>Pour toute demande de conférence, acquisition de livres ou renseignement, n'hésitez pas à écrire.</p>
+        <p style="margin-top:1.2rem">📞 <a href="tel:+15094404957">+1 (509) 44 04 1957</a></p>
+        <p style="margin-top:0.4rem;font-size:0.8rem;color:#666">Disponible à la Librairie La Pléiade PV (Haïti)</p>
+      </div>
+      <div>
+        <div class="form-group"><input type="text" placeholder="Votre nom"></div>
+        <div class="form-group"><input type="email" placeholder="Votre courriel"></div>
+        <div class="form-group"><input type="text" placeholder="Objet"></div>
+        <div class="form-group"><textarea placeholder="Votre message…"></textarea></div>
+        <button class="btn-submit" onclick="sendMsg(this)">Envoyer le message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Myrtha Gilbert</h4>
+      <p>Historienne · Professeure · Auteure</p>
+      <p style="margin-top:0.6rem;font-size:0.75rem">Spécialiste de l'histoire sociale et politique d'Haïti</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="#accueil">Accueil</a>
+      <a href="#livres">Livres</a>
+      <a href="#biographie">Biographie</a>
+      <a href="#articles">Articles</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Commandes</h4>
+      <p>Librairie La Pléiade PV</p>
+      <a href="tel:+15094404957">+1 (509) 44 04 1957</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Myrtha Gilbert · Tous droits réservés</span>
+  </div>
+</footer>
+
+<script>
+function sendMsg(btn){
+  btn.textContent='Message envoyé ✓';
+  btn.style.background='#2A6B3C';
+  setTimeout(()=>{btn.textContent='Envoyer le message';btn.style.background='';},3000);
+}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  const t=document.querySelector(a.getAttribute('href'));
+  if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}
+}));
+</script>
+</body>
+</html>
