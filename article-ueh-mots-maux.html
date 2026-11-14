@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Université d'État d'Haïti : des mots qui fâchent aux maux de l'heure — Myrtha Gilbert</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#3A6B9A;--blue2:#4A80B5;
+  --blue-light:#EAF4FB;--blue-mid:#7AAEC8;
+  --nav-bg:#2A4A60;--footer-bg:#152A3A;
+  --text:#1A2A35;--text2:#3A5060;--text3:#7A9BAA;
+  --bg:#F4F9FC;--white:#FFF;--border:#C8DFE8;
+}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.8}
+.topbar{background:var(--blue);color:#fff;text-align:center;padding:0.4rem 1rem;font-size:0.78rem;letter-spacing:0.06em}
+.topbar a{color:#B8DDEF;text-decoration:none}
+nav{background:var(--nav-bg);position:sticky;top:0;z-index:200}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+.nav-logo{display:flex;flex-direction:column;line-height:1.1;text-decoration:none}
+.nav-logo span:first-child{font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:0.03em;font-family:Georgia,serif}
+.nav-logo span:last-child{font-size:0.65rem;color:#aaa;letter-spacing:0.15em;text-transform:uppercase}
+.nav-menu{display:flex;list-style:none;height:64px}
+.nav-menu>li>a{color:#ddd;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;padding:0 1rem;height:64px;display:flex;align-items:center;transition:background .2s,color .2s;white-space:nowrap;font-family:Arial,sans-serif}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--blue);color:#fff}
+.page-header{background:linear-gradient(120deg,#1A3A55 0%,#2A5A7A 40%,#3A7A9A 70%,#4A90B0 100%);padding:3rem 1.5rem}
+.page-header-inner{max-width:800px;margin:0 auto}
+.breadcrumb{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-bottom:1rem;font-family:Arial,sans-serif}
+.breadcrumb a{color:#B8DDEF;text-decoration:none}
+.breadcrumb a:hover{color:#fff}
+.article-meta{font-family:Arial,sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.6);margin-bottom:0.8rem;letter-spacing:0.05em}
+.page-header h1{font-size:1.9rem;font-weight:normal;color:#fff;line-height:1.3;margin-bottom:0.5rem}
+.article-wrap{max-width:800px;margin:3rem auto;padding:0 1.5rem}
+.article-body{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:3rem;box-shadow:0 2px 12px rgba(58,107,154,0.07)}
+.epigraph{margin-bottom:2rem;padding:1.2rem 2rem;border-left:3px solid var(--blue-mid);background:var(--blue-light);border-radius:2px}
+.epigraph p{font-style:italic;color:var(--text2);margin-bottom:0.4rem}
+.epigraph cite{display:block;font-style:normal;font-family:Arial,sans-serif;font-size:0.82rem;color:var(--text3);margin-top:0.4rem}
+.article-body h2{font-size:1.05rem;color:var(--blue);margin:2.2rem 0 0.8rem;font-weight:bold;font-family:Georgia,serif;border-bottom:1px solid var(--border);padding-bottom:0.4rem}
+.article-body p{color:var(--text2);margin-bottom:1.1rem;text-align:justify}
+.article-body blockquote{margin:1rem 0 1.2rem 1.5rem;padding-left:1rem;border-left:3px solid var(--border);color:var(--text2);font-style:italic}
+.concern-list{margin:0.8rem 0 1.5rem;padding-left:0;list-style:none}
+.concern-list li{color:var(--text2);padding:0.5rem 0.8rem 0.5rem 1.2rem;border-left:3px solid var(--blue);margin-bottom:0.6rem;text-align:justify;line-height:1.8}
+.behavior-list{margin:0.8rem 0 1.5rem;padding-left:0;list-style:none}
+.behavior-list li{color:var(--text2);padding:0.4rem 0.8rem 0.4rem 1.2rem;border-left:3px solid var(--blue-mid);margin-bottom:0.5rem;line-height:1.8}
+.biblio-section{margin-top:2.5rem;padding-top:1.5rem;border-top:2px solid var(--border)}
+.biblio-section h3{font-family:Arial,sans-serif;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-mid);margin-bottom:1rem}
+.biblio-section ul{padding-left:1.5rem;color:var(--text3);font-size:0.82rem;line-height:1.9}
+.biblio-section ul li{margin-bottom:0.3rem}
+.back-link{display:inline-block;margin-bottom:2rem;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--blue);text-decoration:none;letter-spacing:0.05em}
+.back-link:hover{color:var(--blue2)}
+footer{background:var(--footer-bg);color:#666;padding:2rem 1.5rem;text-align:center;font-size:0.78rem;font-family:Arial,sans-serif;margin-top:3rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:2rem}
+.footer-col h4{color:#aaa;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.8rem}
+.footer-col a,.footer-col p{display:block;color:#666;font-size:0.78rem;margin-bottom:0.4rem;text-decoration:none}
+.footer-col a:hover{color:var(--blue-mid)}
+.footer-bottom{border-top:1px solid #223344;padding-top:1.2rem;color:#444}
+@media(max-width:768px){
+  .nav-menu{display:none}
+  .article-body{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">📦 Livraison disponible &nbsp;·&nbsp; <a href="index.html#contact">Commander un livre →</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span>Myrtha Gilbert</span>
+      <span>Historienne · Auteure</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#livres">Livres</a></li>
+      <li><a href="index.html#biographie">Biographie</a></li>
+      <li><a href="publications.html" class="active">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; <a href="publications.html">Articles</a> &nbsp;/&nbsp; UEH : des mots qui fâchent aux maux de l'heure</p>
+    <p class="article-meta">17 octobre 2009</p>
+    <h1>Université d'État d'Haïti : des mots qui fâchent aux maux de l'heure</h1>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <a class="back-link" href="publications.html">← Retour aux publications</a>
+
+  <div class="article-body">
+
+    <div class="epigraph">
+      <p>En somme, nous n'avons devant nous que des Simulacres, il s'agit de nous préparer à les faire reculer et disparaître…</p>
+      <cite>Fernand Hibbert, <em>Les Simulacres</em></cite>
+    </div>
+
+    <h2>Introduction</h2>
+
+    <p>Dans notre texte intitulé « L'Université d'État d'Haïti, entre infantilisme, opportunisme et manipulation politique », nous avons utilisé le concept de « courant lumpen estudiantin », expression qui a paru déplaire à plus d'un.</p>
+
+    <p>Mais à bien comprendre les critiques voire même les accusations portées contre nous, personne ne s'en est pris au contenu de nos réflexions eu égard au concept lui-même, ni aux données chiffrées, ni aux faits évoqués relatifs à l'histoire ancienne ou récente. On s'est arrêté au mot.</p>
+
+    <p>Or, c'est la chose et pas son nom qui doit effrayer et révolter. Ce n'est pas la vérité, quand elle est révélée, qui doit offusquer, aussi cruelle, aussi amère soit-elle. La vérité doit nous aider à prendre conscience de la nature et de l'ampleur de nos problèmes.</p>
+
+    <p>Ce qui doit effrayer et révolter la conscience citoyenne aujourd'hui en Haïti, ce sont :</p>
+
+    <ul class="concern-list">
+      <li>Les conditions infrahumaines dans lesquelles croupissent la majorité des 400 000 habitants de Cité Soleil et d'autres bidonvilles de Port-au-Prince et de la province ;</li>
+      <li>Le taux honteux de chômage de près de 70 % de la force vive de ce pays, dont 800 000 paysans ayant perdu leur moyen de survie durant ces 10 dernières années ;</li>
+      <li>La prostitution ouverte ou voilée qui détruit des milliers de nos adolescents et adolescentes, dont les parents au chômage pataugent dans la misère indigne ;</li>
+      <li>Le taux anormalement élevé de femmes qui meurent en couches faute de tout… ;</li>
+      <li>…Ce sont toutes les menaces qui pèsent sur la nation haïtienne.</li>
+    </ul>
+
+    <h2>I — Les origines du concept et sa réappropriation</h2>
+
+    <p>Alors, pour clarifier davantage notre point de vue, nous croyons qu'il est indispensable de rappeler la définition de Karl Marx du lumpenprolétariat (à l'origine de notre emprunt), puisqu'il en est le concepteur.</p>
+
+    <p>Il s'agit en effet d'une importante catégorie de l'analyse marxiste, d'autant plus intéressante pour l'analyse sociologique en Haïti, qu'elle se réfère aux nouvelles conditions de vie et au nouveau statut social de millions d'anciens paysans qui ont envahi les grandes villes européennes du XIX<sup>e</sup> siècle, dans le mouvement de structuration du capitalisme et de destruction des liens communautaires historiques, donc, de dislocation du monde paysan.</p>
+
+    <p>Marx parle à l'époque « d'un milieu flottant, louche, inorganisé, dans lequel il n'y a ni travail ni revenu fixe ». Milieu qui selon son analyse, n'est pas propice à l'émergence d'une conscience révolutionnaire, mais fournit en revanche un terrain privilégié aux aventuriers de tous horizons en quête de pouvoir.</p>
+
+    <p>Situation assez semblable à celle de notre pays depuis ces trente dernières années, où l'exode rural a fait passer la population de Cité Soleil de 15 000 habitants environ vers 1963, à près de 400 000 aujourd'hui et celle de Port-au-Prince de 700 000 habitants en 1981 à environ deux millions récemment.</p>
+
+    <p>Des idéologues marxistes du XX<sup>e</sup> siècle ont également utilisé ce concept, nuançant l'approche de Marx, selon leur propre compréhension et l'adaptant au contexte de la lutte qu'ils menaient.</p>
+
+    <p>Il s'agit notamment de Frantz Fanon, écrivain martiniquais, psychiatre et militant engagé dans la guerre d'Algérie, qui a exposé sa vision dans <em>Les damnés de la terre</em>. Laquelle vision soutient l'idée du caractère révolutionnaire du lumpenprolétariat comme fer de lance de la lutte des pays colonisés. Même quand il admet que cette catégorie peut tout aussi bien basculer dans le camp des classes dominantes, si elle est délaissée par les organisations d'avant-garde.</p>
+
+    <p>Amilcar Cabral, le théoricien et révolutionnaire capverdien, a aussi utilisé ce concept dans un premier moment, dans une optique proche de celle de Frantz Fanon. Plus tard, fort de son expérience d'organisateur et de dirigeant du PAIG (Mouvement pour l'Indépendance de la Guinée Bissau et du Cap-Vert), il réorientera sa vision qui désignera la petite bourgeoisie comme guide du mouvement et la paysannerie comme principale force de frappe dans la lutte anticolonialiste en Afrique.</p>
+
+    <p>Le militant afro-américain et dirigeant du Black Panthers des années soixante, Eldridge Cleaver, avait totalement épousé la thèse de Frantz Fanon eu égard au lumpenprolétariat dont il se réclamera, lui et les membres de cette organisation révolutionnaire.</p>
+
+    <p>D'autres concepts dérivés seront inventés par Marx et par d'autres, tels lumpen aristocratie, lumpenbourgeoisie, etc.</p>
+
+    <p>Cependant, il appartient à nous autres Haïtiens, de réfléchir sur cette question d'importante actualité, mais aussi sur la réalité de l'ensemble des classes et couches sociales de notre milieu, en liaison avec les questions brûlantes de l'heure, afin de tirer les conclusions pertinentes, susceptibles d'orienter nos combats présents et futurs.</p>
+
+    <h2>II — Effondrement de l'État et relâchement des liens sociaux</h2>
+
+    <p>Maintenant, dans l'Haïti d'aujourd'hui, pourquoi étions-nous amenés à forger ce néologisme ? Quelles sont les relations que nous avons établies, entre le concept « lumpenprolétariat » et celui de « courant lumpen estudiantin » que nous avons utilisé ?</p>
+
+    <p>Pour mieux nous faire comprendre, nous devons revenir sur les réflexions que nous avions ébauchées depuis les années 1999-2001 relatives aux transformations de la formation sociale haïtienne où nous notions en même temps, l'effondrement de l'État, l'extension de la misère abjecte, les dangers du relâchement des liens sociaux dans cette société en crise, et le problème posé par l'absence de direction politique démocratique et populaire.</p>
+
+    <p>Réflexions que nous approfondissions au fil du temps, en discutant avec d'autres, en revisitant notre histoire, en prêtant plus d'attention aux faits et gestes des uns et des autres et en tirant profit des expériences d'ailleurs. De sorte que nous allons rappeler le fil conducteur qui nous a conduits aux conclusions les plus récentes, relatives aux dérives actuelles d'un certain courant du monde estudiantin.</p>
+
+    <p>Ainsi, écrivions-nous dans notre article titré : <em>La crise de l'État Haïtien, les mutations sociales et le nouveau rôle de la femme</em>, paru dans <em>Le Nouvelliste</em> du 8 mars 1999 :</p>
+
+    <blockquote>« Il faut rebâtir Haïti et reconstruire l'État. Nous disons reconstruction de l'État, parce qu'il a été emporté dans la tourmente… L'aboutissement de ces transformations structurelles dépendent …notamment de l'existence d'un véritable leadership… »</blockquote>
+
+    <p>Ce constat de l'effritement de l'État est encore présent dans notre ouvrage <em>Luttes des Femmes et luttes sociales en Haïti</em> paru en août 2001, où nous soulignions dès l'introduction :</p>
+
+    <blockquote>« Aujourd'hui, alors que la crise nationale s'aiguise et que l'État s'effondre, la mobilisation des femmes est quasi inexistante… »</blockquote>
+
+    <p>Nous en avions profité pour tirer la sonnette d'alarme sur le caractère intolérable de la crise, et ses funestes conséquences sociales, en signalant :</p>
+
+    <blockquote>« C'est… une frange importante de la population haïtienne qui est bousculée par la déstructuration de l'économie paysanne et soumise à une misère abjecte. Un grand nombre de jeunes se retrouvent ainsi dans les bidonvilles… sans perspective et de ce fait pratiquement sans liens avec le reste de la société qui devient de plus en plus pour eux un corps étranger. Ces groupes sociaux deviennent la proie facile de politiciens véreux et de groupes mafieux. Ils s'enfoncent ainsi dans une marginalisation qui signifie… désarroi et désespoir »</blockquote>
+
+    <p>Nous persistions en 2002, dans une conférence sur le thème : <em>Famille, violence et crise de société</em>, où nous avions caractérisé la crise de l'État accouplée à celle de la société pour pointer du doigt :</p>
+
+    <blockquote>« …La clochardisation de la population, l'exode rural sauvage, l'expansion alarmante du trafic de la drogue, la délinquance juvénile, la multiplication des gangs armés et le relâchement des liens sociaux… » mais aussi, « la déliquescence des institutions et la disparition virtuelle de l'État ».</blockquote>
+
+    <p>Remarquons que le terme clochardisation que nous avons utilisé, est l'équivalent de la condition du sous prolétaire et sert précisément à signaler le passage de vastes couches de population dans l'extrême précarité socio-économique surtout avec l'application renforcée des politiques néolibérales dès 1996-1997.</p>
+
+    <p>Dans son célèbre ouvrage, <em>Les luttes de classes en France, 1848-1850</em>, Karl Marx lui-même soulignait l'utilisation du lumpenprolétariat par la bourgeoisie, quand le cadre légal existant paraissait une entrave à l'accession au pouvoir de cette classe et qu'elle devait faire usage de violence pour parvenir à ses fins.</p>
+
+    <p>Dans notre publication <em>Se prendre en charge ou disparaître</em> publiée au troisième trimestre de l'année 2004, nous avons été plus explicites en utilisant déjà le concept de lumpenprolétariat pour expliquer l'ascension et le maintien du duvaliérisme au pouvoir en Haïti :</p>
+
+    <blockquote>« …Vu l'essoufflement du système, le duvaliérisme n'avait que deux choix : initier des réformes structurelles profondes ou instaurer un pouvoir autoritaire… Le duvaliérisme a choisi l'impasse, utilisant avec brio et cynisme, le retard et la misère des masses rurales et du lumpenprolétariat des villes. Une politique qui allait trouver un adepte fidèle plus tard avec Jean-Bertrand Aristide. »</blockquote>
+
+    <p>Nous avons ensuite expliqué l'impact négatif du vide politique créé, suite à l'affaiblissement programmé des organisations populaires à partir de septembre 1991 :</p>
+
+    <blockquote>« … le coup d'État militaire sanglant de 1991… a occasionné le départ pour l'étranger de plus de 10 000 activistes d'organisations populaires… Ce nettoyage de terrain, en affaiblissant les organisations démocratiques et populaires, a facilité les excès du pouvoir Lavalas, renforcé son alliance avec le lumpen (mal nommé organisation populaire), renouvelé une débauche de violence et consommé l'implosion de l'État. »</blockquote>
+
+    <p>Et nous avons poursuivi notre analyse en septembre 2006 dans notre texte titré : « L'insécurité et sa prise en charge, une question urgente », où nous soulignions :</p>
+
+    <blockquote>« … Le lumpen a pris la relève, et en lieu et place d'organisations populaires, l'espace se remplit de chefs de gangs… La manipulation politique est de rigueur : manifestations intempestives, casse, incendies, exactions de toutes sortes… En tout cas, en absence d'un véritable leadership démocratique et populaire, le vivier de la misère abjecte, l'absence de projet de société et le désespoir d'une vie sans perspective l'ont permis. »</blockquote>
+
+    <p>L'observation de cette réalité de dégradation effarante des conditions de vie, de perte de repères et de valeurs va nous mener à l'écriture de notre dernier ouvrage paru en 2007 : <em>La crise des valeurs dans la société haïtienne</em> (tome 1) où nous notions ceci :</p>
+
+    <blockquote>« …Beaucoup de pratiques sociales qui s'observent depuis un moment dans notre milieu ne peuvent qu'inquiéter le citoyen ordinaire. Pour le dire autrement, nous présumons qu'une société peut arriver à sécréter pour un ensemble de raisons, des phénomènes tellement nocifs qu'ils peuvent arriver à mettre en danger la survie et la perpétuation du groupe. Les comportements antisociaux trop répandus aujourd'hui ne sont-ils pas les signaux clairs d'une crise qui pourrit et ronge le tissu social ? »</blockquote>
+
+    <p>Et nous ajoutions plus loin :</p>
+
+    <blockquote>« Au constat d'une inquiétante déliquescence sociale et morale, de changements brutaux dans notre manière de faire, d'atteinte outrageuse à la dignité humaine d'une telle ampleur, indicateurs de relâchement voire d'effondrement des liens sociaux, il est légitime de s'interroger sur les causes d'un mal être aussi profond… »</blockquote>
+
+    <h2>III — Relâchement des liens sociaux et dérives estudiantines</h2>
+
+    <p>La suite logique de nos observations et réflexions, nous a permis de déceler à l'UEH, les mêmes attitudes négatives en cours dans d'autres milieux d'où le concept de courant « lumpen estudiantin ».</p>
+
+    <p>Dans le langage courant, le lumpen ne fait pas simplement référence à la condition de celui qui vit dans la misère, mais en plus, à l'absence de conscience de classe et la perte de repères. Et c'est ce triple handicap — misère, déficit de conscience sociale et perte de repères — qui le porte à commettre des actes délictueux, répréhensibles, pour survivre : vols, extorsions diverses, usage de faux, fourberie, etc., souvent accompagnés de violence aveugle (coups et blessures, casses…), expression d'une extrême frustration et aveu d'impuissance face au système qui le broie. Ses attaques sont maintes fois dirigées contre des pauvres comme lui. En fait, il travaille inconsciemment contre ses propres intérêts, les intérêts vitaux et stratégiques des plus démunis.</p>
+
+    <p>Nous nous rappelons bien dans notre histoire récente, la multiplication de vols et d'exactions dont étaient victimes de pauvres gens, des petites marchandes, des artisans, dans plusieurs quartiers et lors de certaines manifestations de rues.</p>
+
+    <p>Parce qu'il est nécessaire de souligner à l'occasion des dérives d'aujourd'hui, l'importante question des référents culturels. En effet, la majorité des paysans en exode de la première génération, était restée fortement attachée à leur culture rurale d'origine sous tous les aspects : pratiques culinaires et vestimentaires, mode d'union, simplicité, dignité (on ne mendie pas son pain), respect mutuel, solides attaches familiales, solidarité agissante, en plus d'un va et vient continu de la ville vers la campagne.</p>
+
+    <p>Pendant longtemps, les quartiers populaires représentaient beaucoup plus une transposition du milieu rural en ville que l'urbanisation des ruraux.</p>
+
+    <p>Mais la dernière génération, bien plus éloignée de la culture d'origine, a subi de plein fouet la totale déchéance du milieu rural, la rupture des liens communautaires, dans un contexte de crise économique aiguë et d'influence étrangère nuisible, avec l'aggravante d'une hémorragie de cadres sérieux, et d'éclatement de la famille, donc d'absence de modèles à suivre.</p>
+
+    <p>De sorte que cette nouvelle génération perd ses repères historiques, sans trouver dans le quotidien en ville, la possibilité de s'insérer dans le monde du travail décent et celle d'adopter de nouvelles valeurs liées aux droits et aux devoirs du citoyen.</p>
+
+    <h2>IV — Dérives estudiantines et mouvement caricatural</h2>
+
+    <p>C'est ainsi que par analogie, nous avons inventé l'expression « lumpen estudiantin » pour caractériser un ensemble de comportements qui se sont développés et font aujourd'hui tâche d'huile au sein de l'UEH, lesquels rappellent par maints côtés ceux couramment utilisés par certains groupes des quartiers populeux, à savoir :</p>
+
+    <ul class="behavior-list">
+      <li>Violence gratuite et aveugle ;</li>
+      <li>Menaces, intimidations et invectives ;</li>
+      <li>Propos outranciers et déplacés ;</li>
+      <li>Intolérance caractérisée face aux opinions contraires ;</li>
+      <li>Irrespect des personnes et piétinement de leurs droits ;</li>
+      <li>Destruction indiscriminée de biens sociaux et particuliers ;</li>
+      <li>Absence/déficit du sens des intérêts collectifs.</li>
+    </ul>
+
+    <p>Ce qui est extrêmement grave dans le cas qui nous préoccupe, c'est qu'il s'agit d'étudiants, de ceux qui ont eu l'opportunité d'aller à l'Université et d'apprendre à réfléchir, de ceux qui traditionnellement servent de guide.</p>
+
+    <p>Or, à analyser les faits observés durant les dernières crises à l'UEH, il n'y a aucune commune mesure entre les revendications portées par ce courant et les moyens utilisés pour arriver à ses fins. C'est le cas notamment du groupe d'étudiants grévistes de la FMP, décrétant une grève unilatérale à deux mois de la fin de l'année académique. Ceci sans compter le niveau inacceptable de violence verbale et d'agression physique à l'encontre d'étudiants et de professeurs, en plus des casses dont furent victimes de simples citoyens.</p>
+
+    <p>Ces actes d'incivisme caractérisés violent le droit de centaines d'étudiants à poursuivre leurs études, et de beaucoup d'autres à les initier, tout en desservant les intérêts stratégiques de leurs promoteurs, s'ils sont véritablement intéressés à faire une carrière médicale.</p>
+
+    <p>Car, les méthodes utilisées jusqu'ici ne font qu'affaiblir cette faculté pour laquelle ils disent se battre et apporter de l'eau au moulin de ceux qui n'apprécient en rien l'existence d'une Université Publique. Bien étrange manière de se battre pour l'<em>Alma Mater</em> et pour l'excellence… en détruisant !</p>
+
+    <p>Et c'est là que se situe toute la différence entre les véritables luttes revendicatives estudiantines qui participent soit de demandes académiques claires, soit d'un combat légitime contre l'oppression et l'arbitraire de dictatures rétrogrades. Et nous en avons connues depuis 1929.</p>
+
+    <p>D'ailleurs, les grévistes de Damien en 1929, face à l'interruption prolongée des cours, ont eu ce dépassement suprême, cette grandeur d'âme de délier toutes les autres facultés qui s'étaient spontanément solidarisées avec leur juste cause, de leur devoir de solidarité envers eux, les enjoignant de reprendre le chemin de l'école. Geste combien noble qui ne fit que renforcer l'élan patriotique qu'ils avaient provoqué. De plein gré, toutes les facultés réitérèrent leur appui au mouvement. Une belle leçon de démocratie !</p>
+
+    <p>Aujourd'hui, nous assistons au contraire à une expression caricaturale de la bataille estudiantine. Ce détournement d'objectifs, chez un secteur jouissant habituellement d'une aussi grande sympathie populaire, est évidemment à déplorer et ne peut que ternir l'image de l'Université et compliquer la tâche d'une nécessaire mise en commun de toutes les bonnes volontés pour une véritable réforme de l'Université.</p>
+
+    <h2>V — Comment alors remédier à une telle dérive ?</h2>
+
+    <p>Il faut sans complaisance identifier les vrais problèmes, délimiter les responsabilités, critiquer les déviations et refuser de jouer à l'autruche. C'est là une tâche incombant à l'ensemble de la communauté universitaire ainsi qu'à tous les intellectuels conscients. Il s'agit de s'entraider pour sortir de ce mauvais pas, de ce piège que nous a tendu le système de rentes en agonie qui fabrique les pauvres par milliers.</p>
+
+    <p>Par ailleurs, l'étudiant de par sa formation, pour nous répéter, est plus proche de maîtriser les instruments qui lui permettent de comprendre les rapports sociaux, ainsi que les enjeux tant politiques qu'économiques dans l'Haïti d'aujourd'hui.</p>
+
+    <p>Il doit être convaincu que les invectives, les injures, les casses et autres exactions, ne sauraient remplacer l'analyse, la réflexion, l'organisation et la mobilisation consciente. Et il s'agit surtout de ne pas se tromper d'ennemis, de ne pas faire la part belle aux loups habillés en berger pour mieux décimer le troupeau, aux opportunistes de tout bord qui ne manqueront pas de profiter du désarroi, du désespoir et de la frustration des jeunes pour les circonvenir.</p>
+
+    <p>Car, la frustration et la haine sociale en tant que scories de la conscience sociale, deviennent des éléments destructeurs dans le sable mouvant de l'extrême pauvreté en Haïti.</p>
+
+    <p>Or, il s'agit, pour faire avancer le combat en faveur du changement véritable, de transformer haine et frustration en esprit combatif, en esprit de sacrifice, en conscience sociale et en intégrité intellectuelle ; ferment indispensable à la rénovation de notre société et de notre Université d'État d'Haïti.</p>
+
+    <p style="margin-top:1.5rem;font-style:italic;color:var(--text3);font-size:0.9rem">Myrtha Gilbert<br>17 octobre 2009</p>
+
+    <div class="biblio-section">
+      <h3>Notice bibliographique</h3>
+      <ul>
+        <li>Fanon Frantz — <em>Les damnés de la terre</em>, 1961</li>
+        <li>Gilbert Myrtha — La crise de l'État Haïtien, les mutations sociales et le nouveau rôle de la Femme. <em>Le Nouvelliste</em>, 8 mars 1999</li>
+        <li>Gilbert Myrtha — <em>Luttes des Femmes et luttes sociales en Haïti</em>, 2001</li>
+        <li>Gilbert Myrtha — <em>Se prendre en charge ou disparaître</em>, 2004</li>
+        <li>Gilbert Myrtha — <em>La crise des valeurs dans la société haïtienne</em> (tome I), 2007</li>
+        <li>Hibbert Fernand — <em>Les Simulacres</em>, 1923</li>
+        <li>Marx Karl — <em>Les luttes de classes en France, 1848-1850</em></li>
+        <li>Séguier Michel — <em>Mobilisations populaires, éducation mobilisante</em>, 1983, INODEP</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2rem">
+    <a class="back-link" href="publications.html">← Retour aux publications</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Myrtha Gilbert</h4>
+      <p>Historienne · Professeure · Auteure</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#livres">Livres</a>
+      <a href="index.html#biographie">Biographie</a>
+      <a href="publications.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Commandes</h4>
+      <p>Librairie La Pléiade PV</p>
+      <a href="tel:+15094404957">+1 (509) 44 04 1957</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Myrtha Gilbert · Tous droits réservés</span>
+  </div>
+</footer>
+
+</body>
+</html>

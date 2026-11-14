@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Une traversée du duvaliérisme, version François Duvalier — Myrtha Gilbert</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#3A6B9A;--blue2:#4A80B5;
+  --blue-light:#EAF4FB;--blue-mid:#7AAEC8;
+  --nav-bg:#2A4A60;--footer-bg:#152A3A;
+  --text:#1A2A35;--text2:#3A5060;--text3:#7A9BAA;
+  --bg:#F4F9FC;--white:#FFF;--border:#C8DFE8;
+}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.8}
+.topbar{background:var(--blue);color:#fff;text-align:center;padding:0.4rem 1rem;font-size:0.78rem;letter-spacing:0.06em}
+.topbar a{color:#B8DDEF;text-decoration:none}
+nav{background:var(--nav-bg);position:sticky;top:0;z-index:200}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+.nav-logo{display:flex;flex-direction:column;line-height:1.1;text-decoration:none}
+.nav-logo span:first-child{font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:0.03em;font-family:Georgia,serif}
+.nav-logo span:last-child{font-size:0.65rem;color:#aaa;letter-spacing:0.15em;text-transform:uppercase}
+.nav-menu{display:flex;list-style:none;height:64px}
+.nav-menu>li>a{color:#ddd;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;padding:0 1rem;height:64px;display:flex;align-items:center;transition:background .2s,color .2s;white-space:nowrap;font-family:Arial,sans-serif}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--blue);color:#fff}
+.page-header{background:linear-gradient(120deg,#1A3A55 0%,#2A5A7A 40%,#3A7A9A 70%,#4A90B0 100%);padding:3rem 1.5rem}
+.page-header-inner{max-width:800px;margin:0 auto}
+.breadcrumb{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-bottom:1rem;font-family:Arial,sans-serif}
+.breadcrumb a{color:#B8DDEF;text-decoration:none}
+.breadcrumb a:hover{color:#fff}
+.article-meta{font-family:Arial,sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.6);margin-bottom:0.8rem;letter-spacing:0.05em}
+.page-header h1{font-size:1.9rem;font-weight:normal;color:#fff;line-height:1.3;margin-bottom:0.5rem}
+.page-header .subtitle{font-family:Arial,sans-serif;font-size:0.95rem;color:rgba(255,255,255,0.7);margin-top:0.4rem}
+.article-wrap{max-width:800px;margin:3rem auto;padding:0 1.5rem}
+.article-body{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:3rem;box-shadow:0 2px 12px rgba(58,107,154,0.07)}
+.epigraph{margin-bottom:2.5rem;padding:1.2rem 2rem;border-left:3px solid var(--blue-mid);background:var(--blue-light);border-radius:2px}
+.epigraph p{font-style:italic;color:var(--text2);margin-bottom:0.3rem}
+.epigraph .attribution{font-family:Arial,sans-serif;font-size:0.8rem;color:var(--text3);font-style:normal;margin-top:0.5rem}
+.article-body h2{font-size:1.1rem;color:var(--blue);margin:2.2rem 0 0.8rem;font-weight:bold;font-family:Georgia,serif}
+.article-body h3{font-size:1rem;color:var(--blue);margin:1.8rem 0 0.7rem;font-weight:bold;font-family:Georgia,serif}
+.article-body p{color:var(--text2);margin-bottom:1.1rem;text-align:justify}
+.article-body ol{color:var(--text2);margin:0.5rem 0 1.1rem 1.8rem;line-height:1.8}
+.article-body ol li{margin-bottom:0.8rem;text-align:justify}
+.author-note{margin-top:2rem;padding:1rem 1.5rem;background:var(--blue-light);border-radius:2px;font-family:Arial,sans-serif;font-size:0.82rem;color:var(--text3);font-style:italic}
+.nb-note{margin-top:0.8rem;padding:0.8rem 1.5rem;background:#f8f8f8;border:1px solid var(--border);border-radius:2px;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--text3)}
+.source-note{margin-top:0.8rem;padding:0.8rem 1.5rem;background:#f8f8f8;border:1px solid var(--border);border-radius:2px;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--text3)}
+.back-link{display:inline-block;margin-bottom:2rem;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--blue);text-decoration:none;letter-spacing:0.05em}
+.back-link:hover{color:var(--blue2)}
+footer{background:var(--footer-bg);color:#666;padding:2rem 1.5rem;text-align:center;font-size:0.78rem;font-family:Arial,sans-serif;margin-top:3rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:2rem}
+.footer-col h4{color:#aaa;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.8rem}
+.footer-col a,.footer-col p{display:block;color:#666;font-size:0.78rem;margin-bottom:0.4rem;text-decoration:none}
+.footer-col a:hover{color:var(--blue-mid)}
+.footer-bottom{border-top:1px solid #223344;padding-top:1.2rem;color:#444}
+@media(max-width:768px){
+  .nav-menu{display:none}
+  .article-body{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">📦 Livraison disponible &nbsp;·&nbsp; <a href="index.html#contact">Commander un livre →</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span>Myrtha Gilbert</span>
+      <span>Historienne · Auteure</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#livres">Livres</a></li>
+      <li><a href="index.html#biographie">Biographie</a></li>
+      <li><a href="publications.html" class="active">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; <a href="publications.html">Articles</a> &nbsp;/&nbsp; Traversée du duvaliérisme</p>
+    <p class="article-meta">12 février 2016 &nbsp;·&nbsp; AlterPresse</p>
+    <h1>Haïti : Une traversée du duvaliérisme, version François Duvalier</h1>
+    <p class="subtitle">Première version : 1957–1971</p>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <a class="back-link" href="publications.html">← Retour aux publications</a>
+
+  <div class="article-body">
+
+    <div class="epigraph">
+      <p>Il ne faut pas s'y tromper, cette histoire annonce des massacres.</p>
+      <p class="attribution">Jacques Stephen Alexis<br><em>In L'espace d'un cillement</em></p>
+    </div>
+
+    <div class="epigraph">
+      <p>Le pays s'est posé un problème de président comme toujours, et il ne peut en sortir comme toujours, parce qu'en un sens c'est un faux problème qui peut se transformer comme toujours, en un drame gratuit, et sans issue pour la communauté haïtienne toute entière.</p>
+      <p class="attribution">Anthony Lespès<br><em>Lettre à René Dépestre, 15 avril 1958</em></p>
+    </div>
+
+    <h2>Introduction</h2>
+
+    <p>Michel Rolph Trouillot a produit une analyse très pertinente du régime duvaliériste et il eut à dire : « Des démences qui nous guettent, la plus dangereuse est sans doute de succomber à la tentation imminente et facile de faire du duvaliérisme un accident de parcours, une bifurcation dans notre trajectoire historique… » <sup>[1]</sup> Il écrivait ceci en 1986, aux lendemains du départ du dictateur Jean-Claude Duvalier.</p>
+
+    <p>Aujourd'hui, trente ans plus tard, une autre démence nous guette, relativement plus terrible que la première, celle d'assister à la tentative honteuse de réhabilitation d'un régime de crimes, de sang, d'horreur et de pillage. Pourtant, la seconde est une conséquence directe de la première. Dans les deux cas, il s'agit de méconnaissance de l'histoire et d'incompréhension profonde des causes de nos malheurs. Il s'agit aussi d'absence d'une direction politique progressiste conséquente capable de mobiliser tous les secteurs revendicatifs du pays dans la compréhension du passé et la construction d'un avenir d'espoir.</p>
+
+    <p>Par ailleurs, une frange de l'oligarchie, en accointance avec le grand capital, obsédée par l'entrée sur la scène publique de vastes couches populaires historiquement marginalisées, rêve de revenir à une proto dictature susceptible de protéger et de défendre les intérêts économiques des brasseurs d'affaires.</p>
+
+    <p>Comme dit le sage, un peuple qui ne comprend pas son passé est condamné à le revivre. Dans ce sens, le retour du dictateur Jean-Claude Duvalier, et l'accueil que lui ont fait certaines gens qui n'ont rien connu de la terreur de ce régime, ainsi que d'autres qui ont déjà (pour leur malheur) oublié le nom de leurs bourreaux, sont là pour nous rappeler une fois de plus, la nécessité de nous consacrer en permanence, au devoir de mémoire et de vérité et à celui de l'autopsie de ce régime de pillage et de crimes.</p>
+
+    <p>Il faut renoncer aux lectures simplistes et aux conclusions faciles, pour interroger collectivement les failles de nos structures économiques, sociales, politiques et culturelles qui ont facilité l'accouchement d'un tel régime, la dégénérescence qui en est sortie et la crise globale qui secoue ce pays depuis plus de 35 ans.</p>
+
+    <p>Les secteurs les plus avancés de la société ont le devoir impératif d'empêcher la restauration du terrorisme d'Etat et celui de faire le procès du duvaliérisme et ses avatars, pour établir toute la vérité sur cette tranche particulièrement dramatique de notre histoire.</p>
+
+    <h2>I — Les conditions d'émergence du duvaliérisme</h2>
+
+    <h3>1.1 Bref rappel de la période post occupation américaine</h3>
+
+    <p>Les américains en rembarquant leurs troupes en 1934 n'ont remis qu'en partie les rênes du pouvoir économique et politique aux mains des haïtiens. Ils continuaient à gérer l'essentiel à distance, par le biais de la gendarmerie pour l'aspect politique, le contrôle des douanes, la centralisation et les emprunts pour l'aspect économique, l'entretien de l'aliénation culturelle des élites, notamment par l'aiguisement de la question de couleur, la création d'instituts, d'écoles et l'octroi de bourses d'études. Au bout de 19 ans d'occupation, les élites haïtiennes avaient retenu la leçon : Washington faisait et défaisait les gouvernements. D'ailleurs l'occupant dès son arrivée s'était chargé de faire savoir au patriote et homme politique Rosalvo Bobo, qu'il ne pouvait pas être candidat à la présidence de la République parce que telle était la volonté des EEUU. « Vous n'êtes pas candidat parce que les Etats-Unis l'interdisent… sachez que vous êtes en plus un ennemi public des Etats-Unis ». <sup>[2]</sup></p>
+
+    <p>En même temps, la reconfiguration du régime semi-féodal, condamnait la paysannerie à une misère abjecte, parce que les nouveaux mécanismes du système organisaient une succion encore plus avide des profits paysans qui filaient vers le milieu urbain et l'étranger, pendant que la gamme des produits d'importations augmentait. Un régime tempéré durant le 19<sup>e</sup> siècle par la régionalisation qui maintenait un certain équilibre entre les diverses élites provinciales. Car jusqu'au début du 20<sup>e</sup> siècle « Jérémie à elle seule exportait parfois plus de la moitié du volume national de cacao… Gonaïves et St-Marc, la plus grande partie du coton… » <sup>[3]</sup></p>
+
+    <p>Cette régionalisation économique qui permettait un certain partage national des richesses avant 1915 s'écroula, car l'occupant voulant un contrôle total des douanes et de notre économie par la centralisation, précipita le déclin des régions, en fermant plusieurs ports de province. Ainsi, une centralisation agressive la remplaça-t-elle, déprimant sensiblement les activités économiques régionales. Comme conséquence « En moins de quarante ans, le niveau de vie des vieilles familles (paysannes) passa de l'état d'aisance à celui de misère » rappelle Rémy Bastien. <sup>[4]</sup> Le paysan nourrissait toute la République, mais il était le plus mal loti.</p>
+
+    <p>Pour faire court, disons qu'au fil du temps, il y eut de plus en plus de citadins que la paysannerie devait nourrir, en même temps qu'elle assurait sa propre survie en situation de croissance démographique et de déclin économique. « Le fait est qu'il y a en ce moment des gens très bien, très instruits qui n'ont pas de quoi manger » écrira le président Sténio Vincent en 1941. Une frange de la petite bourgeoisie réclamait à cor et à cris sa portion de gâteau. De véritables changements structurels s'avéraient incontournables.</p>
+
+    <p>La situation socio-économique s'aggravant, des dirigeants du Parti Socialiste Populaire comme Etienne Charlier, Max Hudicourt, Anthony Lespès entre autres, alertèrent la société durant les années quarante et le début des années cinquante sur l'urgence d'un changement de cap : « … Sans une révolution dans notre politique agraire, notre agriculture est condamnée, nos institutions sont condamnées, la Nation en son ensemble est condamnée… » martelait Anthony Lespès en 1944-1945. Et cette Révolution n'a pas eu lieu.</p>
+
+    <p>On vit par contre, des franges de couches moyennes issues de la paysannerie, se faire preneuses agressives du gâteau paysan. Profitant d'un regain du préjugé de couleur ravivé par l'occupation américaine, ils noyauteront le mouvement indigéniste, et lèveront l'étendard du noirisme au nom « des classes moyennes » ou plus simplement de « la classe », et soi-disant pour « sauver » les « masses de l'arrière-pays ». Sur ces entrefaites, le mouvement de 1946 renversa le gouvernement de Lescot, dans un mélange de revendications populaires justes, de « rancunes d'aigris » ajoutées aux « convoitises agressives ». Les circonstances leur étant favorables, les noiristes les plus zélés, appuyés par une fraction de la hiérarchie de l'armée, prendront le pouvoir d'assaut, élisant comme président, le grand propriétaire foncier Dumarsais Estimé, président de la chambre des députés en 1941 et ancien ministre de l'Education Nationale de Sténio Vincent.</p>
+
+    <p>L'accession de Dumarsais Estimé au pouvoir ne modifia en rien les structures socio-économiques du pays. Bien au contraire, le nombre d'arrivistes prétendant au partage du butin ne fit qu'augmenter et le monde rural davantage grugé. Un exemple parmi d'autres, la production de figue-banane ruinée par des proches du gouvernement d'Estimé s'érigeant en « intermédiaires insouciants, voraces et accapareurs… » <sup>[5]</sup>. L'exportation passa de plus de sept millions de régimes en 1946-1947 à 600 000 environ en 1950 (en période de forte demande), et les revenus d'exportation passèrent d'environ 27 millions à six millions de gourdes, causant la ruine de milliers de petits producteurs et l'augmentation de l'exode rural vers la capitale. <sup>[6]</sup></p>
+
+    <p>Néanmoins, l'économie haïtienne connut de manière générale une certaine période de rémission à la fin de la deuxième guerre mondiale. Grâce à la hausse des prix du café et de la pite, un certain aller mieux exista dans le pays, toutefois peu profitable à la paysannerie et aux masses travailleuses. En effet, les surplus de l'économie n'allèrent ni dans la réforme agraire urgente et le développement du secteur primaire, ni dans un processus d'électrification, ni dans l'extension des petites et moyennes industries à travers le pays, ni dans un vaste programme d'éducation et de santé ; ils servirent surtout aux œuvres de prestige des gouvernements de Dumarsais Estimé et de Paul Eugène Magloire et à l'enrichissement de certains proches des deux régimes. Le Bicentenaire, ouvrage grandiose qui coûta plus de 10 millions de dollars, profita surtout à un groupe d'hommes d'affaires qui se lança dans le tourisme. Et quand les cours du marché baissèrent, que les devises se firent rares, le château de cartes s'écroula, étalant la crudité de la situation du pays au grand jour. Pour faire face aux difficultés financières, les taxes sur le café passèrent de 16% en 1953 à 37% en 1956-1957. La paysannerie encore une fois paya la note salée, la note du gaspillage des classes dominantes et des mauvais choix économiques.</p>
+
+    <h3>L'avènement du duvaliérisme, première version (1957–1971)</h3>
+
+    <p>C'est dans ces circonstances adverses que François Duvalier, <sup>[7]</sup> ancien employé de la mission sanitaire américaine, ancien ministre de la santé d'Estimé, se fraya un chemin vers le pouvoir, brandissant le noirisme comme épouvantail et l'estimisme comme bannière. Avant même la proclamation officielle des résultats des élections par les autorités haïtiennes, le <em>New York Times</em> en date du 27 octobre 1957, annonçait officieusement « … il paraît évident que le Dr François Duvalier sera proclamé vainqueur… ». En plus, s'octroyant la permission de fournir des conseils aux haïtiens, le quotidien poursuit « Le Brigadier Général Antonio Kébreau, chef de la junte militaire… semble avoir fait de son mieux pour réaliser des élections loyales… Les haïtiens seraient sages maintenant s'ils se ralliaient derrière lui et travaillaient à ramener la paix et la prospérité dans leur pays ». <sup>[8]</sup> Comme le dit notre proverbe créole : <em>Moun ki ba w konsèy achte chwal plenn nan tan lapli, pap ede w bal manje nan tan sechrès.</em></p>
+
+    <p>Cette recherche du pouvoir politique par ces couches moyennes n'impliquait aucune vision de réformes structurelles, mais la bataille d'une fraction de la petite bourgeoisie pour un partage du pouvoir politique et l'accès aux richesses dont la jouissance était historiquement réservée à d'autres. La petite histoire rapporte les propos du docteur Jacques Fourcand, un proche de François Duvalier : « Nous avons pris le pouvoir, pour enrichir nos amis et ruiner nos ennemis ».</p>
+
+    <p>Cependant, comme de coutume, François Duvalier récemment élu se présentera comme l'homme de la rupture, celui qui allait mettre de l'ordre dans les affaires de l'Etat grâce à une gestion honnête. « … Dans cette compétition se dressent d'un côté l'honnêteté, la probité, le respect des valeurs morales et de l'autre côté le produit du vol, de la concussion et des prébendes… (les) fortunes scandaleuses amassées dans le marchandage crapuleux, les transactions dégoûtantes et les concessions antinationales… » <sup>[9]</sup> Hélas !</p>
+
+    <p>Le duvaliérisme établit son règne sur la base d'une claire compréhension de la réalité socioculturelle. Il consacra le réaménagement du bloc dominant initié sous Estimé, scellant l'alliance d'une fraction de la petite bourgeoisie, des grands propriétaires fonciers, des grands spéculateurs avec la bourgeoisie commerçante syro-libanaise, combattue longtemps par la bourgeoisie traditionnelle haïtienne.</p>
+
+    <p>Vu l'état critique de la situation économique, tout nouveau pouvoir en Haïti avait le choix entre les massacres et les réformes profondes. Comme l'écrivait Rolph Trouillot, on en était à « l'échéance du sang ». Le régime duvaliériste opta donc pour les massacres, et ils commencèrent avant même l'accession à la présidence de François Duvalier : les cadavres des partisans de Fignolé, (entre mille et six mille) la nuit du 15 au 16 juin 1957, éliminés par des officiers duvaliéristes, paveront la route de Papa Doc vers le palais. <sup>[10]</sup></p>
+
+    <p>Le pouvoir duvaliériste n'entendait pas toucher au régime de rentes. Le duvaliérisme se voulait de préférence, un « défenseur intraitable » des « grands spéculateurs en denrées » <sup>[11]</sup> souvent grands propriétaires fonciers. D'ailleurs, des affidés du régime tels André Simon, Zacharie Delva, Jean Julmé, Charité Louis, et bien d'autres, renforceront leur pouvoir et leur patrimoine la plupart du temps au prix du sang. Le régime travaillera au forceps pour imposer une dramatique déstructuration sociale. Sa première version s'attaquera donc à 5 secteurs clés de la société :</p>
+
+    <p><strong>1 — L'élite économique traditionnelle.</strong> Car la bataille est avant tout une question d'intérêts économiques et de privilèges. D'ailleurs tout pouvoir politique s'inscrit dans un projet économique implicite ou explicite. Il s'agissait de déloger certains ayant-droits de leur position historique et de négocier une place aux côtés des autres, en faveur des nouveaux venus à la curée. Surtout sans rien changer au statu quo. Le tout sera maquillé d'un nationalisme de façade, souvent bruyant et d'un vernis douteux de lutte contre les mulâtres en faveur des « pitit sòyèt ». Pourtant, les fignolistes du Bel-Air, de la Saline, de Morne-à-Tuff et de La Croix des Bossales étaient bien de purs fils et filles du peuple, d'authentiques « pitit sòyèt ». Ils seront les premiers à être sauvagement sacrifiés sur l'autel de la « révolution duvaliériste ». Puis viendra le tour des « ennemis économiques » proprement dits. De grands entrepreneurs, dont plusieurs liés à l'agro-industrie sucrière, à l'exportation ayant soutenu la candidature de Louis Déjoie, comme André Riobé, les familles Forbin, Edlyn, Vieux, seront lâchement massacrés. Puis, les familles Drouin, Villedrouin, Sansaricq, Guilbaud de Jérémie, exportateurs de denrées (café, cacao) seront décimées. D'autres persécutés ou poussés par la peur des représailles s'empresseront d'abandonner le pays. Une frange de la bourgeoisie commerçante et industrielle dut composer avec le régime pour protéger ses privilèges économiques. Cependant, à titre d'alliés, des représentants de la fraction syro-libanaise sont directement invités à partager les postes politiques — Jean Deeb, Carlo Boulos, Baboun, Saliba — (ministres, maires, ambassadeurs, consuls, etc.) afin de se servir plus directement. Tandis que les impôts, taxes, déductions salariales et toutes sortes de prélèvements dans le pur style mafieux, appauvrissent davantage les masses travailleuses et les employés de l'Etat. C'était l'essentiel du programme économique du régime. Et pour renouveler sa fidélité à l'empire, François Duvalier promit de faire d'Haïti un autre Porto-Rico et offrira très tôt, la baie de Môle St Nicolas pour l'installation d'une base militaire américaine !</p>
+
+    <p><strong>2 — L'armée d'Haïti</strong> a subi très tôt un nettoyage sanglant suivi de sa domestication. Elle est l'institution mise en place par les américains pour « sécuriser » le système, ayant à son actif à partir des événements de 1946, coups d'état et interventions politiques diverses. Pour garantir la pérennité de son pouvoir, le régime devait la maîtriser. Et tout se fit par césarienne. Non pour réformer, mais pour instrumentaliser et asservir. Les plus sanguinaires obtiendront très vite les faveurs du prince : Franck Romain, William Regala, Abel Jérôme, Edouard Guillod, Jean Tassy, Jhon Beauvoir, Sony Borges, Rhausser Domingue, Jean-Baptiste Hilaire, Breton Claude, Albert Pierre dit <em>ti boulé</em> etc. Dans des circonstances diverses, un grand nombre d'officiers, retraités, révoqués ou encore actifs seront lâchement assassinés parmi lesquels : Hamilton Garoute, Guy Marcel, Charles Lochard, Max Paris, Lionel Fouchard, René Sajous, Alfred Victor Forbin, Jean Bouchereau, Lucien Scott, Chenon Michel etc.</p>
+
+    <p>Beaucoup d'autres têtes tomberont à mesure que la dictature enserrait dans ses tentacules l'institution militaire. Des membres de familles de militaires actifs ou en exil seront froidement exécutés. Ce fut le cas des familles Edlyn et Duchâtelier dont un bébé de quelques mois assassiné au Palais National. Plus tard, la folie meurtrière atteindra des fidèles bourreaux d'hier, comme en témoigne l'épisode des 19 officiers duvaliéristes passés par les armes en 1967 par le haut commandement de l'armée, à l'encontre de l'éthique la plus élémentaire.</p>
+
+    <p>C'est dans ce contexte de domestication de l'armée, que les cagoulards devinrent macoutes et que la milice s'affirma. Largement composée des éléments du lumpen des quartiers miséreux et de paysans appauvris, les couches les plus retardées au plan politique, elle devait servir de contrepoids à l'armée et d'élément de dissuasion contre toute parole et tout acte taxés d'opposition au régime. Sous l'ombrelle de l'armée domestiquée, elle devint l'arme de la terreur par excellence. À défaut de travail rémunérateur, le duvaliérisme offrit à Gros Féfé, Ti Cabiche, Boss Pent, Eloïs Maître et autres, la population haïtienne en pâture, surtout les plus faibles. Et de temps à autres comme complément, des maisons de bourgeois et d'opposants en disgrâce à piller.</p>
+
+    <p><strong>3 — L'église et la religion</strong> firent aussi face à la violence et à la volonté dictatoriale de Papa Doc. Les traitements furent différents suivant qu'il s'agissait de la religion catholique ou du vodou. La première fut pourchassée dans ses éléments les plus dynamiques et les plus indépendants puis noyautée. Dans le cas du vodou, on assista à une manipulation grossière de la foi populaire dans une pseudo valorisation du culte vodou.</p>
+
+    <p>Prenant appui sur un problème réel que confrontait l'église catholique, à savoir l'existence d'un clergé majoritairement étranger dont certains membres méprisaient sans le cacher la culture populaire, notamment le culte vodou, François Duvalier, se taillera des alliés et des serviteurs au sein de l'église dont certains, n'hésiteront pas à porter des armes de poing avec ostentation tels les pères Hilaire et Bouillaguet.</p>
+
+    <p>Des religieux non soumis au régime dont plusieurs spiritains seront expulsés. Cinq dignitaires de haut rang de l'église catholique nommés par le dictateur lui-même, avec approbation du Saint-Siège, prononceront au palais national le 25 octobre 1966, le serment de « fidélité au gouvernement… » Parmi eux, le Révérend Carl Edward Peters.</p>
+
+    <p><strong>4 — L'Université et l'élite intellectuelle.</strong> Le pouvoir duvaliériste s'est heurté très tôt à la volonté farouche du monde universitaire et des intellectuels progressistes de s'opposer à la papadocratie. D'ailleurs, François Duvalier fera ses premières armes en fermant la Faculté de médecine pour cause d'opposition estudiantine face à certains actes du gouvernement d'Estimé en 1949. Il arrêtera des dirigeants de l'UNMES, une organisation des professeurs du secondaire et procèdera à sa dissolution en 1959. Puis ce sera le tour des étudiants, accusés de comploter contre le régime ; plusieurs étudiants membres de l'UNEH seront arrêtés ainsi que des lycéens. Ce qui donnera lieu à la longue et historique grève des étudiants sur une période de 4 mois. Duvalier dut relâcher les étudiants mais il créa les conditions de macoutisation de l'Université, notamment de la Faculté de Médecine, très cotée à l'époque. Aidé dans cette entreprise de domestication par des énergumènes tels : Roger Lafontant, Rony Gilot, Serge Conille, Robert Germain, Didier Cédras etc. Des dizaines de professeurs, d'étudiants, d'écrivains, d'avocats, d'artistes furent torturés. Beaucoup périrent dans les geôles infectes du régime ou furent lâchement assassinés. Parmi eux, retenons les noms de : Antonio Vieux, Jacques Stéphen Alexis, Clément et Ducasse Jumelle, Mario Rameau, Ernst Sévère, Jean-Jacques Dessalines Ambroise, Rosette Bastien, Jean-Claude Alexandre, André Marcus, Gaveau Desrosiers, Guy Lomini, Yanick Rigaud, Paul Emile Gaboton, Néfort Victomé, Marie-Thérèse Féval, Joseph Wasembeck, Phito Garcia, Anthony Guichard, Jacques Jeannot, Hubert Legros, Rony Lescouflair, Robert Désir, Niclerc Casséus… Beaucoup d'autres intellectuels, surtout des professeurs partirent pour l'exil afin d'éviter d'être assassinés.</p>
+
+    <p><strong>5 — La paysannerie haïtienne</strong> a sans doute payé le plus lourd tribut du duvaliérisme. Si on en parle peu, c'est parce que dans notre société elle a été depuis toujours marginalisée. Même si elle a porté toute la Nation sur son dos, a vaillamment lutté pendant tout le 19<sup>e</sup> siècle et le début du 20<sup>e</sup> siècle, ses vrais problèmes étaient trop souvent ignorés ou mal connus du monde de l'écriture des villes, à part d'heureuses exceptions. Les paysans vivaient et mouraient sans que la République de Port-au-Prince se sente concernée, sauf pour les mascarades de propagande. Mais, n'oublions pas que François Duvalier lui-même dès sa campagne électorale avait défini ses principaux alliés, à savoir les <em>grands spéculateurs</em> qui n'étaient autres que les grands propriétaires fonciers. Les rentiers et les prédateurs par excellence du monde rural. Ils auront donc l'autorisation du « chef suprême » pour massacrer et piller le monde paysan. Une véritable politique d'extermination fut pratiquée dans certaines zones rurales haïtiennes. La Forêt des Pins, Belle Anse, Thiote, Mapou, où une vingtaine de membres de la famille Fandal et vingt-sept membres de la famille Madoumbé seront assassinés. En plus des tueries de L'Arcahaie, Cazale, La Tremblay (Croix des Bouquets) et une bonne partie de la Plaine du Cul de Sac, les Verrettes, pour ne citer que ces zones là.</p>
+
+    <p>C'était la « révolution politique » de Papa Doc. Sa révolution économique et culturelle aussi. Porteuse de contre-valeurs : soumission, lâcheté, délation, servilité, banalisation du crime et du vol, perte du sens de l'honneur et de la solidarité. « Révolution » pseudo-nationaliste et férocement anti-communiste. Papa Doc ne commettait pas de crimes pour rien. La terreur exercée fut une partie consistante du nouvel ordre politico-économique qu'il fallait imposer par le fer et par le feu. En éliminant une petite fraction des couches possédantes dont la place sera occupée par la bourgeoisie syro-libanaise montante et accommodante et en broyant la masse paysanne pour élargir les dividendes des exportateurs et des spéculateurs-grands fonciers féodaux. Avec la bénédiction des Oncles s'entend.</p>
+
+    <div class="author-note">* Myrtha Gilbert — Écrivaine, chercheuse</div>
+
+    <div class="nb-note">NB : première version, 2012 ; version actualisée, 2016</div>
+
+    <div class="source-note">Soumis à AlterPresse le 8 février 2016</div>
+
+  </div>
+
+  <div style="margin-top:2rem">
+    <a class="back-link" href="publications.html">← Retour aux publications</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Myrtha Gilbert</h4>
+      <p>Historienne · Professeure · Auteure</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#livres">Livres</a>
+      <a href="index.html#biographie">Biographie</a>
+      <a href="publications.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Commandes</h4>
+      <p>Librairie La Pléiade PV</p>
+      <a href="tel:+15094404957">+1 (509) 44 04 1957</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Myrtha Gilbert · Tous droits réservés</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haïti : Système éducatif et société — Myrtha Gilbert</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#3A6B9A;--blue2:#4A80B5;
+  --blue-light:#EAF4FB;--blue-mid:#7AAEC8;
+  --nav-bg:#2A4A60;--footer-bg:#152A3A;
+  --text:#1A2A35;--text2:#3A5060;--text3:#7A9BAA;
+  --bg:#F4F9FC;--white:#FFF;--border:#C8DFE8;
+}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.8}
+.topbar{background:var(--blue);color:#fff;text-align:center;padding:0.4rem 1rem;font-size:0.78rem;letter-spacing:0.06em}
+.topbar a{color:#B8DDEF;text-decoration:none}
+nav{background:var(--nav-bg);position:sticky;top:0;z-index:200}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+.nav-logo{display:flex;flex-direction:column;line-height:1.1;text-decoration:none}
+.nav-logo span:first-child{font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:0.03em;font-family:Georgia,serif}
+.nav-logo span:last-child{font-size:0.65rem;color:#aaa;letter-spacing:0.15em;text-transform:uppercase}
+.nav-menu{display:flex;list-style:none;height:64px}
+.nav-menu>li>a{color:#ddd;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;padding:0 1rem;height:64px;display:flex;align-items:center;transition:background .2s,color .2s;white-space:nowrap;font-family:Arial,sans-serif}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--blue);color:#fff}
+.page-header{background:linear-gradient(120deg,#1A3A55 0%,#2A5A7A 40%,#3A7A9A 70%,#4A90B0 100%);padding:3rem 1.5rem}
+.page-header-inner{max-width:800px;margin:0 auto}
+.breadcrumb{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-bottom:1rem;font-family:Arial,sans-serif}
+.breadcrumb a{color:#B8DDEF;text-decoration:none}
+.breadcrumb a:hover{color:#fff}
+.article-meta{font-family:Arial,sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.6);margin-bottom:0.8rem;letter-spacing:0.05em}
+.page-header h1{font-size:1.9rem;font-weight:normal;color:#fff;line-height:1.3;margin-bottom:0.5rem}
+.article-wrap{max-width:800px;margin:3rem auto;padding:0 1.5rem}
+.article-body{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:3rem;box-shadow:0 2px 12px rgba(58,107,154,0.07)}
+.epigraph{margin-bottom:2rem;padding:1.2rem 2rem;border-left:3px solid var(--blue-mid);background:var(--blue-light);border-radius:2px}
+.epigraph p{font-style:italic;color:var(--text2);margin-bottom:0.3rem}
+.epigraph .attribution{font-family:Arial,sans-serif;font-size:0.8rem;color:var(--text3);font-style:normal;margin-top:0.5rem}
+.article-body h2{font-size:1.1rem;color:var(--blue);margin:2.2rem 0 1rem;font-weight:bold;font-family:Georgia,serif;border-bottom:1px solid var(--border);padding-bottom:0.4rem}
+.article-body p{color:var(--text2);margin-bottom:1.1rem;text-align:justify}
+.article-body ul{color:var(--text2);margin:0.4rem 0 1.1rem 1.8rem;line-height:1.8}
+.article-body ul li{margin-bottom:0.5rem;text-align:justify}
+.num-para{display:flex;gap:1rem;margin-bottom:1.1rem}
+.num-para .num{flex-shrink:0;font-family:Arial,sans-serif;font-size:0.82rem;font-weight:700;color:var(--blue-mid);min-width:1.6rem;padding-top:0.15rem}
+.num-para .content{color:var(--text2);text-align:justify;line-height:1.8}
+.sub-label{font-family:Arial,sans-serif;font-size:0.82rem;font-weight:700;color:var(--text2);margin-bottom:0.3rem}
+.source-note{margin-top:2rem;padding:1rem 1.5rem;background:var(--blue-light);border-radius:2px;font-family:Arial,sans-serif;font-size:0.82rem;color:var(--text3);font-style:italic}
+.notes-section{margin-top:2rem;padding-top:1.5rem;border-top:2px solid var(--border)}
+.notes-section h3{font-family:Arial,sans-serif;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-mid);margin-bottom:1rem}
+.notes-section ol{padding-left:1.5rem;color:var(--text3);font-size:0.82rem;line-height:1.7}
+.back-link{display:inline-block;margin-bottom:2rem;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--blue);text-decoration:none;letter-spacing:0.05em}
+.back-link:hover{color:var(--blue2)}
+footer{background:var(--footer-bg);color:#666;padding:2rem 1.5rem;text-align:center;font-size:0.78rem;font-family:Arial,sans-serif;margin-top:3rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:2rem}
+.footer-col h4{color:#aaa;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.8rem}
+.footer-col a,.footer-col p{display:block;color:#666;font-size:0.78rem;margin-bottom:0.4rem;text-decoration:none}
+.footer-col a:hover{color:var(--blue-mid)}
+.footer-bottom{border-top:1px solid #223344;padding-top:1.2rem;color:#444}
+@media(max-width:768px){
+  .nav-menu{display:none}
+  .article-body{padding:1.5rem}
+  .num-para{flex-direction:column;gap:0.2rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">📦 Livraison disponible &nbsp;·&nbsp; <a href="index.html#contact">Commander un livre →</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span>Myrtha Gilbert</span>
+      <span>Historienne · Auteure</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#livres">Livres</a></li>
+      <li><a href="index.html#biographie">Biographie</a></li>
+      <li><a href="publications.html" class="active">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; <a href="publications.html">Articles</a> &nbsp;/&nbsp; Système éducatif</p>
+    <p class="article-meta">9 août 2010 &nbsp;·&nbsp; AlterPresse</p>
+    <h1>Haïti : Système éducatif et société</h1>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <a class="back-link" href="publications.html">← Retour aux publications</a>
+
+  <div class="article-body">
+
+    <div class="epigraph">
+      <p>Rien n'est plus fondamental que de comprendre de quoi les hommes vivent et que d'observer comment ils sont organisés pour assurer leur subsistance.</p>
+      <p class="attribution">Robert Fossaert</p>
+    </div>
+
+    <h2>I — École et société</h2>
+
+    <div class="num-para">
+      <span class="num">1</span>
+      <div class="content">La question fondamentale qui interpelle toute société humaine, quelque soit son niveau de développement tourne autour de la satisfaction des besoins primaires de l'homme à savoir : se nourrir, se vêtir, se loger, se soigner et se reproduire.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">2</span>
+      <div class="content">Pour satisfaire leurs besoins fondamentaux, les hommes rentrent en relation les uns avec les autres. Donc, le fait de vivre en société induit des rapports sociaux notamment dans le processus de production (production, échanges, consommation) et de reproduction.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">3</span>
+      <div class="content">Pour se reproduire, se maintenir en vie et pour améliorer leurs conditions d'existence par rapport à l'habitat, à l'alimentation, les soins de santé, la protection contre les intempéries etc. les sociétés ont transmis de génération en génération, les expériences acquises et les savoir-faire. Ce sont les éléments fondateurs de la culture et du système éducatif.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">4</span>
+      <div class="content">Avec l'évolution des sociétés, la division sociale du travail (agriculteurs, éleveurs, artisans), et plus tard, l'apparition des classes sociales (riches et pauvres), un ample champ du savoir est désormais détenu par un petit groupe : des maîtres issus du secteur aristocratique. Les nobles ne travaillent pas la terre, ne s'occupent ni d'élevage ni d'artisanat. Ils consacrent leur temps aux études diverses : La nature, les astres, le destin de l'homme et l'existence des dieux, les mesures, qui donneront plus tard les mathématiques etc. Un vaste domaine de connaissances complexes est désormais imparti par ces maîtres et réservé au groupe restreint des aristocrates. Désormais la connaissance est un instrument de pouvoir sur les hommes. L'école transmet ainsi d'autres savoirs, en prolongement de ceux reçus au sein de la famille ou en opposition à elles.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">5</span>
+      <div class="content">Dans ces sociétés divisées en classes, de caractère esclavagiste ou féodal, où le système productif est encore rudimentaire, le travail des esclaves, des serfs, des paysans, des artisans, exige peu de connaissances complexes. En même temps, ces activités productives sont considérées par les nobles, comme objet de rabaissement social, et le cumul des richesses comme privilège de caste. Autrefois, les pouvoirs de droit divin, en France, en Chine, en Russie et partout ailleurs, pour maintenir le statu quo, s'accommodaient de l'inculture des masses. Entretenant souvent leur analphabétisme, leur fanatisme eu égard aux dogmes et croyances, leur indifférence par rapport à la science et la technique.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">6</span>
+      <div class="content">Mais, les besoins de l'homme et l'évolution progressive de la science, de la technique, jointe aux découvertes multiples, impulseront le développement de la bourgeoisie commerciale et maritime et celui d'une base industrielle liée d'abord à la demande interne. De nouvelles perspectives économiques s'ouvrent aiguillonnant les recherches scientifiques. Aiguillonnant aussi les luttes politiques et sociales. La société est grosse de Révolution ou de Réformes sociales profondes. De nouvelles idées de progrès circulent. Les serfs et les paysans se révoltent, les ouvriers réclament de meilleures conditions de travail, la bourgeoisie s'insurge contre les nobles…</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">7</span>
+      <div class="content">
+        Toutes les conditions sont réunies pour conduire les forces sociales porteuses de changement à renverser l'ancien régime et forger ainsi de nouveaux rapports sociaux. Ainsi, dans le cas de la société de type féodal, une bourgeoisie de type national et des forces populaires paysannes, ouvrières, masses urbaines, créent-elles une nouvelle dynamique sociale basée notamment sur l'extension du savoir, parce que :
+        <ul style="margin-top:0.6rem">
+          <li>Le développement commercial et industriel a besoin de scientifiques dans plusieurs branches, de techniciens et d'ouvriers qualifiés sur grande échelle ;</li>
+          <li>Les intellectuels d'avant-garde, très actifs dans toutes les batailles pour le progrès social mettent l'accent sur l'importance de l'école, du savoir ;</li>
+          <li>Les classes populaires deviennent plus exigeantes quant aux gains économiques et sociaux, réclamant de meilleures conditions de travail, de meilleurs logements, de meilleurs soins de santé, d'où la nécessité d'une meilleure formation dans les domaines les plus divers.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">8</span>
+      <div class="content">
+        Retenons avant de continuer trois éléments :
+        <ul style="margin-top:0.6rem;list-style:none;padding-left:0">
+          <li style="margin-bottom:0.6rem"><span class="sub-label">a)</span> Tout système éducatif répond à un projet de société formulée ou implicite. Il est toujours un élément du système global ; en même temps, il est un indicateur de l'orientation impulsée à la société.</li>
+          <li style="margin-bottom:0.6rem"><span class="sub-label">b)</span> L'organisation et le fonctionnement du système éducatif exprime l'état réel des rapports sociaux.</li>
+          <li style="margin-bottom:0.6rem"><span class="sub-label">c)</span> Il faut bien comprendre que c'est le projet économique qui guide l'école, c'est la raison pour laquelle les classes dominantes des pays industrialisés ont consenti d'importants investissements dans le système éducatif.</li>
+        </ul>
+        <p style="margin-top:0.6rem;margin-bottom:0">Mais cette évolution dont nous rendons compte plus haut aboutissant à un système éducatif avancé et l'expansion des connaissances, est la réalité des sociétés dont la logique économique est guidée par des intérêts nationaux.</p>
+      </div>
+    </div>
+
+    <h2>II — La logique du système éducatif haïtien</h2>
+
+    <div class="num-para">
+      <span class="num">9</span>
+      <div class="content">Haïti fut une colonie d'exploitation et non de peuplement comme le Canada et les EEUU. La plus totale de toutes les colonies de plantations en Amérique. Son système plus cruel que tous les autres. Mais, il se trouve que malgré le triomphe de la Révolution anti esclavagiste de 1804, malgré les expériences de Dessalines, de Goman et de Christophe, les aristocraties foncières n'ont pas pu couper au plan économique ni culturel le cordon ombilical qui les unissait à la France et à l'Europe.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">10</span>
+      <div class="content">La logique économique restant la même, c'est-à-dire produire pour les grandes puissances, le pays se vit astreint à cultiver pour satisfaire les marchés extérieurs : café, canne à sucre, coton, figue-banane, pite etc. Exactement le contraire de l'orientation économique des pays comme la France, l'Allemagne, l'Angleterre ou les EEUU et le Canada plus tard.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">11</span>
+      <div class="content">Et si pendant longtemps, le pays a pu assurer l'essentiel de son alimentation, ce n'est pas grâce au souci et à la vision des « élites », mais grâce à la paysannerie qui s'est battue du bec et des ongles pour l'accès à la terre et qui dans sa fonction de résistance à l'oppression des féodaux et à la logique économique coloniale, a cultivé maïs, petit mil, pois, igname, malanga et planté manguier, avocatier, oranger, citronnier etc.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">12</span>
+      <div class="content">Mais retenons que dans tout Etat-Nation, c'est l'Etat qui organise le système éducatif. Or dans une société de classes, les groupes dominants orientent de manière décisive les politiques d'Etat. Donc les élites haïtiennes imprégnées de préjugés et aliénées, ont, à partir de Boyer, orienté l'organisation de l'école haïtienne sur le mode de l'exclusion. À l'époque, seul les fils des chefs méritaient d'accéder à la connaissance. L'école haïtienne, forgée avec une armature aux trois quarts coloniale pour répéter Jacques Roumain, correspond à la vision que se font les élites des besoins de la société et du rôle de l'école : Tout pour elles, rien pour les autres comme l'avait souligné judicieusement Justin Lhérisson. Le système éducatif est donc destiné comme disait l'autre, à produire des échantillons de « grands nègres » capables de tenir tête aux « grands blancs ». Les références au paraître, sous forme d'échantillon et à l'étranger, expriment le regard néocolonial des « élites » qui très tôt et de plus en plus, ne se reconnaissent guère dans l'ensemble des composantes d'une Nation à construire et à développer. Alors, héritage colonial oblige, les masses paysannes et populaires sont maintenues dans l'ignorance et la précarité.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">13</span>
+      <div class="content">
+        Deux éléments ont donc modelé l'exclusion sociale qui caractérise depuis toujours le système scolaire haïtien :
+        <ul style="margin-top:0.6rem">
+          <li>La vision des élites, se réappropriant les valeurs d'exclusion qui prévalaient dans la société dominguoise ;</li>
+          <li>Les rapports de dépendance par rapport aux grandes puissances (France, USA) qui confortent cette exclusion.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">14</span>
+      <div class="content">Les rapports de dépendance, maintiennent la nécessité de produire ce dont les autres ont besoin. Et les autres, je parle des grandes puissances, sont en surproduction et chaque fois plus. Donc, à quoi bon en Haïti, des techniciens moyens ou supérieurs en nombre et bien formés, des chercheurs, des scientifiques, des ouvriers qualifiés. S'il n'y a pas d'industrie à développer, d'agriculture à étendre et à perfectionner au profit des producteurs et de la population, d'outils agricoles à fabriquer sur grande échelle, de produits de la terre à transformer, de services sociaux à multiplier. Il en faut très peu et c'est la fonction de l'école à plusieurs vitesses.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">15</span>
+      <div class="content">Car, dans la mesure où la société dans son organisation sur le plan social, politique, économique, culturel repose sur des rapports de dépendance et cette vision coloniale des « élites », l'école ne peut que reproduire l'exclusion et l'extraversion. Ce, en dépit des discours et toute l'hypocrisie qui entoure les plans préfabriqués qui nous viennent de l'étranger.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">16</span>
+      <div class="content">L'école à plusieurs vitesses est la réponse du système d'exclusion à l'explosion de la demande d'éducation de la part des larges couches populaires. C'est une massification apparente, qui offre une école marginale aux marginaux, à l'image des bidonvilles sans services sociaux, aux constructions anarchiques, en guise de bourgs, de villes et de quartiers organisés.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">17</span>
+      <div class="content">
+        Le système éducatif haïtien sue l'exclusion et l'extraversion de toutes parts :
+        <ul style="margin-top:0.6rem">
+          <li>La langue française imposée aux apprenants créolophones ;</li>
+          <li>Le contenu des manuels, dont un grand nombre, préparés à l'étranger ou sous influence étrangère, se référant la plupart du temps à une autre réalité, une autre culture, d'autres besoins et d'autres préoccupations ;</li>
+          <li>90% d'écoles privées contre 10% d'écoles publiques ;</li>
+          <li>Très peu d'écoles de qualité surtout privées versus les écoles « borlettes » quoique privées. Or l'on sait qui a les moyens de se payer les écoles de qualité !</li>
+          <li>Beaucoup de bourses d'études octroyées aux étudiants et cadres haïtiens, dont on pourrait interroger l'adéquation de leur contenu, par rapport aux vrais besoins du pays. Sans compter ce que cela représente souvent, faute d'orientation adéquate comme renforcement du caractère extraverti de l'école.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">18</span>
+      <div class="content">Aujourd'hui, la crise du système capitaliste mondial et l'effondrement de l'Etat Haïtien, en plus du 12 janvier, créent pour la société haïtienne une situation intolérable. L'étau de la dépendance se resserre au point que notre société est menacée de dilution. Les grandes économies en surplus de tout, cherchent à déverser avec plus d'agressivité, non seulement leurs produits manufacturés et alimentaires (voitures, vêtements, riz, maïs, œufs, lait, ailes de poulets etc.) mais plus récemment, leurs cadres au chômage (sous prétexte de petits projets humanitaires ou de développement, par nuée d'ONG interposée). La bourgeoisie de ces pays industrialisés et l'oligarchie haïtienne n'ont guère besoin de cadres haïtiens formés en grand nombre. Pourquoi faire ? À quoi bon tous ces médecins si l'élite se fait soigner à Miami et à St-Domingue ; à quoi bon beaucoup d'ingénieurs agronomes, si le riz, le maïs, le lait, les œufs, le poulet viennent de l'étranger ; à quoi bon des techniciens et des ouvriers qualifiés, si tous les produits manufacturés viennent des EEUU, du Japon, de France et d'ailleurs. Ainsi, la population haïtienne en âge de travailler, est-elle mise au chômage, en vacances forcées.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">19</span>
+      <div class="content">Les grandes puissances de l'ère post industrielle, ont besoin de main d'œuvre à bon marché, comme l'a rappelé dernièrement Paul Collier. Une main d'œuvre proche du servage ou de l'esclavage. Elles en ont besoin pour compenser les pertes subies, par les gains économiques et sociaux de leurs ouvriers, de leurs cadres techniques et le niveau général de vie de leurs populations. Donc, la mondialisation des puissants n'a que faire de nos connaissances pointues sur grande échelle. Mais elle a besoin de cerveaux individuels ingénieux pour renforcer ses profits, et d'une masse amorphe peu formée pour la dure besogne de la sous-traitance.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="num">20</span>
+      <div class="content">Poser aujourd'hui, en Haïti, la question de l'école, du système éducatif et de l'Université, c'est avant tout poser la nécessité de renverser un système inique, en bout de course, qui a mis depuis longtemps l'école et la société dans l'impasse.</div>
+    </div>
+
+    <div class="source-note">Soumis à AlterPresse le 8 août 2010</div>
+
+    <div class="notes-section">
+      <h3>Note</h3>
+      <ol>
+        <li>Conférence présentée à la Plateforme des Organisations Haïtiennes de Droits Humains (POHDH), le 30 juillet 2010.</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2rem">
+    <a class="back-link" href="publications.html">← Retour aux publications</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Myrtha Gilbert</h4>
+      <p>Historienne · Professeure · Auteure</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#livres">Livres</a>
+      <a href="index.html#biographie">Biographie</a>
+      <a href="publications.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Commandes</h4>
+      <p>Librairie La Pléiade PV</p>
+      <a href="tel:+15094404957">+1 (509) 44 04 1957</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Myrtha Gilbert · Tous droits réservés</span>
+  </div>
+</footer>
+
+</body>
+</html>

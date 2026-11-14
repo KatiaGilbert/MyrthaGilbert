@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La guerre de basse intensité à Cité Soleil — Myrtha Gilbert</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#3A6B9A;--blue2:#4A80B5;
+  --blue-light:#EAF4FB;--blue-mid:#7AAEC8;
+  --nav-bg:#2A4A60;--footer-bg:#152A3A;
+  --text:#1A2A35;--text2:#3A5060;--text3:#7A9BAA;
+  --bg:#F4F9FC;--white:#FFF;--border:#C8DFE8;
+}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.8}
+.topbar{background:var(--blue);color:#fff;text-align:center;padding:0.4rem 1rem;font-size:0.78rem;letter-spacing:0.06em}
+.topbar a{color:#B8DDEF;text-decoration:none}
+nav{background:var(--nav-bg);position:sticky;top:0;z-index:200}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+.nav-logo{display:flex;flex-direction:column;line-height:1.1;text-decoration:none}
+.nav-logo span:first-child{font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:0.03em;font-family:Georgia,serif}
+.nav-logo span:last-child{font-size:0.65rem;color:#aaa;letter-spacing:0.15em;text-transform:uppercase}
+.nav-menu{display:flex;list-style:none;height:64px}
+.nav-menu>li>a{color:#ddd;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;padding:0 1rem;height:64px;display:flex;align-items:center;transition:background .2s,color .2s;white-space:nowrap;font-family:Arial,sans-serif}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--blue);color:#fff}
+.page-header{background:linear-gradient(120deg,#1A3A55 0%,#2A5A7A 40%,#3A7A9A 70%,#4A90B0 100%);padding:3rem 1.5rem}
+.page-header-inner{max-width:800px;margin:0 auto}
+.breadcrumb{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-bottom:1rem;font-family:Arial,sans-serif}
+.breadcrumb a{color:#B8DDEF;text-decoration:none}
+.breadcrumb a:hover{color:#fff}
+.article-meta{font-family:Arial,sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.6);margin-bottom:0.8rem;letter-spacing:0.05em}
+.page-header h1{font-size:1.9rem;font-weight:normal;color:#fff;line-height:1.3;margin-bottom:0.5rem}
+.page-header .subtitle{font-family:Arial,sans-serif;font-size:0.95rem;color:rgba(255,255,255,0.7);margin-top:0.4rem}
+.article-wrap{max-width:800px;margin:3rem auto;padding:0 1.5rem}
+.article-body{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:3rem;box-shadow:0 2px 12px rgba(58,107,154,0.07)}
+.article-body p{color:var(--text2);margin-bottom:1.1rem;text-align:justify}
+.author-note{margin-top:2rem;padding:1rem 1.5rem;background:var(--blue-light);border-radius:2px;font-family:Arial,sans-serif;font-size:0.82rem;color:var(--text3);font-style:italic}
+.source-note{margin-top:0.8rem;padding:0.8rem 1.5rem;background:#f8f8f8;border:1px solid var(--border);border-radius:2px;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--text3)}
+.notes-section{margin-top:2.5rem;padding-top:1.5rem;border-top:2px solid var(--border)}
+.notes-section h3{font-family:Arial,sans-serif;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-mid);margin-bottom:1rem}
+.notes-section ol{padding-left:1.5rem;color:var(--text3);font-size:0.82rem;line-height:1.7}
+.notes-section ol li{margin-bottom:0.5rem}
+.back-link{display:inline-block;margin-bottom:2rem;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--blue);text-decoration:none;letter-spacing:0.05em}
+.back-link:hover{color:var(--blue2)}
+footer{background:var(--footer-bg);color:#666;padding:2rem 1.5rem;text-align:center;font-size:0.78rem;font-family:Arial,sans-serif;margin-top:3rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:2rem}
+.footer-col h4{color:#aaa;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.8rem}
+.footer-col a,.footer-col p{display:block;color:#666;font-size:0.78rem;margin-bottom:0.4rem;text-decoration:none}
+.footer-col a:hover{color:var(--blue-mid)}
+.footer-bottom{border-top:1px solid #223344;padding-top:1.2rem;color:#444}
+@media(max-width:768px){
+  .nav-menu{display:none}
+  .article-body{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">📦 Livraison disponible &nbsp;·&nbsp; <a href="index.html#contact">Commander un livre →</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span>Myrtha Gilbert</span>
+      <span>Historienne · Auteure</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#livres">Livres</a></li>
+      <li><a href="index.html#biographie">Biographie</a></li>
+      <li><a href="publications.html" class="active">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; <a href="publications.html">Articles</a> &nbsp;/&nbsp; Cité Soleil</p>
+    <p class="article-meta">29 octobre 2015 &nbsp;·&nbsp; AlterPresse</p>
+    <h1>Haïti : La guerre de basse intensité à Cité Soleil</h1>
+    <p class="subtitle">Une politique cynique de la classe du vrai pouvoir d'Etat *</p>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <a class="back-link" href="publications.html">← Retour aux publications</a>
+
+  <div class="article-body">
+
+    <p>Cité Soleil, autrefois Cité Simone, prend naissance sous la dictature de François Duvalier en 1963. Mais cette zone populaire existait en plus vaste, depuis très longtemps, étant connu sous le nom de La Saline, limitrophe au wharf de Port-au-Prince.</p>
+
+    <p>Selon la petite histoire, François Duvalier aurait donné l'ordre à Mme Max Adolphe de mettre le feu à La Saline en 1963, afin de permettre, au profit d'un certain bord de mer, la construction d'un SHOPPING CENTER. Un projet qui n'a pas pu atterrir.</p>
+
+    <p>Cité Simone allait néanmoins reloger les sinistrés. Mais bien vite, un projet plus global allait voir le jour sur le site. Dès 1967-1968, les américains trouvent l'accord de François Duvalier pour un virage de l'économie nationale qui sera axée désormais sur la sous-traitance et le tourisme au détriment de l'agriculture. Ainsi prend naissance la zone industrielle (La Saline-Cité Simone-Drouillard) qui s'appuie sur une main d'œuvre de proximité, sans aucun droit, mal payée et en nombre de plus en plus imposant au fil du temps et au fil de l'augmentation de la misère rurale.</p>
+
+    <p>La misère rurale augmente en effet. Il faut rappeler que depuis son accession au pouvoir, pour faire fonctionner l'Etat, François Duvalier pénalise sévèrement la production caféière qui faisait vivre plus de 300 000 paysans. Les taxes sur le café se multiplient, mais aucun investissement sérieux n'accompagne sa culture. Les paysans perdent en quelques années 40% de leurs revenus. <sup>[1]</sup> Plus encore, ce sont les conditions générales de production et de survie qui se dégradent pour les principales activités paysannes. Les grands propriétaires fonciers, farouches supporteurs du régime deviennent plus rapaces en milieu rural.</p>
+
+    <p>L'abandon de la paysannerie était tel, que le cheptel bovin de seulement 600 000 unités, se trouva en passe de disparaître en 1965, à cause des activités d'exportation de la compagnie américaine HAMPCO, n'était-ce l'intervention des Nations Unies et de la FAO. <sup>[2]</sup> La malnutrition passe de 21% en 1958 à 67% en 1977. Et en 1977 précisément, la famine frappe les populations surtout rurales, du nord-est, du nord-ouest et du nord ; le pays connaît les émeutes de la faim. Les masses paysannes constituant 90% de la population haïtienne se trouvent aux abois et déferlent sur Port-au-Prince. La branche urbaine de la paysannerie haïtienne s'élargit.</p>
+
+    <p>Entre 1967 et 1970, une centaine de compagnies surtout américaines s'installent dans le pays, <sup>[3]</sup> dont les premières industries de sous-traitance produisant des balles de base-ball. Les conditions infernales de travail qui régnaient dans ces entreprises ont défrayé la chronique à l'extérieur du pays. Sous la présidence de Jean-Claude Duvalier, la sous-traitance prend de l'ampleur. Ses beaux jours se situent entre 1978 et 1980. L'assemblage crée environ 60 000 emplois. Les entreprises de vêtements, d'appareils électriques et électroniques, de jouets, de cuir font leur beurre. Et toutes les lois, toutes les incitations les protègent. Sans compter la répression féroce des militaires et des macoutes à la moindre velléité revendicative des ouvriers et ouvrières, dont la majorité habite Cité Simone.</p>
+
+    <p>La tuberculose trouve un terreau fertile au milieu de cette population qui vit dans des conditions infrahumaines, méprisée de l'Etat Haïtien et mise en esclavage dans les fabriques de misère de la sous-traitance. L'un des propriétaires de ces entreprises a fini par admettre en 2004, les ravages de la tuberculose dans ses usines.</p>
+
+    <p>Alors, les œuvres de charité devinrent une nécessité et pour l'Etat et pour cette bourgeoisie qui grugeait les habitants de Cité Simone, question d'éviter toutes sautes d'humeur des pauvres. Dès 1974, les œuvres de bienfaisance se multiplient, pour « améliorer les conditions de vie des miséreux » : structures sanitaires avec l'appui économique de puissantes ambassades, d'universités américaines, de banques internationales ; écoles communautaires, centre de nutrition… pourtant, tous les services de l'Etat sont absents. Après l'élimination des cochons créoles en 1982-1983, Cité Simone reçoit encore plus de migrants. Et cet entassement de laissés pour compte, côtoyant l'opulence à quelques pas — un véritable volcan endormi — pouvait produire une déflagration à tout moment.</p>
+
+    <p>Et les premières laves ont coulé du volcan le 7 février 1986. Cité Simone devint Cité Soleil ; un immense espoir couvait dans les cœurs de tous ses habitants ; les chômeurs caressaient l'espoir de pouvoir enfin travailler, les jeunes d'étudier ; ceux qui travaillaient dans les usines d'assemblage rêvaient d'un salaire plus décent et de conditions de vie plus humaines. Mais les patrons et la grande bourgeoisie haïtienne rêvaient malheureusement de statu quo. La sous-traitance avait fourni en profit 200 millionnaires. Mais les pertes étaient très lourdes selon un agronome : 750 000 boat people. <sup>[4]</sup></p>
+
+    <p>Les américains tenant dur comme fer à leur projet de sous-traitance, imposèrent au départ du dictateur Jean-Claude Duvalier, une politique d'ouverture des marchés qui cassa totalement les reins de l'agriculture haïtienne, renforçant l'exode rural. L'USAID ravi, estimait que 200 000 emplois allaient être créés dans ce secteur. <sup>[5]</sup> De là l'encouragement de la Banque Mondiale pour un fort exode rural vers Port-au-Prince après 1986. La population de Cité Soleil, la principale pourvoyeuse de main-d'œuvre à très bon marché augmenta. Les estimations vont jusqu'à 300 000 habitants pour une superficie de 4 km<sup>2</sup>. Soit 75 000 hab/km<sup>2</sup> !!! Les âmes charitables des ONGs se battent désormais pour « aider » la population de ce vaste bidonville : écoles, petits crédits, château d'eau… Les premiers syndicats s'organisent dans le secteur de la sous-traitance, ils revendiquent une augmentation de salaire, et sont durement réprimés. Cité Soleil les appuie. Les patrons se fâchent. Les militaires tabassent… Le 16 décembre 1990, le candidat Jean-Bertrand Aristide rafle le scrutin… Les habitants de Cité Soleil crurent qu'ils allaient finalement sortir du bourbier.</p>
+
+    <p>Le 30 septembre 1991, le rêve des habitants de Cité Soleil vira au cauchemar. Pour avoir soutenu à bout de bras l'ascension du président Jean-Bertrand Aristide, cette population a connu le cilice : viols des femmes et des filles, exécutions sommaires, emprisonnement, tortures, persécutions des activistes… Et le sauve qui peut de ceux qui voulaient échapper au FRAPH de Jodel Chamblain et aux militaires de Raoul Cédras et de Michel François… Pourtant, Cité Soleil persécuté a aussi résisté et a même osé manifester sa colère et son support à Aristide en plein coup d'état…</p>
+
+    <p>Mais, les conditions de vie allaient en se dégradant. 49% des entreprises d'assemblage laissent le pays après le coup d'état de 1991. La sous-traitance passe de 44 000 emplois en 1991 à 5 000 en 1994. <sup>[6]</sup> La paysannerie haïtienne déjà pauvre perd 50% de ses revenus. Donc, Cité Soleil s'appauvrit par ses deux branches nourricières : la sous-traitance et l'agriculture.</p>
+
+    <p>Pourtant, le retour à l'ordre constitutionnel en 1994 ne changea rien à l'ordre des choses. Le projet de 1990, se vida de tout contenu populaire. Et voilà comment cet immense bidonville fort de plusieurs milliers d'habitants, à cause de la misère abjecte, l'absence de projet d'avenir, le désespoir d'une vie sans horizon, sombra dans la délinquance. Avec la complicité active ou l'encouragement des pouvoirs publics, de la mafia, des brasseurs d'affaires et des « grands Amis d'Haïti », Cité Soleil devint un repaire de bandits. D'ailleurs, dès 1994, des rumeurs persistantes indiquaient que des camions chargés d'armes appartenant aux forces d'occupation étaient souvent abandonnés, portes ouvertes dans les parages de Cité Soleil.</p>
+
+    <p>Chacun contrôlait son gang, payé pour accomplir les sales besognes de tout type. Plus la misère augmentait, plus les gangs se multipliaient ; chaque patron armait sa bande et comme partout, ils s'entretuaient souvent. La misère matérielle entraînant aussi la misère morale, toutes les valeurs que ces populations pratiquaient pendant des décennies tendaient à disparaître.</p>
+
+    <p>Après 2004, la MINUSTAH institutionnalisa le gangstérisme. Un chef de gang comme Amaral pouvait donner une entrevue à la chaîne française TV5. <sup>[7]</sup> Désormais, ces bandes étaient munies d'armes sophistiquées. Mieux armées à l'époque que la police nationale elle-même selon Mario Andrésol, Directeur Général de la police nationale. <sup>[8]</sup> Ce qui n'empêcha pas cette même MINUSTAH de mener une guerre de pacification qui a provoqué de terribles dégâts parmi la population désarmée, victime du double jeu des forces dites de maintien de la Paix. En réalité, il s'agissait de maintenir une guerre de basse intensité pour contrôler la Cité, mais aussi d'utiliser les gangs pour intimider les forces sociales opposées à la présence des bottes étrangères.</p>
+
+    <p>Malgré tout, ce bidonville fait peur, car Cité Soleil, en dépit de sa pauvreté, sait lire, écrire et compter. La misère abjecte dont pâtit l'écrasante majorité de cette population et la conscience de sa marginalisation, en fait une vraie bombe à retardement. Le cauchemar des nantis ! Car, à part les gangs, il existe toute une population de petits besogneux, qui peut relever la tête à tout moment ; qui peut vouloir voter aux élections par exemple. Quel gâchis, si tous ces pauvres votent dans le sens de leurs intérêts ! Et s'il faudrait compter ces votes ? Une cité aussi pauvre, aussi abandonnée, mais qui sait lire, écrire et compter, comment la dompter pour éviter toute surprise désagréable ?</p>
+
+    <p>Il faut la nettoyer. De qui ? De ceux qui n'obéissent pas aux ordres des puissants, de ceux qui ne s'alignent pas, de ceux qui ont conservé une certaine conscience de classe. Comment ? En alimentant la guerre des gangs, le trafic de la drogue, la pornographie, les spectacles <em>ti sourit</em>… Et s'ils persistent, ils seront victimes de dégâts collatéraux.</p>
+
+    <p>Le pouvoir et ses tuteurs ainsi que les brasseurs d'affaires pensent que personne ne songera à défendre la population de Cité Soleil, cette zone de non droit. Ils sont dans l'erreur. Il y a certes des gangs à Cité Soleil, mais dans ce bidonville vit également comme nous le disions, une population de petits besogneux, mais aussi, des ouvriers, des étudiants, des femmes, des enfants, des adolescents, abandonnés par les pouvoirs publics et pris en otage par les gangs. Ils sont les victimes d'un Etat anti-peuple. D'ailleurs, Cité Soleil telle qu'elle a évolué de 1963 à nos jours, n'est autre chose que la résultante des mauvaises politiques appliquées par l'Etat Haïtien sous la dictée des Américains, du FMI, de la Banque Mondiale et aussi pour la défense d'un petit clan de brasseurs d'affaires locaux.</p>
+
+    <p>Envers la population de Cité Soleil, nous, patriotes haïtiens, avons un devoir de solidarité.</p>
+
+    <div class="author-note">
+      * Une expression créée par Roger Gaillard pour caractériser le petit cercle des dominants, incluant tant ceux de l'intérieur que le Grand capital d'origine étrangère.<br>
+      ** Myrtha Gilbert — Écrivaine et chercheuse
+    </div>
+
+    <div class="source-note">Soumis à AlterPresse le 26 octobre 2015</div>
+
+    <div class="notes-section">
+      <h3>Notes</h3>
+      <ol>
+        <li>Christian Girault, <em>Le commerce du café en Haïti, Habitants, spéculateurs, exportateurs</em>, 1982.</li>
+        <li>Micheline Labelle, <em>Idéologie de couleur et classes sociales</em> (1987), Montréal.</li>
+        <li>Gérard Pierre-Charles, <em>Radiographie d'une dictature</em>, Montréal, 1973.</li>
+        <li><em>Haïti l'échec, Économie et politique d'un pays mis en lambeaux.</em></li>
+        <li>Marie Josée Garnier, <em>Programme de renforcement du milieu d'affaires en Haïti (PRIMA)</em>, janvier 2007.</li>
+        <li>Marie Josée Garnier, travaux cités.</li>
+        <li>Entrevue du directeur général de la police nationale Mario Andrésol avec Nancy Roc de Radio Métropole en 2005.</li>
+        <li>Idem.</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2rem">
+    <a class="back-link" href="publications.html">← Retour aux publications</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Myrtha Gilbert</h4>
+      <p>Historienne · Professeure · Auteure</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#livres">Livres</a>
+      <a href="index.html#biographie">Biographie</a>
+      <a href="publications.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Commandes</h4>
+      <p>Librairie La Pléiade PV</p>
+      <a href="tel:+15094404957">+1 (509) 44 04 1957</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Myrtha Gilbert · Tous droits réservés</span>
+  </div>
+</footer>
+
+</body>
+</html>

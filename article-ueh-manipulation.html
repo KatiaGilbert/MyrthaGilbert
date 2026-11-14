@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'UEH entre infantilisme, opportunisme et manipulation politique — Myrtha Gilbert</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#3A6B9A;--blue2:#4A80B5;
+  --blue-light:#EAF4FB;--blue-mid:#7AAEC8;
+  --nav-bg:#2A4A60;--footer-bg:#152A3A;
+  --text:#1A2A35;--text2:#3A5060;--text3:#7A9BAA;
+  --bg:#F4F9FC;--white:#FFF;--border:#C8DFE8;
+}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.8}
+.topbar{background:var(--blue);color:#fff;text-align:center;padding:0.4rem 1rem;font-size:0.78rem;letter-spacing:0.06em}
+.topbar a{color:#B8DDEF;text-decoration:none}
+nav{background:var(--nav-bg);position:sticky;top:0;z-index:200}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+.nav-logo{display:flex;flex-direction:column;line-height:1.1;text-decoration:none}
+.nav-logo span:first-child{font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:0.03em;font-family:Georgia,serif}
+.nav-logo span:last-child{font-size:0.65rem;color:#aaa;letter-spacing:0.15em;text-transform:uppercase}
+.nav-menu{display:flex;list-style:none;height:64px}
+.nav-menu>li>a{color:#ddd;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;padding:0 1rem;height:64px;display:flex;align-items:center;transition:background .2s,color .2s;white-space:nowrap;font-family:Arial,sans-serif}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--blue);color:#fff}
+.page-header{background:linear-gradient(120deg,#1A3A55 0%,#2A5A7A 40%,#3A7A9A 70%,#4A90B0 100%);padding:3rem 1.5rem}
+.page-header-inner{max-width:800px;margin:0 auto}
+.breadcrumb{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-bottom:1rem;font-family:Arial,sans-serif}
+.breadcrumb a{color:#B8DDEF;text-decoration:none}
+.breadcrumb a:hover{color:#fff}
+.article-meta{font-family:Arial,sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.6);margin-bottom:0.8rem;letter-spacing:0.05em}
+.page-header h1{font-size:1.8rem;font-weight:normal;color:#fff;line-height:1.3;margin-bottom:0.5rem}
+.article-wrap{max-width:800px;margin:3rem auto;padding:0 1.5rem}
+.article-body{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:3rem;box-shadow:0 2px 12px rgba(58,107,154,0.07)}
+.epigraph{margin-bottom:2rem;padding:1.2rem 2rem;border-left:3px solid var(--blue-mid);background:var(--blue-light);border-radius:2px}
+.epigraph p{font-style:italic;color:var(--text2);margin-bottom:0.5rem}
+.epigraph .attribution{font-family:Arial,sans-serif;font-size:0.8rem;color:var(--text3);font-style:normal;margin-top:0.5rem}
+.article-body h2{font-size:1.05rem;color:var(--blue);margin:2.2rem 0 0.8rem;font-weight:bold;font-family:Georgia,serif;border-bottom:1px solid var(--border);padding-bottom:0.4rem}
+.article-body h3{font-size:0.9rem;color:var(--blue);margin:1.5rem 0 0.6rem;font-weight:700;font-family:Arial,sans-serif}
+.article-body p{color:var(--text2);margin-bottom:1.1rem;text-align:justify}
+.article-body blockquote{margin:1.5rem 0;padding:1.2rem 1.8rem;border-left:3px solid var(--border);background:#fafafa;color:var(--text2);font-size:0.95rem;line-height:1.75}
+.article-body blockquote p{margin-bottom:0.6rem}
+.sub-para{display:flex;gap:0.8rem;margin-bottom:1rem}
+.sub-para .label{flex-shrink:0;font-family:Arial,sans-serif;font-size:0.85rem;font-weight:700;color:var(--blue-mid);min-width:1.4rem;padding-top:0.1rem}
+.sub-para .content{color:var(--text2);text-align:justify;line-height:1.8}
+.sub-label{font-weight:700;color:var(--text2)}
+.source-note{margin-top:2rem;padding:0.8rem 1.5rem;background:#f8f8f8;border:1px solid var(--border);border-radius:2px;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--text3)}
+.back-link{display:inline-block;margin-bottom:2rem;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--blue);text-decoration:none;letter-spacing:0.05em}
+.back-link:hover{color:var(--blue2)}
+footer{background:var(--footer-bg);color:#666;padding:2rem 1.5rem;text-align:center;font-size:0.78rem;font-family:Arial,sans-serif;margin-top:3rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:2rem}
+.footer-col h4{color:#aaa;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.8rem}
+.footer-col a,.footer-col p{display:block;color:#666;font-size:0.78rem;margin-bottom:0.4rem;text-decoration:none}
+.footer-col a:hover{color:var(--blue-mid)}
+.footer-bottom{border-top:1px solid #223344;padding-top:1.2rem;color:#444}
+@media(max-width:768px){
+  .nav-menu{display:none}
+  .article-body{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">📦 Livraison disponible &nbsp;·&nbsp; <a href="index.html#contact">Commander un livre →</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span>Myrtha Gilbert</span>
+      <span>Historienne · Auteure</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#livres">Livres</a></li>
+      <li><a href="index.html#biographie">Biographie</a></li>
+      <li><a href="publications.html" class="active">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; <a href="publications.html">Articles</a> &nbsp;/&nbsp; L'UEH et la manipulation</p>
+    <p class="article-meta">21 septembre 2009 &nbsp;·&nbsp; AlterPresse</p>
+    <h1>Haïti : L'UEH entre infantilisme, opportunisme et manipulation politique</h1>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <a class="back-link" href="publications.html">← Retour aux publications</a>
+
+  <div class="article-body">
+
+    <div class="epigraph">
+      <p>L'histoire devra se rappeler que la plus grande tragédie de cette période de transition sociale ne fut pas les paroles venimeuses et les actions violentes des méchants, mais plutôt le silence terrifiant et l'indifférence des gens sensés. Notre génération devra se repentir non seulement des paroles et des actes commis par les enfants des ténèbres mais encore des craintes et de l'apathie des enfants de la lumière.</p>
+      <p class="attribution">Martin Luther King</p>
+    </div>
+
+    <h2>1 — « Grève des étudiants » — Première édition</h2>
+
+    <p>En juillet 1997, trois étudiants de la Faculté de médecine et de pharmacie (FMP), accomplissant leur année d'internat, initièrent une grève de la faim dans les locaux de l'Hôpital général pour exiger notamment, la démission du Dr Franck Thomas, directeur médical de l'institution.</p>
+
+    <p>Ils justifiaient leur action revendicative en se positionnant dans un conflit qui opposait le directeur médical de l'HUEH et la directrice de formation d'alors, prenant fait et cause pour cette dernière qui de leur point de vue fournissait un travail appréciable eu égard à l'encadrement des jeunes médecins.</p>
+
+    <p>Leurs revendications recueillirent la sympathie de la population. Une population par ailleurs frustrée et pénalisée depuis trop longtemps par la mauvaise qualité des soins fournis par l'HUEH.</p>
+
+    <p>Mais, le dénouement de la crise ne laissa pas de surprendre plus d'un. La plupart de ceux qui avaient de bonne foi sympathisé avec la cause défendue par les internes n'y virent que du feu.</p>
+
+    <p>En un tour de main, l'ancien président Aristide se convertissant en médiateur providentiel, obtint la révocation du directeur médical contre la levée de la grève des étudiants, court-circuitant les canaux institutionnels. On apprit plus tard que l'essentiel des tractations furent menées au Palais national.</p>
+
+    <p>Certains protagonistes flairant la farce, refusèrent de jouer au dindon. D'autres constatèrent avec amertume qu'ils s'étaient fait piéger.</p>
+
+    <p>Peu après, pour des raisons de principes, le titulaire du Ministère de la santé publique (MSPP), Rodolphe Mallebranche, démissionna de son poste. Opposé à la révocation du Dr. Thomas, il s'était vu imposer le départ de ce dernier. Solidairement, le directeur général du MSPP offrira également sa démission.</p>
+
+    <p>Par la suite, l'opinion publique dépistée ne put que prendre acte de cette grossière manipulation, couronnée par des profits politiques qui devaient consacrer le « triomphe électoral » des trois anciens grévistes, sous la bannière du parti Fanmi Lavalas.</p>
+
+    <h3>1.2 — Motivations profondes</h3>
+
+    <p>On peut toujours se demander quelles étaient les motivations profondes de cette manœuvre politique autour de l'HUEH. Notre réponse ne peut être que partielle. Et il se peut que les raisons soient multiples mais complémentaires :</p>
+
+    <div class="sub-para">
+      <span class="label">1)</span>
+      <div class="content">À l'époque, certaines informations faisaient état d'un règlement de compte, comme quoi il y aurait des personnalités « têtues » à écarter. De sorte que le conflit conjoncturel serait arrivé à point nommé pour servir de paravent.</div>
+    </div>
+
+    <div class="sub-para">
+      <span class="label">2)</span>
+      <div class="content">Au retour à l'ordre constitutionnel dans les conditions que nous connaissons, le pouvoir Lavalas se retrouva vidé de sa vision démocratique et populaire. Le moment de vérité de l'application des politiques néolibérales avait sonné. Ainsi, 1996-1997 verront-ils la matérialisation des purges administratives sous forme de retraite anticipée et de départ volontaire, notamment dans le milieu hospitalier accompagnant un processus de liquidation totale ou partielle de certaines entreprises publiques et un désengagement encore plus drastique de l'Etat dans les domaines économique et social. Donc la grogne gagnait maints secteurs, sévèrement touchés par ces politiques. Dès lors, dépourvu de projet national, encore plus de projet populaire, le pouvoir cherchera fiévreusement comment donner le change, à défaut d'améliorer concrètement les conditions de vie des vastes couches populaires, sa base sociale de départ.</div>
+    </div>
+
+    <div class="sub-para">
+      <span class="label">3)</span>
+      <div class="content">L'HUEH était une zone de turbulence et les jeunes médecins, souvent protagonistes de ces protestations, pouvaient faire tâche d'huile et entraîner derrière eux d'autres secteurs harcelés par la pauvreté. Le pouvoir devait séduire et neutraliser les leaders potentiels.</div>
+    </div>
+
+    <h3>1.3 — La descente aux enfers</h3>
+
+    <p>Et la descente aux enfers se poursuivit avec la désagrégation de l'économie, l'augmentation du chômage, de la vie chère et l'affaissement marqué des institutions. Chômage et misère faisant le lit de l'instabilité politique, de l'insécurité et d'une violence de plus en plus aveugle marquée à l'aune de la détresse matérielle et morale.</p>
+
+    <h2>2 — « Grève des étudiants » — Deuxième édition, revue et corrigée</h2>
+
+    <p>C'est dans une conjoncture difficile pour le pouvoir, que nous assisterons cinq ans plus tard à une réédition de la grève de 1997.</p>
+
+    <p>En juillet 2002 en effet, cinq ou six individus, dont un étudiant en médecine, le jeune frère d'un sénateur contesté et ancien gréviste de la faim lui-même, prenant d'assaut les locaux du rectorat, se déclarèrent en grève de la faim et formulèrent une série de revendications dont la plus insistante exigeait le départ du recteur d'alors Pierre Paquiot.</p>
+
+    <p>Le pouvoir en profita pour démettre le conseil exécutif du rectorat, conseil élu, de ses fonctions. Mais la conjoncture était autre, et la communauté universitaire plus unie qu'aujourd'hui. Une lutte ardue de tous les acteurs de l'UEH forcera finalement le pouvoir Lavalas à revenir sur sa décision.</p>
+
+    <h3>2.1 — Motivations du pouvoir</h3>
+
+    <p>Une fois de plus, la question se pose. Pourquoi cette réédition de la grève de 1997 ? Quelles pouvaient être, dans cette nouvelle conjoncture, les motivations du pouvoir eu égard à l'UEH ? À l'analyse, trois points nous paraissent dignes d'être retenus :</p>
+
+    <div class="sub-para">
+      <span class="label">1)</span>
+      <div class="content">Le pouvoir Lavalas, dont la crédibilité est durement entamée avec l'application des politiques socio-économiques antipopulaires, se trouve encore plus fragilisé par l'atmosphère de forte contestation ayant entouré l'accession de Jean-Bertrand Aristide au pouvoir en 2001. La popularité du président est en chute libre.</div>
+    </div>
+
+    <div class="sub-para">
+      <span class="label">2)</span>
+      <div class="content">Parallèlement, l'UEH connaît un regain de bouillonnement d'idées depuis 1998-1999, notamment avec la création de la Fédération des étudiants universitaires haïtiens (FEUH) et d'autres noyaux d'organisations estudiantines, non acquis à la cause des nouveaux dirigeants. Dans ce contexte de fragilité politique, le pouvoir Lavalas croit indispensable de rétablir par n'importe quel moyen son influence sur un secteur universitaire très critique. D'ailleurs, on verra le président Jean-Bertrand Aristide fonder sa propre université/faculté de médecine après 2001 — avec des fonds publics, s'il vous plaît !</div>
+    </div>
+
+    <div class="sub-para">
+      <span class="label">3)</span>
+      <div class="content">Quand un pouvoir politique ne peut ni convaincre ni délivrer la marchandise, il lui reste selon les circonstances, la cooptation/domestication, la manipulation ou la répression des secteurs sensibles et combatifs, or l'Université d'Etat est l'un de ces secteurs.</div>
+    </div>
+
+    <p>Effectivement, les événements postérieurs allaient placer à l'avant-scène politique le monde estudiantin et universitaire en général, lequel allait se dresser contre les dérives du pouvoir Lavalas.</p>
+
+    <p>Mais comme nous l'avions exprimé dans un texte antérieur « Université et Luttes politiques en Haïti », des secteurs de l'oligarchie, en conflit avec le régime Lavalas sur des questions de partage de privilèges, sauront manœuvrer habilement, puis utiliser à leur profit, les justes revendications du monde universitaire et faire obstacle à tout changement après le départ de Jean-Bertrand Aristide.</p>
+
+    <h2>3 — « Grève des étudiants » — Troisième édition, revue, corrigée et augmentée</h2>
+
+    <p>De quoi est faite la crise de l'UEH aujourd'hui ? Les groupes d'étudiants de l'École Normale Supérieure se battaient-ils pour des revendications d'ordre simplement académique ? Que signifie la grève de ce groupe d'étudiants de la Faculté de Médecine et de Pharmacie sept ans après celle de 2002 ?</p>
+
+    <p>Nous commencerons par dire que la crise de l'UEH rentre dans un double contexte de crise généralisée de l'Etat et d'instrumentalisation politique des demandes sociales. Mais pour mieux comprendre les comportements des acteurs, il faut analyser en même temps l'impasse des demandes populaires depuis 1986 et le processus d'effritement du tissu social, tout en se rapportant à l'Histoire. L'Histoire, « ce prophète au regard tourné vers l'arrière ».</p>
+
+    <p>Au départ de Jean-Claude Duvalier, le taux d'analphabétisme en Haïti se rapprochait de 70%. Les revendications populaires en faveur de l'éducation fusent de toutes parts. L'argent des parents au pays et en diaspora et des projets d'ONG y répondent partiellement. De sorte qu'une étude réalisée en 1996 classait Cité Soleil comme le point du territoire le plus alphabétisé.</p>
+
+    <p>Sur un autre registre, l'ouverture tous azimuts du marché agricole haïtien allait provoquer une ruée encore plus importante de la paysannerie vers Port-au-Prince.</p>
+
+    <p>De ces deux conjonctures découleront trois phénomènes nouveaux entre 1986 et 1996 :</p>
+
+    <div class="sub-para">
+      <span class="label">a)</span>
+      <div class="content">La montée vertigineuse du chômage, due à la destruction de pans entiers de l'économie et les liquidations d'entreprises publiques et, dans une moindre mesure, au renvoi massif d'employés et de fonctionnaires de l'Etat en 1996-1997 ;</div>
+    </div>
+
+    <div class="sub-para">
+      <span class="label">b)</span>
+      <div class="content">L'explosion démographique de Port-au-Prince, notamment l'entassement de la population pauvre dans les bidonvilles ;</div>
+    </div>
+
+    <div class="sub-para">
+      <span class="label">c)</span>
+      <div class="content">Une massification de l'éducation suivie d'un changement radical dix ans plus tard, de la composition sociale du monde estudiantin à l'UEH. Désormais, la majorité des étudiants proviennent des quartiers populaires et des bidonvilles. Ce changement radical ne sera pas sans conséquence sur les événements actuels.</div>
+    </div>
+
+    <p>Nous devons nous rappeler que le taux de chômage calculé par la Banque mondiale vers l'année 1982 accusait le niveau de 22 à 30%. Pourtant aujourd'hui, les chiffres parlent de taux avoisinant les 60-70%. Ce qui revient à dire que la plupart des ménages haïtiens vivent d'expédients et un certain nombre, aux crochets de parents à l'étranger.</p>
+
+    <p>À partir de telles données, on peut parler d'une population à large composante <em>lumpen</em> : lumpen prolétariat et « lumpen paysannat » en milieu urbain, survivant sans aucune perspective d'avenir.</p>
+
+    <p>Or, quelle est la mentalité de l'élément lumpen ? C'est un individu déclassé et instable, prêt à toutes les aventures. Parce qu'il ne se positionne pas dans son quotidien face à aucun acteur précis. Il n'est ni un paysan face au propriétaire terrien ou au spéculateur, ni un ouvrier face au patron, ni la marchande face au percepteur, ni un employé public face à l'Etat Central.</p>
+
+    <p>Ainsi, devient-il la proie facile des politiciens véreux, des mafieux et des aventuriers de tout crin. Il est simplement un frustré, un révolté, pas un révolutionnaire. Sa révolte pour toutes ces raisons est très souvent aveugle et destructrice, plus rarement constructive.</p>
+
+    <p>Mouvement rageur qui s'adresse à tout et à rien de spécifique, qui s'adresse au premier obstacle rencontré, pourvu que le moment s'y prête et qu'une main habile le lui désigne comme cible.</p>
+
+    <p>Un élément symbole du lumpen, dans l'histoire récente, c'est Joe Lucy, issu d'un quartier populaire des Gonaïves. Il a participé avec beaucoup de fougue en 1986 au combat populaire qui précéda la chute de Jean-Claude Duvalier, mais on le retrouvera plus tard, avec les forces répressives de l'armée, lors du coup d'Etat de Cédras-Michel François, harcelant la population pauvre de sa ville natale. Aucune conscience de classe n'orientait son combat.</p>
+
+    <p>Le tableau que nous venons de dresser nous explique les problèmes que confronte aujourd'hui une partie importante du monde estudiantin. Problèmes d'ordre matériel relatifs au logement, à l'alimentation, l'habillement, le transport, la santé, l'électricité etc. En bref, un <em>primum vivere</em> non assuré. Mais aussi un problème de désarroi social, de détresse morale et de désespoir.</p>
+
+    <p>Une situation aiguisée par le discours dominant à large diffusion, tous types de médias confondus et qui est absorbé par ces jeunes. Un discours qui prêche l'abandon de tout idéal de vie tourné vers Haïti et son peuple, au profit de la promotion de l'individualisme forcené, de l'argent et de l'imitation servile de certains modèles étrangers. Ce qui rend nos jeunes plus vulnérables à une éventuelle instrumentalisation de leurs besoins.</p>
+
+    <p>Mais ces problèmes de fond, pour importants qu'ils soient, ne sauraient expliquer à eux seuls les dernières crises à l'UEH. Il faut y ajouter : les carences réelles des facultés, délaissées, méprisées par l'Etat, sans ressources adéquates pour fonctionner — d'une part source de tension et de frustration — et d'autre part, les attitudes parfaitement égoïstes et opportunistes de petits caciques, internes à certaines facultés, qui s'opposent — par étudiants interposés — à toute réforme véritable qui mettrait fin à leur médiocre caciquat. En dernier lieu, des mains habiles viendront au moment opportun cueillir le fruit mûr.</p>
+
+    <p>L'occupation violente du rectorat en début d'année par un groupe d'étudiants et un professeur de l'École Normale Supérieure, pour « des revendications » d'une déconcertante futilité, annonçait les couleurs de l'instrumentalisation.</p>
+
+    <p>Que par la suite, un groupe d'étudiants en médecine décide unilatéralement, dictatorialement, de fermer les portes d'une faculté, d'utiliser la violence gratuite et aveugle, d'induire de pauvres hères à en faire de même, pour exiger le départ du décanat de la FMP, puis celui du rectorat, voilà des méthodes qui remettent en mémoire les menées des grévistes de 2002 et leurs supporteurs, au service du pouvoir d'alors.</p>
+
+    <p>Et depuis 1997, un courant « lumpen estudiantin » pointe le nez et tente d'infiltrer le corps estudiantin. Il a essayé de le noyauter en 2002, il subsiste à l'état rampant, et il revient aujourd'hui à la charge avec encore plus de hargne sept ans plus tard.</p>
+
+    <p>Au début, les mains étaient bien cachées et beaucoup d'honnêtes gens ont mordu à l'hameçon. Mais depuis, nombre se sont ravisés, car cette violence gratuite, cette sauvagerie sentait la pourriture. Alors les manipulateurs ont attendu pour forcer le jeu. Pour que la police intervienne. Pour le concert de protestations. Pour le concert d'hypocrisie surtout.</p>
+
+    <p>Ils voulaient beaucoup de voix, beaucoup de vacarme et suffisamment longtemps pour cacher les vrais enjeux : voix de politiciens en mal de popularité, sans éthique ni moralité, celles de militants de déconcertante myopie, celles des opportunistes de tout poil en attente de récompense. Des voix pour condamner et exiger le départ du recteur Henry Vernet, puis celui du Conseil exécutif.</p>
+
+    <p>Les chefs des marionnettes ont besoin coûte que coûte de domestiquer ce monde, par peur de la Réforme véritable, peur d'une Université d'Etat renforcée à rayonnement national, jouissant de toute son autonomie et jouant enfin son rôle dans le développement de notre pays.</p>
+
+    <h2>4 — Les nouveaux « Cacos Jésus »</h2>
+
+    <p>Dans notre dernier texte « Université et luttes politiques en Haïti » nous avions attiré l'attention sur les nuages noirs qui s'amoncelaient sur l'UEH et nous recommandions à nos universitaires de revisiter le passé afin de tirer profit des leçons de l'histoire.</p>
+
+    <p>La saga de ces deux facultés — ENS et FMP — et celle de leurs supporteurs, nous incite à jeter un regard rétrospectif sur une tranche d'histoire haïtienne, celle des « Cacos Jésus », entre 1911 et 1915.</p>
+
+    <p>Les choix et comportements de ces étudiants issus en général de familles paysannes victimes de la désagrégation de l'économie rurale, nous rappelle les guerres des « Cacos Jésus » au moment où la pression démographique dans le cadre d'une structure agraire désuète créait de plus en plus de paysans sans terre dans le Nord.</p>
+
+    <p>Ces paysans sans terre furent amenés à servir leurs oppresseurs en l'occurrence les grands propriétaires fonciers du Nord en quête du fauteuil présidentiel, qui purent les convaincre que leurs véritables exploiteurs se trouvaient au Sud. Gaillard parle d'une « impeccable opération de transfert, celle de l'exportation de sa lutte de classe ».</p>
+
+    <p>Voici un extrait tiré du livre de Roger Gaillard : <em>Charlemagne Péralte Le Caco</em> :</p>
+
+    <blockquote>
+      <p>« À cette époque, le cacoïsme peut se comparer à une gigantesque machine, sinon de destruction du moins d'intimidation. Son boutoir est constitué par la masse des "deux-moitiés" déchus de la Plaine de Nord et des régions de la Grande Rivière du Nord, remplissant le rôle de piétaille…</p>
+      <p>Son conducteur, maître absolu de toute cette mécanique, seul à décider de son utilisation et de ses mouvements, portant le titre significatif de "chef suprême" est le nouveau candidat à la présidence, poursuivant la plupart du temps, à travers une phraséologie patriotique, ses propres intérêts de possédant…</p>
+      <p>Le cacoïsme entre 1911 et 1915 n'est ainsi que l'arme des politiciens traditionnels du Nord, dans le combat implacable qu'ils se livrent entre eux-mêmes et dans leur tactique de "caponnage" à l'égard de leurs rivaux de Port-au-Prince, aucun intérêt n'étant accordé par quiconque à la situation réelle des basses couches paysannes si audacieusement mises en branle.</p>
+      <p>Ces dernières, abusées quant à l'exploitation véritable dont elles sont victimes, servent ainsi la cause même de leur oppresseur, consolidant, par voie de conséquence, leur propre asservissement. D'où en leur sein, un mécontentement sans cesse grandissant…</p>
+      <p>S'apercevant bientôt qu'ils ont été bernés, beaucoup alors recommencent. Ainsi "Cacos à souliers vernis" exploitent sans vergogne la misère des "Cacos Jésus", de ces paysans qui, après chaque "descente" sur Port-au-Prince, vont se poster à Carrefour Jésus et s'offrir comme mercenaire au nouveau candidat à la présidence…</p>
+      <p>Quant aux chefs, toujours convoitant le pouvoir, ou toujours voulant le conserver… d'idéologies révolutionnaires ils n'en ont pas ; de préoccupations populaires et paysannes, ils n'en ont guère… »</p>
+    </blockquote>
+
+    <p>Et comme le mobile de ces guerres ne répond ni à une idéologie révolutionnaire, ni à des « préoccupations populaires et paysannes », les pots cassés qui accompagnent les routes cahoteuses vers le pouvoir, ce sont « les cultivateurs paisibles du Nord qui (les) paient le plus durement », souligne Roger Gaillard, les humbles, les couches paysannes laborieuses, victimes de la « puissance aveugle » d'un lumpen paysannat dévoyé et convié au « pillage (et) au brigandage ».</p>
+
+    <p>À un siècle près, nous pensons qu'il y a des ressemblances frappantes entre les deux situations. Entre les comportements des paysans pauvres bernés par les Seigneurs de guerre d'antan et des couches d'étudiants manipulés par de nouveaux chefs qui utilisent encore et toujours la même « phraséologie patriotique », les mêmes « clichés patriotards » d'hier pour encourager les étudiants au vandalisme et justifier la destruction de leur propre <em>Alma Mater</em>. Et tout cela, au nom de l'intérêt supérieur des « pitit pèp » — hélas !!!! En réalité, comme hier, au nom de leurs intérêts personnels et ceux de leur clan.</p>
+
+    <p>Mais l'histoire n'est pas finie. Et contrairement aux paysans illettrés, donc sans instruments d'analyse hier, il s'agit tout de même d'étudiants disposant de meilleures capacités de réflexion et d'appréhension de la réalité. Plus à même de se ressaisir. Même si la précarité et le désespoir demeurent de mauvais conseillers.</p>
+
+    <p>Et l'Histoire nous a aussi appris comment une direction politique plus éclairée avec Charlemagne Péralte a reconverti cette masse paysanne en combattant de la cause nationale contre l'occupant entre 1918 et 1920.</p>
+
+    <p>Alors, la grande communauté universitaire doit se réveiller. Les professeurs comme les étudiants de l'UEH doivent comprendre où se trouvent leurs véritables intérêts et sortir de leur silence.</p>
+
+    <p>L'heure est à l'action collective pour contrer l'action destructrice du courant « lumpen » mais aussi pour avancer vers une Réforme en profondeur de l'Université d'Etat d'Haïti.</p>
+
+    <div class="source-note">Soumis à AlterPresse le 21 septembre 2009</div>
+
+  </div>
+
+  <div style="margin-top:2rem">
+    <a class="back-link" href="publications.html">← Retour aux publications</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Myrtha Gilbert</h4>
+      <p>Historienne · Professeure · Auteure</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#livres">Livres</a>
+      <a href="index.html#biographie">Biographie</a>
+      <a href="publications.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Commandes</h4>
+      <p>Librairie La Pléiade PV</p>
+      <a href="tel:+15094404957">+1 (509) 44 04 1957</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Myrtha Gilbert · Tous droits réservés</span>
+  </div>
+</footer>
+
+</body>
+</html>

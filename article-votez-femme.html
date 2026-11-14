@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haïti : Votez Femme — Myrtha Gilbert</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#3A6B9A;--blue2:#4A80B5;
+  --blue-light:#EAF4FB;--blue-mid:#7AAEC8;
+  --nav-bg:#2A4A60;--footer-bg:#152A3A;
+  --text:#1A2A35;--text2:#3A5060;--text3:#7A9BAA;
+  --bg:#F4F9FC;--white:#FFF;--border:#C8DFE8;
+}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.8}
+.topbar{background:var(--blue);color:#fff;text-align:center;padding:0.4rem 1rem;font-size:0.78rem;letter-spacing:0.06em}
+.topbar a{color:#B8DDEF;text-decoration:none}
+nav{background:var(--nav-bg);position:sticky;top:0;z-index:200}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+.nav-logo{display:flex;flex-direction:column;line-height:1.1;text-decoration:none}
+.nav-logo span:first-child{font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:0.03em;font-family:Georgia,serif}
+.nav-logo span:last-child{font-size:0.65rem;color:#aaa;letter-spacing:0.15em;text-transform:uppercase}
+.nav-menu{display:flex;list-style:none;height:64px}
+.nav-menu>li>a{color:#ddd;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;padding:0 1rem;height:64px;display:flex;align-items:center;transition:background .2s,color .2s;white-space:nowrap;font-family:Arial,sans-serif}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--blue);color:#fff}
+.page-header{background:linear-gradient(120deg,#1A3A55 0%,#2A5A7A 40%,#3A7A9A 70%,#4A90B0 100%);padding:3rem 1.5rem}
+.page-header-inner{max-width:800px;margin:0 auto}
+.breadcrumb{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-bottom:1rem;font-family:Arial,sans-serif}
+.breadcrumb a{color:#B8DDEF;text-decoration:none}
+.breadcrumb a:hover{color:#fff}
+.article-meta{font-family:Arial,sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.6);margin-bottom:0.8rem;letter-spacing:0.05em}
+.page-header h1{font-size:1.9rem;font-weight:normal;color:#fff;line-height:1.3;margin-bottom:0.5rem}
+.page-header .subtitle{font-family:Arial,sans-serif;font-size:0.95rem;color:rgba(255,255,255,0.7);margin-top:0.4rem}
+.article-wrap{max-width:800px;margin:3rem auto;padding:0 1.5rem}
+.article-body{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:3rem;box-shadow:0 2px 12px rgba(58,107,154,0.07)}
+.article-body h2{font-size:1.05rem;color:var(--blue);margin:2rem 0 0.8rem;font-weight:bold;font-family:Georgia,serif}
+.article-body p{color:var(--text2);margin-bottom:1.1rem;text-align:justify}
+.article-body ul{color:var(--text2);margin:0.5rem 0 1.1rem 1.8rem;line-height:1.8}
+.article-body ul li{margin-bottom:0.4rem}
+.author-note{margin-top:2rem;padding:1rem 1.5rem;background:var(--blue-light);border-radius:2px;font-family:Arial,sans-serif;font-size:0.82rem;color:var(--text3);font-style:italic}
+.source-note{margin-top:1rem;padding:0.8rem 1.5rem;background:#f8f8f8;border:1px solid var(--border);border-radius:2px;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--text3)}
+.back-link{display:inline-block;margin-bottom:2rem;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--blue);text-decoration:none;letter-spacing:0.05em}
+.back-link:hover{color:var(--blue2)}
+footer{background:var(--footer-bg);color:#666;padding:2rem 1.5rem;text-align:center;font-size:0.78rem;font-family:Arial,sans-serif;margin-top:3rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:2rem}
+.footer-col h4{color:#aaa;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.8rem}
+.footer-col a,.footer-col p{display:block;color:#666;font-size:0.78rem;margin-bottom:0.4rem;text-decoration:none}
+.footer-col a:hover{color:var(--blue-mid)}
+.footer-bottom{border-top:1px solid #223344;padding-top:1.2rem;color:#444}
+@media(max-width:768px){
+  .nav-menu{display:none}
+  .article-body{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">📦 Livraison disponible &nbsp;·&nbsp; <a href="index.html#contact">Commander un livre →</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span>Myrtha Gilbert</span>
+      <span>Historienne · Auteure</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#livres">Livres</a></li>
+      <li><a href="index.html#biographie">Biographie</a></li>
+      <li><a href="publications.html" class="active">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; <a href="publications.html">Articles</a> &nbsp;/&nbsp; Votez Femme</p>
+    <p class="article-meta">5 avril 2006 &nbsp;·&nbsp; AlterPresse</p>
+    <h1>Haïti : Votez Femme</h1>
+    <p class="subtitle">Ou les non-dits d'un slogan</p>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <a class="back-link" href="publications.html">← Retour aux publications</a>
+
+  <div class="article-body">
+
+    <p>L'essentiel est dans la forme. C'est ce que semble exprimer le slogan de l'organisation féministe « Fanm yo la », invitant la population haïtienne à voter toutes les candidates participant aux joutes électorales de l'année en cours. Ceci, en dehors de toute orientation programmatique.</p>
+
+    <p>Ce slogan n'est-il pas en contradiction avec l'initiative prise par cette organisation il y a de cela quelques mois, quand elle avait invité les partis politiques à ouvrir leur havresac, histoire de permettre au public féminin présente en la circonstance de jeter un coup d'œil sur les projets de société des aspirants dirigeants ?</p>
+
+    <p>1 — Nous ne devons pas oublier que l'espace politique est celui de la cristallisation par excellence de l'économique (substrat fondamental), du social, du culturel et de l'institutionnel. De ce fait, le vote comme instrument d'expression politique est toujours une prise de position (instinctive ou raisonnée) dans les conflits socio-économiques qui agitent la société.</p>
+
+    <p>2 — Tel qu'exprimé, le slogan « Votez Femme » nous ramène purement et simplement à une réalité biologique, exempte (en apparence) de tout critère lié à des options politiques explicites. Sous-entendu, peu importe les choix politiques d'une candidate, l'essentiel c'est qu'elle soit une femme.</p>
+
+    <p>3 — Dans cette optique, la politique se trouve comme par magie, vidée de son contenu. De là, le commentaire désappointé d'une dirigeante féministe, déplorant le fait que les citoyens aient voté surtout des programmes et non des « individualités » (sic), d'où la faible performance électorale des femmes candidates.</p>
+
+    <p>4 — Si « Fanm yo la » était un parti politique, le slogan « Votez Femme » prendrait un tout autre sens parce qu'il serait d'abord lié à une proposition d'organisation de l'Etat et de la société. Mais une organisation féministe regroupant des femmes d'horizons politiques divers ne peut (sous peine de se fourvoyer) que proposer à ses adhérentes, des lignes de politiques générales transversales intéressant la condition et la situation des Femmes.</p>
+
+    <p>Il appartient en fait aux partis politiques de prendre en charge la promotion personnalisée de leurs candidates, attendu que le suffrage ainsi sollicité ne s'arrêterait pas au sexe du candidat mais impliquerait d'abord, l'adhésion à un programme politique spécifique. L'aspect de promotion des candidatures féminines — s'il était adopté — constituerait un élément complémentaire dans le cadre d'une stratégie globale visant un meilleur équilibre Homme/Femme dans la sphère du pouvoir d'Etat.</p>
+
+    <p>Autrement, le slogan « Votez Femme » peut ressembler à :</p>
+
+    <ul>
+      <li>une tentative d'imposer aux femmes une lecture biaisée du que-faire politique ;</li>
+      <li>un prolongement camouflé de la guerre des sexes si chère à un certain courant féministe « hystérique » des pays capitalistes industrialisés ;</li>
+      <li>une récupération par le courant néo-libéral dominant de la lutte des Femmes, vidée en passant de son contenu socio-économique et culturel profond au profit du néo-sexisme (Femme contre Homme).</li>
+    </ul>
+
+    <p>En Haïti comme dans toutes les sociétés à classes sociales antagoniques, la politique se fait d'abord et avant tout pour défendre des intérêts socio-économiques. En Haïti comme ailleurs, la politique des uns sert à défendre les intérêts vitaux des grandes majorités et celle des autres à protéger les privilèges des nantis et leurs alliés. C'est la simple réalité qu'il est superflu d'enrober de miel.</p>
+
+    <p>À une époque pas trop lointaine, on disait « votez un noir » et plus près de nous « votez un prêtre ». Mais l'histoire nous enseigne que ni la couleur ni les confessions religieuses ni le sexe n'offrent de garantie ferme de patriotisme, d'intégrité morale ou de sens de l'équité. Ces signes distinctifs ne pourront jamais à eux seuls remplacer les indispensables projets de réorganisation de l'Etat et de la société.</p>
+
+    <div class="author-note">Myrtha Gilbert</div>
+
+    <div class="source-note">Soumis à AlterPresse le 5 avril 2006</div>
+
+  </div>
+
+  <div style="margin-top:2rem">
+    <a class="back-link" href="publications.html">← Retour aux publications</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Myrtha Gilbert</h4>
+      <p>Historienne · Professeure · Auteure</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#livres">Livres</a>
+      <a href="index.html#biographie">Biographie</a>
+      <a href="publications.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Commandes</h4>
+      <p>Librairie La Pléiade PV</p>
+      <a href="tel:+15094404957">+1 (509) 44 04 1957</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Myrtha Gilbert · Tous droits réservés</span>
+  </div>
+</footer>
+
+</body>
+</html>

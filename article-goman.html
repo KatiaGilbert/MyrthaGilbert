@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goman : un pionnier de la résistance paysanne — Myrtha Gilbert</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#3A6B9A;--blue2:#4A80B5;
+  --blue-light:#EAF4FB;--blue-mid:#7AAEC8;
+  --nav-bg:#2A4A60;--footer-bg:#152A3A;
+  --text:#1A2A35;--text2:#3A5060;--text3:#7A9BAA;
+  --bg:#F4F9FC;--white:#FFF;--border:#C8DFE8;
+}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.8}
+.topbar{background:var(--blue);color:#fff;text-align:center;padding:0.4rem 1rem;font-size:0.78rem;letter-spacing:0.06em}
+.topbar a{color:#B8DDEF;text-decoration:none}
+nav{background:var(--nav-bg);position:sticky;top:0;z-index:200}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+.nav-logo{display:flex;flex-direction:column;line-height:1.1;text-decoration:none}
+.nav-logo span:first-child{font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:0.03em;font-family:Georgia,serif}
+.nav-logo span:last-child{font-size:0.65rem;color:#aaa;letter-spacing:0.15em;text-transform:uppercase}
+.nav-menu{display:flex;list-style:none;height:64px}
+.nav-menu>li>a{color:#ddd;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;padding:0 1rem;height:64px;display:flex;align-items:center;transition:background .2s,color .2s;white-space:nowrap;font-family:Arial,sans-serif}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--blue);color:#fff}
+.page-header{background:linear-gradient(120deg,#1A3A55 0%,#2A5A7A 40%,#3A7A9A 70%,#4A90B0 100%);padding:3rem 1.5rem}
+.page-header-inner{max-width:800px;margin:0 auto}
+.breadcrumb{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-bottom:1rem;font-family:Arial,sans-serif}
+.breadcrumb a{color:#B8DDEF;text-decoration:none}
+.breadcrumb a:hover{color:#fff}
+.article-meta{font-family:Arial,sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.6);margin-bottom:0.8rem;letter-spacing:0.05em}
+.page-header h1{font-size:1.9rem;font-weight:normal;color:#fff;line-height:1.3;margin-bottom:0.5rem}
+.article-wrap{max-width:800px;margin:3rem auto;padding:0 1.5rem}
+.article-body{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:3rem;box-shadow:0 2px 12px rgba(58,107,154,0.07)}
+.article-subtitle{font-size:1.1rem;font-weight:bold;color:var(--blue);margin-bottom:1.2rem;font-family:Georgia,serif}
+.epigraph{margin-bottom:2rem;padding:1.2rem 2rem;border-left:3px solid var(--blue-mid);background:var(--blue-light);border-radius:2px}
+.epigraph p{font-style:italic;color:var(--text2);margin-bottom:0.4rem}
+.epigraph cite{display:block;font-style:normal;font-family:Arial,sans-serif;font-size:0.82rem;color:var(--text3);margin-top:0.4rem}
+.article-body p{color:var(--text2);margin-bottom:1.1rem;text-align:justify}
+.sources-section{margin-top:2.5rem;padding-top:1.5rem;border-top:2px solid var(--border)}
+.sources-section h3{font-family:Arial,sans-serif;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-mid);margin-bottom:1rem}
+.sources-section ul{padding-left:1.5rem;color:var(--text3);font-size:0.82rem;line-height:1.9}
+.sources-section ul li{margin-bottom:0.4rem}
+.article-figure{margin:0 0 2rem;text-align:center}
+.article-figure img{max-width:100%;height:auto;border-radius:2px;box-shadow:0 2px 10px rgba(58,107,154,0.12)}
+.article-figure figcaption{font-family:Arial,sans-serif;font-size:0.78rem;color:var(--text3);margin-top:0.5rem;font-style:italic}
+.back-link{display:inline-block;margin-bottom:2rem;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--blue);text-decoration:none;letter-spacing:0.05em}
+.back-link:hover{color:var(--blue2)}
+footer{background:var(--footer-bg);color:#666;padding:2rem 1.5rem;text-align:center;font-size:0.78rem;font-family:Arial,sans-serif;margin-top:3rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:2rem}
+.footer-col h4{color:#aaa;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.8rem}
+.footer-col a,.footer-col p{display:block;color:#666;font-size:0.78rem;margin-bottom:0.4rem;text-decoration:none}
+.footer-col a:hover{color:var(--blue-mid)}
+.footer-bottom{border-top:1px solid #223344;padding-top:1.2rem;color:#444}
+@media(max-width:768px){
+  .nav-menu{display:none}
+  .article-body{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">📦 Livraison disponible &nbsp;·&nbsp; <a href="index.html#contact">Commander un livre →</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span>Myrtha Gilbert</span>
+      <span>Historienne · Auteure</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#livres">Livres</a></li>
+      <li><a href="index.html#biographie">Biographie</a></li>
+      <li><a href="publications.html" class="active">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; <a href="publications.html">Articles</a> &nbsp;/&nbsp; Goman : un pionnier de la résistance paysanne</p>
+    <p class="article-meta">21 février 2021</p>
+    <h1>Goman : un pionnier de la résistance paysanne</h1>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <a class="back-link" href="publications.html">← Retour aux publications</a>
+
+  <div class="article-body">
+
+    <figure class="article-figure">
+      <img src="Goman.jpeg" alt="Statue de Goman à l'Anse-d'Hainault" onerror="this.src='Goman.jpg'">
+      <figcaption>Statue de Goman, Anse-d'Hainault, Grand'Anse</figcaption>
+    </figure>
+
+    <p class="article-subtitle">Goman, Jean-Baptiste Perrier</p>
+
+    <div class="epigraph">
+      <p>« Tu n'étais qu'une plaie, qu'importe, tu n'avais pas abdiqué, toi. »</p>
+      <cite>Félix Viard</cite>
+    </div>
+
+    <p>Goman, de son vrai nom Jean-Baptiste Perrier, était un Africain d'ethnie congo. Captif conduit à St-Domingue, travaillant pour un colon de la plaine des Cayes, il se fit marron très tôt, et prit la tête de l'insurrection des Platons en 1792-1793, avec Nicolas Régnier et Gilles Bénech. Il devint après le triomphe de la Révolution de 1804, chef du 2<sup>e</sup> bataillon de la 19<sup>e</sup> demi-brigade cantonnée à l'Anse-d'Hainault.</p>
+
+    <p>À la mort de l'Empereur le 17 octobre 1806, et craignant sans doute un retour à l'esclavage, notamment dans le sud « aristocratique », dominé par les affranchis, anciens propriétaires d'esclaves, il leva l'Étendard de la Révolte en février 1807 et se proclama le vengeur de Dessalines.</p>
+
+    <p>La majorité des nouveaux paysans de la Grand'Anse et un grand nombre de soldats se joignirent au mouvement insurrectionnel. Ses troupes très disciplinées selon Madiou se sont battues dans des conditions très difficiles avec un courage exemplaire, mélangeant guerre conventionnelle et tactiques de guérilla.</p>
+
+    <p>L'historien Lepelletier de Saint-Rémy explique l'épopée de Goman et des paysans rebelles de la Grand'Anse comme une tentative de créer un état permanent à l'instar de celui de Port-au-Prince, mais à partir d'un autre projet. Dans cette même optique, Tadeus Lepkowski, historien polonais décédé en 1989, parle de « démocratie agraire » et de « l'État révolutionnaire de Goman ». Soulignant en outre le développement de l'agriculture dans toutes les zones sous contrôle du mouvement.</p>
+
+    <p>Cette extraordinaire insurrection paysanne dura environ treize (13) ans. Et la disparition physique de Goman peut se situer vers le 23 février 1820.</p>
+
+    <p>Le mouvement insurrectionnel des paysans de la Grand'Anse sous la direction de Goman fut la première grande bataille organisée de la paysannerie haïtienne. Ce large mouvement, par son organisation, sa discipline, l'ampleur de l'adhésion qu'il a suscitée parmi les cultivateurs et les militaires, notamment le simple soldat, la longue durée de l'insurrection, l'intensité des combats, a marqué le monde paysan. Les sociétés paysannes (Société Congo de La Gonâve, Société Olandè, Société djouba de Marbial, etc.) dans leur originalité, leur philosophie et leur organisation, pourraient être considérées aussi comme le legs de cette bataille. Laquelle a contribué à façonner, selon un historien haïtien, les contours de l'histoire économique de la paysannerie haïtienne et aussi, celle du Peuple haïtien.</p>
+
+    <p style="margin-top:1.5rem;font-style:italic;color:var(--text3);font-size:0.9rem">Myrtha Gilbert<br>21 février 2021</p>
+
+    <div class="sources-section">
+      <h3>Sources consultées</h3>
+      <ul>
+        <li>Beaubrun Ardouin, <em>Études sur l'Histoire d'Haïti</em>, publiées pour la première fois entre 1853 et 1860</li>
+        <li>Michel Hector, <em>Crises et Mouvements populaires en Haïti</em>, deuxième édition, 2006</li>
+        <li>Thomas Madiou, <em>Histoire d'Haïti</em>, tome IV 1807-1811 ; tome V 1811-1818 ; tome VI 1819-1820</li>
+        <li>Tadeus Lepkowski, <em>Haïti, les débuts de l'État et de la Nation</em> ; première édition, 1964 ; traduction française Serge Rousseau, 2018</li>
+        <li>R. Lepelletier de Saint-Rémy, <em>St Domingue, Étude et Solution nouvelle de la question haïtienne</em>, Paris, 1846</li>
+        <li>Myrtha Gilbert, <em>La Révolte de Goman et le mouvement insurrectionnel de la Grand'Anse</em>, 2020</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2rem">
+    <a class="back-link" href="publications.html">← Retour aux publications</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Myrtha Gilbert</h4>
+      <p>Historienne · Professeure · Auteure</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#livres">Livres</a>
+      <a href="index.html#biographie">Biographie</a>
+      <a href="publications.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Commandes</h4>
+      <p>Librairie La Pléiade PV</p>
+      <a href="tel:+15094404957">+1 (509) 44 04 1957</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Myrtha Gilbert · Tous droits réservés</span>
+  </div>
+</footer>
+
+</body>
+</html>

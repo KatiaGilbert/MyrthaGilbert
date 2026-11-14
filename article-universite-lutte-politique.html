@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Université et lutte politique en Haïti — Myrtha Gilbert</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#3A6B9A;--blue2:#4A80B5;
+  --blue-light:#EAF4FB;--blue-mid:#7AAEC8;
+  --nav-bg:#2A4A60;--footer-bg:#152A3A;
+  --text:#1A2A35;--text2:#3A5060;--text3:#7A9BAA;
+  --bg:#F4F9FC;--white:#FFF;--border:#C8DFE8;
+}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.8}
+.topbar{background:var(--blue);color:#fff;text-align:center;padding:0.4rem 1rem;font-size:0.78rem;letter-spacing:0.06em}
+.topbar a{color:#B8DDEF;text-decoration:none}
+nav{background:var(--nav-bg);position:sticky;top:0;z-index:200}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+.nav-logo{display:flex;flex-direction:column;line-height:1.1;text-decoration:none}
+.nav-logo span:first-child{font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:0.03em;font-family:Georgia,serif}
+.nav-logo span:last-child{font-size:0.65rem;color:#aaa;letter-spacing:0.15em;text-transform:uppercase}
+.nav-menu{display:flex;list-style:none;height:64px}
+.nav-menu>li>a{color:#ddd;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;padding:0 1rem;height:64px;display:flex;align-items:center;transition:background .2s,color .2s;white-space:nowrap;font-family:Arial,sans-serif}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--blue);color:#fff}
+.page-header{background:linear-gradient(120deg,#1A3A55 0%,#2A5A7A 40%,#3A7A9A 70%,#4A90B0 100%);padding:3rem 1.5rem}
+.page-header-inner{max-width:800px;margin:0 auto}
+.breadcrumb{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-bottom:1rem;font-family:Arial,sans-serif}
+.breadcrumb a{color:#B8DDEF;text-decoration:none}
+.breadcrumb a:hover{color:#fff}
+.article-meta{font-family:Arial,sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.6);margin-bottom:0.8rem;letter-spacing:0.05em}
+.page-header h1{font-size:1.9rem;font-weight:normal;color:#fff;line-height:1.3;margin-bottom:0.5rem}
+.article-wrap{max-width:800px;margin:3rem auto;padding:0 1.5rem}
+.article-body{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:3rem;box-shadow:0 2px 12px rgba(58,107,154,0.07)}
+.epigraph{margin-bottom:2rem;padding:1.2rem 2rem;border-left:3px solid var(--blue-mid);background:var(--blue-light);border-radius:2px}
+.epigraph p{font-style:italic;color:var(--text2);margin-bottom:0.6rem}
+.article-body h2{font-size:1.05rem;color:var(--blue);margin:2.2rem 0 0.8rem;font-weight:bold;font-family:Georgia,serif;border-bottom:1px solid var(--border);padding-bottom:0.4rem}
+.article-body h3{font-size:0.95rem;color:var(--blue);margin:1.5rem 0 0.6rem;font-weight:bold;font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:0.04em}
+.article-body p{color:var(--text2);margin-bottom:1.1rem;text-align:justify}
+.sub-para{display:flex;gap:0.8rem;margin-bottom:1rem}
+.sub-para .label{flex-shrink:0;font-family:Arial,sans-serif;font-size:0.85rem;font-weight:700;color:var(--blue-mid);min-width:1.4rem;padding-top:0.1rem}
+.sub-para .content{color:var(--text2);text-align:justify;line-height:1.8}
+.source-note{margin-top:2rem;padding:0.8rem 1.5rem;background:#f8f8f8;border:1px solid var(--border);border-radius:2px;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--text3)}
+.notes-section{margin-top:2rem;padding-top:1.5rem;border-top:2px solid var(--border)}
+.notes-section h3{font-family:Arial,sans-serif;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-mid);margin-bottom:1rem;border:none;margin-top:0}
+.notes-section ol{padding-left:1.5rem;color:var(--text3);font-size:0.82rem;line-height:1.7}
+.notes-section ol li{margin-bottom:0.6rem}
+.back-link{display:inline-block;margin-bottom:2rem;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--blue);text-decoration:none;letter-spacing:0.05em}
+.back-link:hover{color:var(--blue2)}
+footer{background:var(--footer-bg);color:#666;padding:2rem 1.5rem;text-align:center;font-size:0.78rem;font-family:Arial,sans-serif;margin-top:3rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:2rem}
+.footer-col h4{color:#aaa;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.8rem}
+.footer-col a,.footer-col p{display:block;color:#666;font-size:0.78rem;margin-bottom:0.4rem;text-decoration:none}
+.footer-col a:hover{color:var(--blue-mid)}
+.footer-bottom{border-top:1px solid #223344;padding-top:1.2rem;color:#444}
+@media(max-width:768px){
+  .nav-menu{display:none}
+  .article-body{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">📦 Livraison disponible &nbsp;·&nbsp; <a href="index.html#contact">Commander un livre →</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span>Myrtha Gilbert</span>
+      <span>Historienne · Auteure</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#livres">Livres</a></li>
+      <li><a href="index.html#biographie">Biographie</a></li>
+      <li><a href="publications.html" class="active">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; <a href="publications.html">Articles</a> &nbsp;/&nbsp; Université et lutte politique</p>
+    <p class="article-meta">29 juillet 2009 &nbsp;·&nbsp; AlterPresse</p>
+    <h1>Université et lutte politique en Haïti</h1>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <a class="back-link" href="publications.html">← Retour aux publications</a>
+
+  <div class="article-body">
+
+    <div class="epigraph">
+      <p>« Il est à remarquer plus qu'en 1929 et 1946, la lutte des secteurs les plus progressistes dont les étudiants (2002-2004), a été rapidement récupérée par une fraction de l'oligarchie soutenue par une couche de classes moyennes, en collusion avec les grandes puissances, empêchant une véritable avancée de la bataille du peuple haïtien, vers de véritables conquêtes sociales.</p>
+      <p>Aujourd'hui encore, des nuages noirs s'amoncellent sur le monde universitaire. Des caricatures de mouvements revendicatifs tentent de semer la confusion. À quelle fin ? »</p>
+    </div>
+
+    <h2>1 — Contexte général</h2>
+
+    <div class="sub-para">
+      <span class="label">a)</span>
+      <div class="content">La première guerre mondiale (1914-1918) offrit aux américains, l'opportunité d'étendre leur influence en Amérique Latine et dans la Caraïbe par la politique de la canonnière. Les principales puissances européennes (Angleterre, France, Allemagne) — qui contrôlaient le marché des denrées haïtiennes et les contrats juteux — étant en guerre, les EEUU estimèrent qu'il était grand temps de mettre en pratique la doctrine de Monroe vis-à-vis de la Caraïbe, en contrecarrant l'influence européenne pour se confirmer comme seule puissance continentale.</div>
+    </div>
+
+    <div class="sub-para">
+      <span class="label">b)</span>
+      <div class="content">Sur le plan interne, l'obsolescence des structures agraires exprimées dans les rapports de « de moitié », les corvées déguisées, les abus des puissants, les dépossessions arbitraires, l'insécurité foncière, assaillent une paysannerie en forte croissance démographique. Pour certains grandons, c'est l'occasion rêvée. Manipulant les justes revendications paysannes, et profitant du faible niveau de conscience de classe et de la misère des paysans sans terre, ils endosseront leurs habits de généraux, recruteront des milliers de miséreux pour descendre chercher le pouvoir à Port-au-Prince.</div>
+    </div>
+
+    <div class="sub-para">
+      <span class="label">c)</span>
+      <div class="content">Par ailleurs, l'Occupation américaine d'Haïti le 28 juillet 1915 a été précédée d'un acte de piraterie internationale inusité. En effet, le 17 décembre 1914, un groupe de marines débarqua à Port-au-Prince et fit main basse sur les réserves d'or de la Banque Nationale d'Haïti, estimées à 500 000 dollars, ouvrant un nouveau chapitre de relations musclées avec notre pays.</div>
+    </div>
+
+    <p>Ce sont là des faits qui devaient marquer douloureusement toute une frange de la jeunesse de l'époque.</p>
+
+    <p>Pendant que la bourgeoisie compradore (import-export) — celle qui ne produisait pas mais se limitait à son rôle de ramasseur avide — applaudissait l'occupant des deux mains, des patriotes haïtiens résistaient avec les armes et la plume.</p>
+
+    <p>Les leaders cacos Josaphat Jean-François dans le Nord et Misael Codio dans le Sud se sont battus courageusement contre l'occupant.</p>
+
+    <p>Charlemagne Péralte et Benoît Batraville, se mirent à la tête de milliers de paysans du Plateau Central. Le premier fut assassiné par les forces d'occupation suite à la trahison du renégat Conzé le 31 octobre 1919, et le second abattu par la soldatesque le 19 mai 1920.</p>
+
+    <p>Retenons que d'autres patriotes tels Joseph Jolibois et Georges Petit, avec leur plume, ont vigoureusement dénoncé l'occupation, dès 1915.</p>
+
+    <h2>2 — L'Université et la conjoncture de 1929</h2>
+
+    <p>L'année 1929 voit l'effondrement des bourses aux EEUU et des faillites en cascade. C'est l'une des pires crises du système capitaliste mondial.</p>
+
+    <p>En Haïti, les occupants ont dépossédé énormément de paysans, établi des taxes qui ruinaient les petits producteurs. Beaucoup de ports dont ceux du Môle St Nicolas, de Miragoâne, des Cayes, d'Aquin ont été fermés au commerce extérieur depuis 1923 causant la ruine des commerçants et des agriculteurs. La taxe sur l'alcool révolte les planteurs de canne des Cayes et de Léogâne. Les paysans haïtiens partent vers les bateys de Cuba et de la République Dominicaine par milliers.</p>
+
+    <p>Un événement mineur va mettre le feu aux poudres. Il s'agit de la décision de Georges Freeman, directeur du Service Technique d'Agriculture à Damien, de diminuer désormais le nombre de bourses allouées aux étudiants de l'École Centrale d'Agriculture.</p>
+
+    <p>Les étudiants rentrent en grève le 31 octobre 1929, et organisent leur première manifestation pacifique à 10 ans jour pour jour de la mort de Charlemagne Péralte, affichant leur totale désapprobation d'une mesure qualifiée d'injuste, compte tenu des salaires extravagants perçus à la même époque par une pléiade d'experts américains travaillant dans cette institution.</p>
+
+    <p>À noter que Jacques Roumain revenu deux ans auparavant au pays prend une part active dans ce mouvement dont il est en quelque sorte le promoteur.</p>
+
+    <p>Face au refus arrogant de Freeman <sup>[2]</sup> de revenir sur sa décision, les grévistes maintiennent leur mot d'ordre et trouvent en premier lieu l'appui des étudiants de l'École de Droit de Port-au-Prince. Et par la suite, les démonstrations de solidarité vont se multiplier. Tour à tour, la faculté de médecine de pharmacie et d'art dentaire, l'École des sciences appliquées, l'École Normale d'institutrices, l'École des Infirmières manifestent leur appui à la juste cause des étudiants de Damien. Puis, ce fut le tour des collégiens et lycéens de St Louis de Gonzague, du Collège St Martial, du Lycée Pétion et de bien d'autres centres d'enseignement.</p>
+
+    <p>Pratiquement toute la presse haïtienne se solidarisa avec les justes revendications des étudiants. Mais le mouvement avait depuis longtemps dépassé leur simple demande :</p>
+
+    <p>« Ce ne fut pas seulement une manifestation des Jeunes, ce fut la question haïtienne dans son ensemble posée très nettement par l'opinion haïtienne », écrit le journal <em>Le Temps</em> dans un article daté du 22 novembre 1929.</p>
+
+    <p>Le Haut Commissaire Russel crie au complot communiste !</p>
+
+    <p>Le Président Borno pour sortir de l'impasse fait des concessions qui ne satisfont pas les étudiants et le 25 novembre la grève redouble de plus belle.</p>
+
+    <p>Les actes de solidarité se multipliaient au fil du temps : les écoles professionnelles Élie Dubois et JB Damier expriment ouvertement leur appui. Et finalement, les écoles congréganistes des sœurs de Ste Rose de Lima (Lalue), du Sacré-Cœur et de St-Joseph de Cluny rejoignent le mouvement de grève. On est déjà au début du mois de décembre.</p>
+
+    <p>Une manifestation gigantesque se déroule à Port-au-Prince. La foule des étudiants et supporteurs est impressionnante. Les étudiants tentent de pénétrer chez Freeman et c'est la répression policière. Des jeunes arrêtés sont vite relâchés sous pression des manifestants.</p>
+
+    <p>Et puis la province s'enflamme, les élèves, les commerçants, les ouvriers de Jacmel, de St-Marc, du Cap-Haïtien, des Gonaïves manifestent et rentrent en grève. Les écoles rurales ne seront pas en reste. Finalement, la douane, le nerf même de l'occupation se déclare en grève. Alors le 5 décembre, l'occupant décrète la loi martiale. Le barreau irrité adhère au mouvement de contestation.</p>
+
+    <p>Le 16 décembre 1929, le président des EEUU décide l'envoi de nouvelles troupes et celui de la Commission Forbes.</p>
+
+    <p>Les principales retombées de la grève des étudiants de Damien seront : a) la revitalisation de la lutte contre l'occupation, b) le départ de Borno du pouvoir — celui-ci avec l'appui américain tentait « une manœuvre constitutionnelle » pour obtenir un troisième mandat — c) l'envoi de la Commission Forbes, d) le processus de désoccupation.</p>
+
+    <p>Cependant, l'absence d'une organisation politique d'avant-garde plus structurée et en liaison plus étroite avec les masses populaires (en dépit des efforts de Jacques Roumain et d'autres pionniers) n'a pas permis de recueillir tous les fruits de cette grande bataille nationale initiée par les courageux étudiants de Damien.</p>
+
+    <p>C'est ainsi qu'un opportuniste comme Sténio Vincent, arborant le drapeau du nationalisme a pu tromper de véritables patriotes et révolutionnaires. Une fois au pouvoir, il ne manquera pas de dévoiler son vrai visage. Il persécutera ceux qui l'avaient appuyé dans le contexte de la bataille patriotique contre l'occupation américaine, notamment Jacques Roumain qu'il fera emprisonner.</p>
+
+    <h2>3 — Deuxième moment : les jeunes et les étudiants dans la conjoncture de 1946</h2>
+
+    <h3>3.1 Contexte général</h3>
+
+    <p>Nous sommes au lendemain de la seconde guerre mondiale. Le commerce international est fortement perturbé. Les produits importés sont rares, les cours des denrées sont en baisse sur le marché international. La situation des masses urbaines se détériore davantage.</p>
+
+    <p>En Haïti, depuis 1941, les masses rurales sont à nouveau aux abois, pourchassées par les expulsions massives organisées sous le gouvernement d'Élie Lescot au profit de la SHADA, mal nommée Société Haïtiano-américaine de Développement Agricole. Il s'agit d'une société écran soit disant étatique mais véritablement américaine au profit de laquelle 104 000 ha de terre seront rendues disponibles pour la culture du caoutchouc, de la pite et la coupe des arbres forestiers au niveau de la Forêt des Pins mais aussi du morne Doco dans la Grand'Anse, Bois Laurence et La Miel dans le Plateau Central.</p>
+
+    <p>Dans le même temps, la campagne dite de rejetés ou campagne antisuperstitieuse, jetait le désarroi au sein des masses paysannes doublement persécutées. Cette chasse aux sorcières est menée tambour battant et avec violence par le clergé breton avec la bénédiction expresse du gouvernement de Lescot.</p>
+
+    <p>On peut même se demander dans quelle mesure cette campagne des rejetés ne préparait pas ces expulsions, à moins qu'elle n'ait servi à l'occultation de ce violent processus de dépossession des masses paysannes, au profit de la SHADA ?</p>
+
+    <p>La misère rurale devient plus profonde et des poches de disette s'installent.</p>
+
+    <p>Profitant de ce contexte particulier, une couche d'intellectuels se sentant exclus de la fonction publique réclame sa part du gâteau national. Issus de la petite bourgeoisie, ils sont pour la plupart liés au courant indigéniste qui glisse déjà vers le noirisme notamment avec Lorimer Denis, François Duvalier, René Piquion, Emmanuel C Paul etc.</p>
+
+    <p>Par ailleurs, un vent de liberté souffle sur le monde, à la faveur de la deuxième guerre mondiale, soutenu par les éclatantes victoires de l'armée russe sur les forces militaires de l'Allemagne nazie et de manière générale, l'implication des forces progressistes dans la victoire militaire sur le fascisme allemand.</p>
+
+    <p>À la faveur de cette conjoncture, les jeunes et surtout les étudiants font irruption sur la scène politique. Ils ont pour nom : Rodolphe Moïse, Jean-Jacques Dessalines Ambroise, René Dépestre, Jacques Stephen Alexis, Théodore Baker, Gérald Bloncourt, Anthony Phelps… Ils seront à la pointe de la contestation. À côté d'eux, on retrouvera des intellectuels de gauche comme Étienne Charlier, Christian Beaulieu, Joseph Jolibois, Max D. Sam, Édriss St-Amand, Rossini Pierre-Louis.</p>
+
+    <p>Les grands propriétaires fonciers souvent grands spéculateurs sont aussi mécontents. Surtout que Lescot avait, dans l'une des premières mesures de son gouvernement, fixé un prix au producteur de café, supérieur à celui que pratiquaient ces spéculateurs. Par la suite, il devait aussi fixer des marges de bénéfices aux commerçants importateurs pour contrecarrer le marché noir, ce qui portera aussi ces derniers à se liguer contre son pouvoir.</p>
+
+    <p>Le mécontentement se généralisa au point que le mouvement amorcé par les étudiants et les écoliers se généralisa au niveau des zones urbaines et provoqua la chute du régime de Lescot.</p>
+
+    <p>Les politiciens noiristes jouissaient donc d'une marge de manœuvre intéressante, compte tenu du poids renouvelé de la question raciale depuis l'occupation américaine.</p>
+
+    <p>Ce sont donc eux qui vont être les principaux bénéficiaires de ladite « Révolution de 1946 » qui favorisera l'arrivée au pouvoir de Dumarsais Estimé, issu du secteur des grands propriétaires fonciers de l'Artibonite.</p>
+
+    <p>Certaines revendications des couches moyennes seront prises en considération au niveau du système éducatif. Mais on verra surtout l'introduction sur plus grande échelle d'intellectuels et de cadres noirs dans l'administration publique. Ainsi que plus d'opportunités pour certains partisans du pouvoir en place de s'enrichir vite.</p>
+
+    <p>Les masses populaires rurales et urbaines ne verront quant à elles aucun changement significatif en ce qui a trait à l'amélioration de leur sort.</p>
+
+    <p>Le gouvernement d'Estimé sera renversé par l'armée, quand ce dernier voulut réaménager la constitution pour renouveler son mandat. Le général Paul Eugène Magloire le remplacera et vers la fin du mandat du général, il y eut un retour fugace des jeunes sur la scène politique. De façon coïncidente, lui aussi manœuvrait pour prolonger son mandat.</p>
+
+    <p>Ainsi, le 17 mai 1957, des lycéens, d'abord ceux du lycée Pétion, sous orientation de certains meneurs proches d'opposants du régime en place, abandonnèrent leurs salles de classes et se dirigèrent vers le lycée Toussaint Louverture en manifestant dans les rues aux cris de : « Abas Magloire ! » Ils furent proprement bastonnés par des troupes de l'armée sous la conduite entre autres de l'officier Sonny Borges, un criminel qui mettra plus tard ses capacités répressives au service de François Duvalier.</p>
+
+    <p>Beaucoup de jeunes manifestants, vont intégrer plus tard, les associations lycéennes et l'Union Nationale des Étudiants Haïtiens (UNEH).</p>
+
+    <h2>4 — Troisième moment : le mouvement estudiantin et la dictature fasciste de Papa Doc</h2>
+
+    <h3>4.1 Contexte général</h3>
+
+    <p>L'avènement au pouvoir de François Duvalier le 22 septembre 1957, coïncide avec les débuts de la guérilla cubaine conduite par Fidel Castro, Che Guevara, Camilo Cienfuegos entre autres dirigeants. Et c'est toute l'Amérique Latine et l'Europe qui se réveillent admiratives face aux prouesses des jeunes « barbudos ».</p>
+
+    <p>Mais au plan interne, la dégradation de la situation socio-économique est sérieuse. Les difficultés confrontées par l'économie américaine dans les années 50, ont des retombées négatives sur la nôtre, de même que les gaspillages du gouvernement de Paul Magloire.</p>
+
+    <p>Daniel Fignolé, candidat à la présidence lors des joutes électorales de 1957, ayant accepté de présider un gouvernement provisoire en mai 1956, sera renversé après seulement 19 jours de gouvernement provisoire. Dès lors, ce sont les partisans de François Duvalier qui maîtriseront l'institution militaire.</p>
+
+    <p>Un Conseil Militaire de Gouvernement, chargé des joutes électorales est installé au pouvoir en mai 1957 avec à sa tête Antonio TH Kébreau, chef de la répression sanglante des fignolistes au Bel-Air.</p>
+
+    <p>Les élections truquées organisées par l'armée le 22 septembre 1957, placeront ainsi François Duvalier au pouvoir. Et la répression commence immédiatement à Port-au-Prince et en province, surtout contre les déjoistes, dès la première quinzaine d'installation du gouvernement.</p>
+
+    <p>Le journal <em>Le Matin</em> rapporte de nombreuses arrestations effectuées à Port-au-Prince et à St-Marc. Un mandat d'arrêt est décerné contre l'ex candidat Clément Jumelle qui sera forcé de se mettre à couvert. Peu de temps après, ce dernier meurt et deux de ses frères sont abattus dans des circonstances peu claires.</p>
+
+    <p>Sur le plan international, le triomphe de la Révolution cubaine fournira au régime une intéressante marge de manœuvre et l'appui de l'establishment américain contre ses opposants qualifiés qui de terroristes, qui de communistes, qui d'apatrides.</p>
+
+    <p>Très tôt, les affrontements du monde universitaire avec le régime des Duvalier commencent. En 1960, sous prétexte d'activités communistes, dix-huit jeunes sont arrêtés, parmi eux, des écoliers et des étudiants. L'UNEH (l'Union Nationale des Étudiants Haïtiens) exige la libération de tous les jeunes et dans cette démarche, rencontre les ministres de l'Intérieur et de l'Éducation Nationale de l'époque. Rien n'y fait. Alors, les étudiants décident de rentrer en grève. Toutes les facultés appuient le mot d'ordre ainsi que les lycées.</p>
+
+    <p>« La loi martiale fut décrétée, mais face à l'ampleur du mouvement, Duvalier sera forcé de remettre les étudiants et les écoliers incarcérés en liberté au début du mois de décembre 1960 ». <sup>[3]</sup></p>
+
+    <p>L'apprenti dictateur bien décidé à mater ce mouvement de jeunes reprend d'une main ce qu'il a dû céder de l'autre. Il prononce la dissolution de l'organisation estudiantine puis exige que tous les étudiants se réinscrivent dans leurs propres facultés et qu'ils produisent un certificat de police attestant qu'ils n'appartenaient à aucune organisation communiste. En plus de signer un document d'allégeance au pouvoir.</p>
+
+    <p>L'UNEH pour protester contre cette grossière manœuvre anti-démocratique lança un nouveau mot d'ordre de grève. Cette grève est effective à la rentrée de janvier 1961 et largement suivie par les étudiants et les lycéens.</p>
+
+    <p>Mais un coup dur fut porté à cette protestation par quelques traîtres dont Roger Lafontant, étudiant en médecine lors et Secrétaire Général adjoint de l'UNEH, Rony Gilot, Serge Conille et Robert Germain admis à la faculté de Médecine de manière irrégulière. Il faut également mentionner le nom de l'étudiant en médecine Didier Cédras, l'un des principaux espions de Papa Doc au niveau de cette Faculté et frère aîné de Raoul Cédras qui allait 30 ans plus tard se couvrir les mains du sang du peuple haïtien, lors du coup d'état sanglant de septembre 1991.</p>
+
+    <p>« La grève de l'UNEH dura près de quatre mois ». Faute d'appui des autres secteurs sociaux du pays, la direction de l'association estudiantine décidera plus tard d'y mettre fin.</p>
+
+    <p>Les étudiants en majorité ne se plièrent pas toutefois aux diktats de Papa Doc. Cependant le processus de macoutisation de l'Université était bel et bien ouvert. La faculté de médecine, la plus cotée et la plus combative à l'époque, devint la cible privilégiée du tyran. Désormais, seuls ceux qui étaient bien souchés, pourvus donc d'un parrain macoute allaient pouvoir y accéder.</p>
+
+    <p>François Duvalier jouant au populiste, permettait l'admission d'un nombre d'étudiants bien plus élevé que celle autorisée par la capacité réelle de la faculté. Toute cette démagogie se faisait au nom des intérêts du peuple et à coup de propos faisant référence à la question de couleur. De là, une dégradation accélérée des conditions de travail et d'études pour les nouvelles promotions. Une préparation approximative qui a fait reculer la faculté de Médecine d'Haïti à un très bas niveau dans le classement mondial.</p>
+
+    <p>Depuis 1929, ce fut le premier échec du mouvement estudiantin face au pouvoir politique.</p>
+
+    <p>L'UNEH allait gagner la clandestinité où elle poursuivra son combat au milieu d'énormes difficultés. Beaucoup de ses membres deviendront plus tard des militants des partis révolutionnaires fondés aussi dans la clandestinité sous le régime des Duvalier ou peu avant. Notamment le PPLN (Parti populaire de libération nationale) et le PEP (Parti d'Entente Populaire).</p>
+
+    <h2>5 — Quatrième moment : 1986–1994</h2>
+
+    <p>Très tôt, à la chute de Jean-Claude Duvalier, les associations de tout type foisonnent et c'est ainsi qu'au niveau de l'Université d'Etat verra le jour une organisation estudiantine : la FENEH, la Fédération Nationale des Étudiants Haïtiens.</p>
+
+    <p>La FENEH participe aux grandes manifestations démocratiques et populaires de la période 1986-1990. Mais elle se donne la tâche de « nettoyer » la direction des diverses facultés et le rectorat de l'Université des partisans de l'ancien régime. Ainsi furent remplacées au fur et à mesure les directions des facultés.</p>
+
+    <p>En même temps, les diverses facultés s'étaient converties en lieu de débats privilégiés, relatifs aux grands dossiers nationaux. Aux côtés des jeunes universitaires, participèrent également des organisations ouvrières, paysannes, des associations de quartiers, surtout entre 1987 et 1991.</p>
+
+    <p>Grâce à la lutte de l'Université, les doyens des facultés et le Comité exécutif de l'UEH seront désormais élus par la communauté universitaire et non par le président de la République comme auparavant.</p>
+
+    <p>De manière enthousiaste, les universitaires ont été très présents dans les grandes manifestations patriotiques contre le Conseil National de Gouvernement (CNG), notamment contre l'embauchage des braceros tels que pratiqués sous les régimes passés, contre l'exploitation sans miséricorde des masses travailleuses et la vente aux enchères du pays.</p>
+
+    <p>Le premier congrès de la FENEH pour le vote des statuts et l'élection de leur Direction Nationale, parvint à réunir près de 5 000 étudiants. L'un des thèmes du combat de cette organisation tournait autour de l'autonomie de l'Université.</p>
+
+    <p>Cependant, le coup d'État de 1991 devait donner un coup fatal à ce mouvement social. Les putschistes de Raoul Cédras et de Michel François persécutèrent et emprisonnèrent des étudiants durant toute la période du coup d'État.</p>
+
+    <p>L'on sait que environ 10 000 jeunes cadres d'organisations populaires quittèrent le pays sous la pression des circonstances ou encouragés par certaines ambassades. Nous ne savons pas combien d'étudiants et d'enseignants furent contraints de partir ; mais ils durent être nombreux. Parmi les professeurs d'université, certains étaient revenus au pays à la faveur de la chute de Jean-Claude Duvalier.</p>
+
+    <p>Ce fut en tout cas une monstrueuse saignée, si l'on tient compte que Haïti avait déjà pâti de près de 30 ans de dictature qui avait forcé beaucoup d'enseignants, d'intellectuels et de cadres jeunes et moins jeunes à fuir le pays.</p>
+
+    <h2>6 — Cinquième moment : 2002–2004</h2>
+
+    <h3>6.1 Contexte général</h3>
+
+    <p>L'année 2001, février pour être plus précis, marque la passation de pouvoir de Préval à Aristide dans une situation de forte contestation de l'opposition politique. Les fraudes électorales sont plus qu'évidentes. En plus, les politiques économiques dictées par le FMI, la Banque Mondiale et de puissantes ambassades ont mis l'économie du pays à genou.</p>
+
+    <p>Même si Aristide peut encore compter sur une frange de la population pauvre, il a évidemment perdu une part appréciable de popularité. La délinquance augmente dangereusement dans la capitale et certaines grandes villes avec la misère ambiante.</p>
+
+    <p>Dès 1999, un groupe d'étudiants met sur pied une nouvelle organisation estudiantine la FEUH (Fédération des Étudiants Universitaires Haïtiens). Cette dernière sera critiquée dans certains milieux universitaires pour des pratiques qualifiées de non transparentes et opportunistes. Au niveau de l'Université en général, les étudiants peinent à s'organiser.</p>
+
+    <p>Les premières manifestations estudiantines partent de l'École Normale Supérieure où des conférences débats se tiennent régulièrement.</p>
+
+    <p>Le centre de contestation anti-gouvernementale se déplacera plus tard vers la Faculté des Sciences Humaines. Mais ce qui mettra le feu aux poudres et mobilisera le monde universitaire, en particulier les jeunes, adhérents ou non de la FEUH, ce sera la fameuse grève de quelques cinq individus (qui se disent étudiants), dans les locaux du rectorat, dont le jeune frère d'un sénateur contesté de l'époque, pour empêcher les élections au niveau du Conseil Exécutif de l'Université en juillet 2002.</p>
+
+    <p>Cette manœuvre aboutira au remplacement par arrêté ministériel, des membres élus du rectorat, par une commission provisoire de trois membres présidée par Charles Tardieu, le 30 juillet 2002.</p>
+
+    <p>À la rentrée d'octobre, des étudiants et nombre de professeurs vont se mobiliser contre cette forfaiture, jusqu'au retrait de cette décision et le retour des recteurs élus, suite à la colossale manifestation du 15 novembre 2002.</p>
+
+    <p>Les escarmouches avec les étudiants et le monde universitaire allaient se poursuivre et l'année 2003 verra un élargissement des foyers de contestation à Port-au-Prince et dans les provinces et une multiplication des manifestations de rue les unes plus violentes que les autres, opposant partisans et adversaires de Jean-Bertrand Aristide. La journée du 5 décembre 2003 constitue une journée noire pour le monde universitaire. Nombre d'étudiants sont blessés par des groupes à la solde d'Aristide qui ont pu pénétrer de force dans la FASCH et les deux jambes du recteur Paquiot seront brisées.</p>
+
+    <p>La lutte estudiantine a servi de levain et de plus en plus de secteurs contestent le pouvoir et ses dérives : médecins, avocats, artistes, écrivains, organisations de femmes, des franges du secteur populaire, des partis politiques traditionnels etc.</p>
+
+    <p>Plus tard, une frange de l'oligarchie contestera de plus en plus fort le régime, puis prendra la tête du mouvement social en créant le groupe des 184 avec la promesse d'un nouveau contrat social pour Haïti.</p>
+
+    <p>Finalement, Jean-Bertrand Aristide en butte à des foyers de contestation les uns pacifiques les autres armés, lâché par les américains, quitte le pouvoir le 29 février 2004.</p>
+
+    <p>Malgré la présence des secteurs progressistes dans la lutte contre les dérives du pouvoir Lavalas — sans doute à cause de leurs faiblesses — aucune remise en question du système social obsolète n'a été amorcée.</p>
+
+    <p>Bien au contraire, les secteurs revendicatifs n'ont pu qu'assister impuissants, à une prise en charge encore plus drastique des destinées du pays par les forces étrangères dans une atmosphère de partage de butin entre copains-coquins.</p>
+
+    <p>Il est à remarquer plus qu'en 1929 et 1946, la lutte des secteurs les plus progressistes dont les étudiants, a été rapidement récupérée par une fraction de l'oligarchie soutenue par une couche de classes moyennes, en collusion avec les grandes puissances, empêchant une véritable avancée de la bataille du peuple haïtien, vers de véritables conquêtes sociales.</p>
+
+    <p>Aujourd'hui encore, des nuages noirs s'amoncellent sur le monde universitaire. Des caricatures de mouvements revendicatifs tentent de semer la confusion. À quelle fin ?</p>
+
+    <p>Nous entendons déjà les cris sourds des corbeaux sur la plaine.</p>
+
+    <p>Le monde universitaire doit savoir désormais qu'il faut lier constamment réflexions et action et qu'il faut savoir tirer profit des grandes leçons de l'histoire.</p>
+
+    <div class="source-note">Soumis à AlterPresse le 29 juillet 2009</div>
+
+    <div class="notes-section">
+      <h3>Notes</h3>
+      <ol>
+        <li>Article daté de novembre 2007.</li>
+        <li>Réponse de l'américain Georges Freeman aux délégués étudiants exposant leurs revendications : « Rien à faire ! Si les élèves ne sont pas contents, ils n'ont qu'à s'en aller. Je serai même plus content s'ils s'en vont ».</li>
+        <li>Henri Malfan, <em>Cinq décennies d'histoire du mouvement étudiant haïtien</em>. Édition Jeune Clarté, Montréal–New York, 1981.</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2rem">
+    <a class="back-link" href="publications.html">← Retour aux publications</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Myrtha Gilbert</h4>
+      <p>Historienne · Professeure · Auteure</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#livres">Livres</a>
+      <a href="index.html#biographie">Biographie</a>
+      <a href="publications.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Commandes</h4>
+      <p>Librairie La Pléiade PV</p>
+      <a href="tel:+15094404957">+1 (509) 44 04 1957</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Myrtha Gilbert · Tous droits réservés</span>
+  </div>
+</footer>
+
+</body>
+</html>

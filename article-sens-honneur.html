@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le sens de l'honneur — Myrtha Gilbert</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#3A6B9A;--blue2:#4A80B5;
+  --blue-light:#EAF4FB;--blue-mid:#7AAEC8;
+  --nav-bg:#2A4A60;--footer-bg:#152A3A;
+  --text:#1A2A35;--text2:#3A5060;--text3:#7A9BAA;
+  --bg:#F4F9FC;--white:#FFF;--border:#C8DFE8;
+}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.8}
+.topbar{background:var(--blue);color:#fff;text-align:center;padding:0.4rem 1rem;font-size:0.78rem;letter-spacing:0.06em}
+.topbar a{color:#B8DDEF;text-decoration:none}
+nav{background:var(--nav-bg);position:sticky;top:0;z-index:200}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+.nav-logo{display:flex;flex-direction:column;line-height:1.1;text-decoration:none}
+.nav-logo span:first-child{font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:0.03em;font-family:Georgia,serif}
+.nav-logo span:last-child{font-size:0.65rem;color:#aaa;letter-spacing:0.15em;text-transform:uppercase}
+.nav-menu{display:flex;list-style:none;height:64px}
+.nav-menu>li>a{color:#ddd;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;padding:0 1rem;height:64px;display:flex;align-items:center;transition:background .2s,color .2s;white-space:nowrap;font-family:Arial,sans-serif}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--blue);color:#fff}
+.page-header{background:linear-gradient(120deg,#1A3A55 0%,#2A5A7A 40%,#3A7A9A 70%,#4A90B0 100%);padding:3rem 1.5rem}
+.page-header-inner{max-width:800px;margin:0 auto}
+.breadcrumb{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-bottom:1rem;font-family:Arial,sans-serif}
+.breadcrumb a{color:#B8DDEF;text-decoration:none}
+.breadcrumb a:hover{color:#fff}
+.article-meta{font-family:Arial,sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.6);margin-bottom:0.8rem;letter-spacing:0.05em}
+.page-header h1{font-size:2rem;font-weight:normal;color:#fff;line-height:1.3;margin-bottom:0.5rem}
+.article-wrap{max-width:800px;margin:3rem auto;padding:0 1.5rem}
+.article-body{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:3rem;box-shadow:0 2px 12px rgba(58,107,154,0.07)}
+.dedication{font-family:Arial,sans-serif;font-size:0.82rem;color:var(--text3);font-style:italic;margin-bottom:1.5rem;padding:0.8rem 1.2rem;border-left:3px solid var(--blue-mid);background:var(--blue-light);border-radius:2px;line-height:1.65}
+.epigraph{margin-bottom:2.5rem;padding:1.2rem 2rem;border-left:3px solid var(--blue-mid);background:var(--blue-light);border-radius:2px}
+.epigraph p{font-style:italic;color:var(--text2);margin-bottom:0.3rem}
+.epigraph .attribution{font-family:Arial,sans-serif;font-size:0.8rem;color:var(--text3);font-style:normal;margin-top:0.5rem}
+.article-body h2{font-size:0.9rem;color:var(--blue);margin:2rem 0 0.8rem;font-weight:700;font-family:Arial,sans-serif;letter-spacing:0.06em;text-transform:uppercase}
+.article-body p{color:var(--text2);margin-bottom:1.1rem;text-align:justify}
+.article-signature{margin-top:2rem;font-style:italic;color:var(--text3);font-size:0.9rem}
+.source-note{margin-top:1.5rem;padding:1rem 1.5rem;background:var(--blue-light);border-radius:2px;font-family:Arial,sans-serif;font-size:0.82rem;color:var(--text3);font-style:italic}
+.notes-section{margin-top:2rem;padding-top:1.5rem;border-top:2px solid var(--border)}
+.notes-section h3{font-family:Arial,sans-serif;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue-mid);margin-bottom:1rem}
+.notes-section ol{padding-left:1.5rem;color:var(--text3);font-size:0.82rem;line-height:1.7}
+.notes-section ol li{margin-bottom:0.6rem}
+.back-link{display:inline-block;margin-bottom:2rem;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--blue);text-decoration:none;letter-spacing:0.05em}
+.back-link:hover{color:var(--blue2)}
+footer{background:var(--footer-bg);color:#666;padding:2rem 1.5rem;text-align:center;font-size:0.78rem;font-family:Arial,sans-serif;margin-top:3rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:2rem}
+.footer-col h4{color:#aaa;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.8rem}
+.footer-col a,.footer-col p{display:block;color:#666;font-size:0.78rem;margin-bottom:0.4rem;text-decoration:none}
+.footer-col a:hover{color:var(--blue-mid)}
+.footer-bottom{border-top:1px solid #223344;padding-top:1.2rem;color:#444}
+@media(max-width:768px){
+  .nav-menu{display:none}
+  .article-body{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">📦 Livraison disponible &nbsp;·&nbsp; <a href="index.html#contact">Commander un livre →</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span>Myrtha Gilbert</span>
+      <span>Historienne · Auteure</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#livres">Livres</a></li>
+      <li><a href="index.html#biographie">Biographie</a></li>
+      <li><a href="publications.html" class="active">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; <a href="publications.html">Articles</a> &nbsp;/&nbsp; Le sens de l'honneur</p>
+    <p class="article-meta">19 mars 2021</p>
+    <h1>Le sens de l'honneur</h1>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <a class="back-link" href="publications.html">← Retour aux publications</a>
+
+  <div class="article-body">
+
+    <figure style="text-align:center;margin-bottom:1.8rem">
+      <img src="articleSensHonneur.jpeg" alt="Hector Riobé" onerror="this.src='articleSensHonneur.jpg'" style="max-width:220px;border-radius:50%;box-shadow:0 4px 16px rgba(0,0,0,0.18);display:inline-block">
+      <figcaption style="margin-top:0.8rem;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--text3);font-style:italic">Hector Riobé</figcaption>
+    </figure>
+
+    <div class="dedication">
+      Hector Riobé — 19 juillet 1963, un jeune qui organisa une attaque armée sur la caserne de Pétion-Ville et résista les bourreaux pendant une semaine sous la couverture d'une grotte à Furcy où il se tua plus tôt que de se rendre.
+    </div>
+
+    <div class="epigraph">
+      <p>« N'entre pas lui dit-elle ; il n'y a pas de place ici pour un homme déshonoré. »</p>
+      <p>« Oh ! Non mère, rétorqua-t-il, je ne suis point venu chercher refuge chez vous. Je viens prendre mon arme et vous dire adieu. »</p>
+      <p class="attribution">C. Duvingston III, <em>Souvenirs de Jérémie</em></p>
+    </div>
+
+    <p>Une valeur traditionnelle de l'Haïtien, c'est le sens de l'honneur. L'honneur pour l'Haïtien, c'est la fierté, la dignité, l'orgueil d'être des descendants de héros de la taille de Dessalines, de Toussaint, de Pétion, de Christophe, de Capois, de Sanite Belair, de Marie-Jeanne. N'a-t-on pas reproché aux Haïtiens leur conception monumentale de l'histoire <sup>[1]</sup> ?</p>
+
+    <p>Qui dit honneur en Haïti dit respect. C'était d'ailleurs l'expression couramment utilisée dans les campagnes et les provinces par les visiteurs : <em>Onè-Respè</em>. Signifiant que celui qui frappe à la porte le fait avec respect ; respect de l'autre. Un homme d'honneur est accueilli par son hôte avec respect. Ce sens de l'honneur, nous l'avons appris depuis La Crête à Pierrot avec le père de la Patrie Jean-Jacques Dessalines, avec Christophe qui a préféré incendier le Cap en commençant par sa propre maison en réponse à l'attaque de l'armée de Leclerc, avec Sanite Belair qui ne se laissa pas bander les yeux au moment d'être fusillée ; avec Capois, l'Amiral Killik. Plus tard avec les frères Mauclair de Jérémie, en réplique à l'insulte des Américains <sup>[2]</sup>.</p>
+
+    <p>C'est aussi dans nos traditions, le refus d'agir à l'encontre de la bienséance. Le refus de commettre des actes indignes d'une personne de bien. Il ne s'agit pas ici de celui ou de celle qui possède beaucoup de biens matériels, mais de celui ou de celle qui ne s'abaisse pas à perpétrer une action que la morale communautaire réprouverait. Et Justin Lhérisson raconte sous forme d'audience, comment des paysans, le père et la mère, avaient préféré la mort à l'éventualité de livrer leur fille toute jeune à ce colonel qui voulait obtenir les faveurs de la belle, au prix de l'intimidation des parents. Quelle leçon de dignité !</p>
+
+    <h2>Qui se respecte, honore sa parole</h2>
+
+    <p>Le sens de l'honneur, c'est aussi celui de la parole donnée. Pour l'homme du peuple : <em>Pwomès se dèt</em>. On assistait couramment autrefois à la vente sans papier de biens divers même immobiliers. Partant, celui qui se respecte, honore sa parole. Car, il fallait conserver la considération de la communauté. Le pire pour un habitant d'un bourg, d'une section, c'était d'être mal vu, de perdre le prestige, l'appréciation des voisins. Ce qui revient à une espèce de mort civile.</p>
+
+    <p>Ainsi, le sens de l'honneur commande-t-il à tout un chacun de ne pas abuser de la confiance de l'autre. On l'a souvent vu et entendu, au moment de l'établissement d'une relation conjugale. Et les parents ne pardonnaient pas autrefois à leur fille la honte d'avoir caché au futur conjoint une relation amoureuse antérieure, découverte après consécration de l'union.</p>
+
+    <p>Dans la plupart des familles, le sens de l'honneur consistait à vivre simplement, à se suffire à soi-même. À souffrir souvent des pénuries, sans jamais s'adresser à un étranger. D'où les proverbes : <em>Kay piti, nat anba bra</em> ou encore, <em>malere pa defo</em>.</p>
+
+    <p>On ne souhaite pas déranger. On n'aime pas se plaindre. Cette attitude ressemble parfois à de l'orgueil. C'est plutôt, de la fierté, de la dignité teintée de pudeur. C'est une haute conception de soi-même, comme être digne, qui ne mendie pas son pain, ni n'étale sa détresse à tout venant. Tout un art de vivre.</p>
+
+    <h2>Même les parents évitaient souvent de dévoiler les difficultés économiques aux enfants</h2>
+
+    <p>Souvent, les mères s'échinaient à laver tous les jours l'unique uniforme de leurs enfants pour que leurs rejetons n'aient pas à rougir face aux autres. Les enfants parcouraient de longues distances à pied, sans qu'il soit venu à l'idée de demander à quiconque la monnaie d'une camionnette ou d'un taxi. On blaguait sous un soleil de plomb ; on copiait souvent les leçons faute de livres. Mais on n'étalait pas ses problèmes au premier venu. Même les parents évitaient souvent de dévoiler les difficultés économiques aux enfants.</p>
+
+    <p>C'est aussi le sens de l'honneur qui a poussé le jeune Riobé d'à peine vingt ans à affronter seul les hordes duvaliéristes pour venger son père lâchement assassiné par un sbire de François Duvalier qui en voulait à ses biens. La mort héroïque de Riobé, et plus tard celui de Forbin, du jeune Turnier, des frères Adrien et Daniel Sansaricq et de beaucoup d'autres jeunes de l'époque, constituent les preuves lumineuses de ce sens de l'honneur, de la justice, de la dignité, qui ennoblit et impose le respect de tous.</p>
+
+    <p class="article-signature">Myrtha Gilbert<br>19 mars 2021</p>
+
+    <div class="source-note">Ce texte est largement inspiré de <em>La Crise des valeurs dans la société haïtienne</em> (tome I), 2007, Myrtha Gilbert.</div>
+
+    <div class="notes-section">
+      <h3>Notes</h3>
+      <ol>
+        <li>Un écrivain arabe du siècle dernier expliquait ce réflexe refuge chez certains peuples, parce que, disait-il, le passé est leur patrie, car des étrangers leur volent le présent.</li>
+        <li>C. Duvingston III, <em>Souvenirs de Jérémie</em>, 1998.</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2rem">
+    <a class="back-link" href="publications.html">← Retour aux publications</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Myrtha Gilbert</h4>
+      <p>Historienne · Professeure · Auteure</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#livres">Livres</a>
+      <a href="index.html#biographie">Biographie</a>
+      <a href="publications.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Commandes</h4>
+      <p>Librairie La Pléiade PV</p>
+      <a href="tel:+15094404957">+1 (509) 44 04 1957</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Myrtha Gilbert · Tous droits réservés</span>
+  </div>
+</footer>
+
+</body>
+</html>

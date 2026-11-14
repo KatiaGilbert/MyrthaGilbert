@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>État, institutions et société — Myrtha Gilbert</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#3A6B9A;--blue2:#4A80B5;
+  --blue-light:#EAF4FB;--blue-mid:#7AAEC8;
+  --nav-bg:#2A4A60;--footer-bg:#152A3A;
+  --text:#1A2A35;--text2:#3A5060;--text3:#7A9BAA;
+  --bg:#F4F9FC;--white:#FFF;--border:#C8DFE8;
+}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.8}
+.topbar{background:var(--blue);color:#fff;text-align:center;padding:0.4rem 1rem;font-size:0.78rem;letter-spacing:0.06em}
+.topbar a{color:#B8DDEF;text-decoration:none}
+nav{background:var(--nav-bg);position:sticky;top:0;z-index:200}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:64px}
+.nav-logo{display:flex;flex-direction:column;line-height:1.1;text-decoration:none}
+.nav-logo span:first-child{font-size:1.15rem;font-weight:700;color:#fff;letter-spacing:0.03em;font-family:Georgia,serif}
+.nav-logo span:last-child{font-size:0.65rem;color:#aaa;letter-spacing:0.15em;text-transform:uppercase}
+.nav-menu{display:flex;list-style:none;height:64px}
+.nav-menu>li>a{color:#ddd;text-decoration:none;font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;padding:0 1rem;height:64px;display:flex;align-items:center;transition:background .2s,color .2s;white-space:nowrap;font-family:Arial,sans-serif}
+.nav-menu>li>a:hover,.nav-menu>li>a.active{background:var(--blue);color:#fff}
+.page-header{background:linear-gradient(120deg,#1A3A55 0%,#2A5A7A 40%,#3A7A9A 70%,#4A90B0 100%);padding:3rem 1.5rem}
+.page-header-inner{max-width:800px;margin:0 auto}
+.breadcrumb{font-size:0.75rem;color:rgba(255,255,255,0.5);margin-bottom:1rem;font-family:Arial,sans-serif}
+.breadcrumb a{color:#B8DDEF;text-decoration:none}
+.breadcrumb a:hover{color:#fff}
+.article-meta{font-family:Arial,sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.6);margin-bottom:0.8rem;letter-spacing:0.05em}
+.page-header h1{font-size:1.9rem;font-weight:normal;color:#fff;line-height:1.3;margin-bottom:0.5rem}
+.article-wrap{max-width:800px;margin:3rem auto;padding:0 1.5rem}
+.article-body{background:var(--white);border:1px solid var(--border);border-radius:2px;padding:3rem;box-shadow:0 2px 12px rgba(58,107,154,0.07)}
+.article-body p{color:var(--text2);margin-bottom:1.1rem;text-align:justify}
+.article-body h2{font-size:1.05rem;color:var(--blue);margin:2.2rem 0 0.8rem;font-weight:bold;font-family:Georgia,serif;border-bottom:1px solid var(--border);padding-bottom:0.4rem}
+.num-para{display:flex;gap:0.8rem;margin-bottom:1.1rem}
+.num-para .label{flex-shrink:0;font-family:Arial,sans-serif;font-size:0.9rem;font-weight:700;color:var(--blue);min-width:1.6rem;padding-top:0.1rem}
+.num-para .content{color:var(--text2);text-align:justify;line-height:1.8;flex:1}
+.back-link{display:inline-block;margin-bottom:2rem;font-family:Arial,sans-serif;font-size:0.8rem;color:var(--blue);text-decoration:none;letter-spacing:0.05em}
+.back-link:hover{color:var(--blue2)}
+footer{background:var(--footer-bg);color:#666;padding:2rem 1.5rem;text-align:center;font-size:0.78rem;font-family:Arial,sans-serif;margin-top:3rem}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start;text-align:left;margin-bottom:2rem}
+.footer-col h4{color:#aaa;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.8rem}
+.footer-col a,.footer-col p{display:block;color:#666;font-size:0.78rem;margin-bottom:0.4rem;text-decoration:none}
+.footer-col a:hover{color:var(--blue-mid)}
+.footer-bottom{border-top:1px solid #223344;padding-top:1.2rem;color:#444}
+@media(max-width:768px){
+  .nav-menu{display:none}
+  .article-body{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">📦 Livraison disponible &nbsp;·&nbsp; <a href="index.html#contact">Commander un livre →</a></div>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <span>Myrtha Gilbert</span>
+      <span>Historienne · Auteure</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#livres">Livres</a></li>
+      <li><a href="index.html#biographie">Biographie</a></li>
+      <li><a href="publications.html" class="active">Articles</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; <a href="publications.html">Articles</a> &nbsp;/&nbsp; État, institutions et société</p>
+    <p class="article-meta">Première version : septembre 2015 &nbsp;·&nbsp; Actualisé : 1<sup>er</sup> septembre 2016</p>
+    <h1>État, institutions et société</h1>
+  </div>
+</div>
+
+<div class="article-wrap">
+  <a class="back-link" href="publications.html">← Retour aux publications</a>
+
+  <div class="article-body">
+
+    <h2>I — D'où vient l'État ? D'où viennent les institutions ? En tout cas, ils ne tombent pas du ciel.</h2>
+
+    <p>L'État est un produit de l'histoire, une expression organisée de la société à un stade avancé de maturation des relations sociales antagoniques, à un moment où les richesses créées sont inégalement partagées. Les institutions qui forment l'État sont donc le produit des structures économiques complexes et celui de l'évolution et de la dynamique des rapports sociaux qui y sont liés, dans une société donnée. Elles ont donc émergé, là où elles sont devenues indispensables au fonctionnement « normal » des groupes sociaux aux intérêts antagoniques. Les classes sociales à intérêts divergents ne peuvent survivre sans institutions d'État sous peine de s'autodétruire.</p>
+
+    <p>Le rôle de l'État à travers ses institutions, c'est précisément celui de maintenir « l'ordre », de limiter les conflits dans les limites de l'acceptable. Dans ce sens, les graves problèmes observés en Somalie et en Libye par exemple ne sont autre chose que l'expression du délitement des institutions dans un processus d'effondrement de l'État. La société haïtienne subit également aujourd'hui les contrecoups de l'extrême faiblesse de l'État.</p>
+
+    <p>Rappelons en passant qu'en Haïti nous confondons souvent l'État fort et l'État répressif. L'État fort est celui qui a abouti, au fil d'un long processus, au meilleur fonctionnement possible de toutes les institutions qui le composent, d'où une grande stabilité sociale. L'État répressif, c'est celui qui utilise la répression à outrance à l'encontre des grandes majorités, comme instrument par excellence d'une stabilité sociale factice.</p>
+
+    <h2>II — Jetons maintenant un regard rétrospectif sur notre histoire.</h2>
+
+    <p>Par exemple, si on examine la construction des institutions coloniales dominguoises — dont l'histoire nous est relativement familière — nous pouvons observer très clairement le lent processus d'organisation de l'État colonial, prenant forme au fil du temps et créant selon ses besoins une série d'institutions de type administratif, économique et financier, militaire, etc., accompagnant les lois et les structures judiciaires qui au fur et à mesure lui seront nécessaires.</p>
+
+    <p>Les flibustiers, les boucaniers et les habitants ne vivaient pas dans un État ; et aussi longtemps qu'ils étaient simplement frères de la côte, ils n'avaient aucun besoin d'institutions. Ils vivaient en société et se donnaient des règles générales simples de leur vivre ensemble. L'administration coloniale n'est pas née d'une vue de l'esprit, mais d'un processus de sédentarisation des anciens flibustiers et boucaniers, stimulé par les besoins de la bourgeoisie montante. La bourgeoisie française assoira à St-Domingue les bases de son expansion économique, participant au fur et à mesure à la création de toutes les institutions de l'État colonial, indispensables à son enrichissement :</p>
+
+    <div class="num-para">
+      <span class="label">1.</span>
+      <div class="content"><strong>Les sociétés commerciales :</strong> la première fut la Compagnie des Indes occidentales créée en 1664 pour faire le commerce en divers points de l'Amérique. Ce n'est pas par hasard que ce sont les directeurs généraux de la compagnie qui nommèrent Bertrand d'Ogeron gouverneur de l'île de la Tortue. D'Ogeron encouragea l'agriculture en commençant par le cacao et stimula la traite négrière.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="label">2.</span>
+      <div class="content"><strong>L'administration coloniale :</strong> les structures administratives devinrent une nécessité, et en 1683 fut établi le premier conseil supérieur de justice à Petit-Goâve afin de régler les nombreux conflits qui éclataient entre colons et autorités coloniales et entre les colons eux-mêmes. Le Code noir, publié en 1685 comme « recueil de règlements » de l'esclavage des Africains, constitue une étape clé d'institutionnalisation, au moment où la main-d'œuvre esclave sur grande échelle garantissait désormais la richesse des colons de St-Domingue et de la bourgeoisie métropolitaine. Il faut noter que les préjugés de couleur et de caste n'existaient pas en l'absence de l'État, et pendant plus d'un siècle, Espagnols et Français se marièrent et s'allièrent avec des Indiennes et des Africaines.</div>
+    </div>
+
+    <div class="num-para">
+      <span class="label">3.</span>
+      <div class="content"><strong>Les institutions militaires :</strong> les flibustiers et boucaniers en transition d'habitants, s'organisaient en fantassins et cavaliers pour attaquer et pour se défendre. Puis la défense militaire se structura afin de garantir le contrôle notamment de la main-d'œuvre servile en cas de révolte, mais aussi pour combattre la flibuste et les attaques des autres grandes puissances. Dans les premières années du XVIII<sup>e</sup> siècle (1700-1730), la métropole concentrait 3 000 militaires à St-Domingue et l'administration coloniale avait organisé trois compagnies de miliciens. L'autorité militaire fut séparée de l'autorité civile. Des assemblées furent créées. Le territoire fut organisé en paroisses.</div>
+    </div>
+
+    <p>Ce que nous pouvons constater, c'est que la nature des institutions créées ainsi que les lois régissant les rapports entre les classes et couches sociales, les droits (ou non-droits) des uns et des autres répondent à la nature du projet économique mis en œuvre par la métropole française.</p>
+
+    <h2>III — Tout ceci, pour arriver à une question bien à l'ordre du jour : la réforme des institutions de l'État en Haïti.</h2>
+
+    <p>En période électorale chez nous, c'est le thème de prédilection. La plupart du temps, le discours des politiciens-candidats laisse l'impression qu'ils croient pouvoir changer les structures d'une institution sans se soucier des mécanismes sociaux globaux qui relient toutes les entités. Ils en parlent avec une telle légèreté !</p>
+
+    <p>Quelle idée se font les prétendants à la « couronne » de l'État haïtien ? Ont-ils remarqué que son émergence n'a pas suivi le parcours de l'État français ou de l'État anglais ? Que retiennent-ils de la manière dont se sont construites les institutions haïtiennes, leur fonctionnement et leur dysfonctionnement hier et aujourd'hui ? Le poids des choix et des héritages ?</p>
+
+    <p>Parce que l'existence de l'État haïtien en tant que territoire délimité peuplé et administré par des autorités est une chose, sa structuration de fait en deux sous-ensembles — l'une urbaine autour des élites économiques, politiques et intellectuelles, et l'autre rurale, celle des paysans avec de larges extensions bidonvilloises aujourd'hui — en est une seconde. Les prétendants ont-ils interrogé les structures économiques, le système productif, la nature des rapports commerciaux internes et externes, les relations sociales, pour savoir si les institutions haïtiennes sont en phase avec le réel haïtien ? Jusqu'à quel point ? Et pourquoi ?</p>
+
+    <h2>IV — En 1838, la Chambre des Représentants…</h2>
+
+    <p>…pour signifier l'inapplicabilité du code rural de 1826, en porte-à-faux avec les réalités du milieu rural, répondit ainsi à une adresse du président Boyer : « Il (le Code rural) est tombé et sa chute a écrasé l'agriculture. » Où en sommes-nous aujourd'hui ?</p>
+
+    <p>On a souvent l'impression que les politiciens regardent à droite pour mieux ignorer les problèmes qui s'étalent à gauche. Et sous l'occupation américaine, dans son roman de mœurs titré <em>Les simulacres</em>, Fernand Hibbert fustigeait le comportement « woule m de bò » des politiciens traditionnels haïtiens, à l'affût du pouvoir, mais sans aucune conviction ni préoccupation pour le sort de la grande majorité, ni celui de leur pays sous les bottes étrangères.</p>
+
+    <p>Alors, ceux qui proposent des réformes institutionnelles (nouvelle constitution, nouvelle législation et la lune à l'avenant) en dehors de la réalité de notre base structurelle et son état avancé de dégradation croissante croient-ils que les institutions ont une vie indépendante, de telle sorte qu'on peut avoir un pays souverain politiquement, avec son armée, sa police au service de la population, une industrie touristique florissante, dans un contexte d'économie en banqueroute, charriant 60 % de chômeurs, une misère abjecte, et un budget « national » soutenu à bout de bras par de gros tuteurs étrangers ?</p>
+
+    <p>C'est peut-être cette façon de comprendre les choses qui explique que beaucoup de ceux qui ont pignon sur rue avaient cru (du moins nous le laissent-ils entendre) que les étrangers pouvaient, de manière discrète et angélique, leur financer des élections « honnêtes », « crédibles », « démocratiques »… en 2015, sans interférence étrangère ! À part le financement qui est si peu de chose.</p>
+
+    <p>Aujourd'hui, certains s'abîment en comparaison, s'arrachent les cheveux parce qu'ils ne comprennent pas pourquoi la République dominicaine a pu trouver finalement une certaine stabilité, accouplée à des avancées économiques et nous, en Haïti, non. En 2015 s'il vous plaît ! D'autres, plus « courageux », osent la comparaison avec les EEUU, la France… Tous ont oublié Ti Sentaniz. Ce serait trop demander à leur démocratie ! En plus qu'ils ont vainement cherché sa photo dans les manuels et rapports de la Banque mondiale !</p>
+
+    <p>Anthony Lespès rappelait sagement que la démocratie (dont on se gargarise tant) n'est pas une idée ; mais un pain de cinquante centimes qu'on vend à la Grand-Rue… En d'autres termes, elle commence vraiment avec la possibilité réelle pour chacun de manger son pain.</p>
+
+    <p>Là encore, il faut revenir à l'épineuse question de l'État haïtien et de ses institutions. Sur quelles bases socio-économiques et financières, sur quels rapports sociaux reposent les institutions haïtiennes ? Celles des pays pris si souvent comme modèles par les clercs d'ici ? Beaucoup trop d'intellectuels et de cadres haïtiens ont appris à penser avec la tête des autres, incapables de regarder autour d'eux sans les lunettes américaines, canadiennes, françaises. Incapables de proposer (sans la bénédiction d'un Blanc) des programmes d'éducation, de santé, d'infrastructures, d'agriculture… compatibles avec la réalité haïtienne, nos modestes moyens, et surtout, les vrais besoins et aspirations du peuple haïtien. Incapables de contester les diktats des tuteurs.</p>
+
+    <p>Cessons donc de nous en prendre aux symptômes et aux fantômes. Nous ne pouvons pas continuer à faire l'économie d'analyses profondes, relatives à notre État et nos institutions (ou ce qu'il en reste) si nous voulons comprendre les graves problèmes structurels qui minent notre société, les affronter vraiment, afin de tourner définitivement le dos aux simulacres.</p>
+
+    <p style="margin-top:1.5rem;font-style:italic;color:var(--text3);font-size:0.9rem">Myrtha Gilbert<br>
+    Première version : septembre 2015<br>
+    Actualisé : 1<sup>er</sup> septembre 2016</p>
+
+  </div>
+
+  <div style="margin-top:2rem">
+    <a class="back-link" href="publications.html">← Retour aux publications</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Myrtha Gilbert</h4>
+      <p>Historienne · Professeure · Auteure</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="index.html#livres">Livres</a>
+      <a href="index.html#biographie">Biographie</a>
+      <a href="publications.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Commandes</h4>
+      <p>Librairie La Pléiade PV</p>
+      <a href="tel:+15094404957">+1 (509) 44 04 1957</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Myrtha Gilbert · Tous droits réservés</span>
+  </div>
+</footer>
+
+</body>
+</html>
